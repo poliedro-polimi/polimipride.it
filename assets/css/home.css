@@ -1,0 +1,9 @@
+.page-header {
+	height: 40vh;
+}
+
+@media (orientation: landscape) {
+	.page-header {
+	    height: 100vh;
+	}
+}
