@@ -11,10 +11,19 @@
             </a>
 
             <div class="navbar-lang">
-                {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-                {% for page in pages %}
+                {% assign ref=page.ref %}
+                {% assign lang=page.lang %}
+                {% if page.ref == 'toplevel' %}
+                    {% assign ref='index' %}
+                {% endif %}
+                {% assign pages=site.pages | where:"ref", ref | sort: 'lang' %}
+                {% for page in pages reversed %}
                 <p>
-                    <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+                    {% if lang == page.lang %}
+                        {{ page.lang }}
+                    {% else %}
+                        <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+                    {% endif %}
                 </p>
                 {% endfor %}
             </div>
