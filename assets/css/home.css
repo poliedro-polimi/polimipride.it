@@ -1,3 +1,72 @@
+section#header {
+	height: 100vmin;
+	padding-top: 74px;
+	background-color: #ff0a5c;
+	color: white;
+}
+
+section#header .outer-center {
+	height: 100vmin;
+}
+
+@media screen and (min-width: 768px) {
+	section#header {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+}
+
+section#header .section-title,
+section#header .section-content {
+	text-align: center;
+}
+
+section#header .section-content {
+	padding-top: 20px;
+}
+
+.section-title {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.section-content {
+	font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@keyframes up-down {
+	from {
+		bottom: 5px;
+	}
+	to {
+		bottom: 20px;
+	}
+}
+
+section#header .up-down-arrow {
+	/*font-size: 30px;*/
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 5px;
+	animation-name: up-down;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+@media screen and (max-width: 768px) {
+
+	@keyframes up-down {
+		from {
+			bottom: 0px;
+		}
+		to {
+			bottom: 15px;
+		}
+	}
+}
+
 .page-header {
 	height: 40vh;
 	padding: 2rem 1rem;

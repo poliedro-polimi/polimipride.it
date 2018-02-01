@@ -1,6 +1,8 @@
 ---
 title: PoliMi Pride 2018
 layout: home
+ref: index
+lang: it
 ---
 
 # PoliMi Pride 2018
