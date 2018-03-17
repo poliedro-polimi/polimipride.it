@@ -1,8 +1,0 @@
-title: PoliMi Pride 2018
-description: Orgoglio Politecnico
-theme: jekyll-theme-cayman
-plugins:
-   - jemoji
-   - jekyll-redirect-from
-   - jekyll-sitemap
-   - jekyll-seo-tag
