@@ -6,8 +6,7 @@ install:
 env:
   - FLASK_APP=polimipride
 script:
-  - flask freeze
-  - ls -lRa
+  - flask freeze -d "$(pwd)/build"
 deploy:
   provider: pages
   skip-cleanup: true
