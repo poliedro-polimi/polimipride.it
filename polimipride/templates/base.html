@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="{{ _("en") }}">
+<head>
+    {% block head %}
+        {% block meta %}
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="theme-color" content="#b0003a">
+
+            <meta property="og:title" content="{{ _("PoliMi Pride 2018") }}"/>
+            <meta property="og:locale" content="{{ _("en") }}"/>
+            <meta name="description" content="{{ _("Politecnico's Pride") }}"/>
+            <meta property="og:description" content="{{ _("Politecnico's Pride") }}"/>
+            <meta property="og:site_name" content="{{ _("PoliMi Pride 2018") }}"/>
+        {% endblock %}
+
+
+        <title>{% block title %}{{ _("PoliMi Pride 2018") }} | {{ _("Politecnico's Pride") }}{% endblock %}</title>
+
+
+        {% if _("en") != "en" %}
+            <link rel="alternate" hreflang="en" href="{{ url_for_self(lang_code='en') }}"/>
+        {% elif _("en") != "it" %}
+            <link rel="alternate" hreflang="it" href="{{ url_for_self(lang_code='it') }}"/>
+        {% endif %}
+
+
+        {% block style %}
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+
+            <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+            {#            <link rel="stylesheet" href="https://poliedro-polimi.it/wp-content/themes/passivello/inc/css/passivello.css"#}
+            {#                  crossorigin="anonymous">#}
+            <link href="{{ url_for('static', filename='vendor/fontawesome/css/fontawesome-all.min.css') }}">
+
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        {% endblock %}
+
+    {% endblock %}
+</head>
+<body>
+
+{% block navbar %}
+    <nav id="mainNav" class="navbar navbar-dark navbar-expand-sm navbar-custom fixed-top justify-content-between">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <a class="navbar-brand page-scroll" href="https://poliedro-polimi.it">
+                    {% include 'svg/poliedro.svg' %}
+                </a>
+
+                <div class="navbar-lang">
+                    <p>
+                        {% if _("en") != "it" %}
+                            <a href="{{ url_for_self(lang_code='en') }}">IT</a>
+                        {% else %}
+                            IT
+                        {% endif %}
+                    </p>
+                    <p>
+                        {% if _("en") != "en" %}
+                            <a href="{{ url_for_self(lang_code='it') }}">EN</a>
+                        {% else %}
+                            EN
+                        {% endif %}
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav ml-auto mt-2 mt-lg-0">
+
+                    {% block navbar_items %}
+                        <li class="nav-item">
+                            <a class="page-scroll nav-link" href="https://support.poliedro-polimi.it">Gadgets <i
+                                    class="fa fa-external-link"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll nav-link" href="https://poliedro-polimi.it">PoliEdro Home <i
+                                    class="fa fa-external-link"></i></a>
+                        </li>
+                    {% endblock %}
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+    <footer class="site-footer">
+          <span class="site-footer-owner"><a href="https://polimipride.it">PoliMi Pride</a> è un'iniziativa realizzata da <a
+                  href="http://github.com/poliedro-polimi">PoliEdro</a> con il contributo del <a
+                  href="https://polimi.it"
+                  target="_blank">Politecnico di Milano</a>.</span>
+        <span class="site-footer-credits">Questo sito è stato generato utilizzando <a
+                href="http://github.com/poliedro-polimi/polimipride.it">GitHub Pages</a>.</span>
+    </footer>
+{% endblock %}
+
+
+{% block scripts %}
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{{ url_for('static', filename='vendor/jquery/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+{% endblock %}
+</body>
+</html>
