@@ -2,7 +2,6 @@ language: python
 python:
   - "3.6"
 install:
-  - pip install Frozen-Flask
   - pip install .
 env:
   - FLASK_APP=polimipride
@@ -14,5 +13,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   local-dir: build
+  fqdn: polimipride.it
   on:
     branch: master
