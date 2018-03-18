@@ -1,0 +1,18 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install Frozen-Flask
+  - pip install .
+env:
+  - FLASK_APP=polimipride
+script:
+  - flask freeze
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: build
+  on:
+    branch: master
