@@ -7,6 +7,7 @@ env:
   - FLASK_APP=polimipride
 script:
   - flask freeze
+  - ls -lRa
 deploy:
   provider: pages
   skip-cleanup: true
