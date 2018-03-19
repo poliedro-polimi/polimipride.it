@@ -48,7 +48,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <a class="navbar-brand page-scroll" href="https://poliedro-polimi.it">
-                    {% include 'svg/poliedro.svg' %}
+                    {% include 'svg/polimipride.svg' %}
                 </a>
 
                 <div class="navbar-lang">
@@ -84,11 +84,17 @@
 
                     {% block navbar_items %}
                         <li class="nav-item">
-                            <a class="page-scroll nav-link" href="https://support.poliedro-polimi.it">Gadgets <i
+                            <a class="page-scroll nav-link" href="#about">{{ _("About us") }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll nav-link" href="#project">{{ _("The project") }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll nav-link" href="https://donate.poliedro-polimi.it/{{ _("en") }}/">{{ _("Support us") }}<i
                                     class="fa fa-external-link"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="page-scroll nav-link" href="https://poliedro-polimi.it">PoliEdro Home <i
+                            <a class="page-scroll nav-link" href="https://poliedro-polimi.it/{{ _("en") }}/#contatti">{{ _("Contacts") }} <i
                                     class="fa fa-external-link"></i></a>
                         </li>
                     {% endblock %}
