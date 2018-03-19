@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var obj = $("section#header");
     var navbar = $("nav#mainNav");
-    var togglebtn = $("button.navbar-toggle");
+    var togglebtn = $("button.navbar-toggler");
 
     $(window).scroll(function () {
         var top = $(window).scrollTop();
