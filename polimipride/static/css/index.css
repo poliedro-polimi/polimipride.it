@@ -1,6 +1,6 @@
 section#header {
 	height: 100vmin;
-	padding-top: 74px;
+	padding: 0;
 	background-color: #ff0a5c;
 	color: white;
 }
@@ -11,8 +11,7 @@ section#header .outer-center {
 
 @media screen and (min-width: 768px) {
 	section#header {
-		padding-top: 120px;
-		padding-bottom: 120px;
+		padding: 0;
 	}
 }
 
@@ -23,6 +22,11 @@ section#header .section-content {
 
 section#header .section-content {
 	padding-top: 20px;
+}
+
+section#header .carousel {
+    width: 100%;
+    height: 100%;
 }
 
 .section-title {
