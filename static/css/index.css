@@ -1,27 +1,27 @@
 section#header {
-	height: 100vmin;
-	padding: 0;
-	background-color: #ff0a5c;
-	color: white;
+    height: 100vmin;
+    padding: 0;
+    background-color: #ff0a5c;
+    color: white;
 }
 
 section#header .outer-center {
-	height: 100vmin;
+    height: 100vmin;
 }
 
 @media screen and (min-width: 768px) {
-	section#header {
-		padding: 0;
-	}
+    section#header {
+        padding: 0;
+    }
 }
 
 section#header .section-title,
 section#header .section-content {
-	text-align: center;
+    text-align: center;
 }
 
 section#header .section-content {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 section#header .carousel {
@@ -29,51 +29,78 @@ section#header .carousel {
     height: 100%;
 }
 
+section#header .carousel-inner,
+section#header .carousel-item {
+    height: 100%;
+}
+
+section#header .carousel .carousel-img-crop {
+    width: 100%;
+    height: 100%;
+}
+
+section#header .carousel .carousel-caption svg {
+    height: 100%;
+}
+
+section#header .carousel .carousel-caption {
+    height: calc(100vh - 150px);
+}
+
+section#header .carousel .polimipride-wrapper {
+    height: 55%;
+}
+
+section#header .carousel .insiemeper-wrapper {
+    height: 15%;
+    margin: 3%;
+}
+
 .section-title {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .section-content {
-	font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @keyframes up-down {
-	from {
-		bottom: 5px;
-	}
-	to {
-		bottom: 20px;
-	}
+    from {
+        bottom: 5px;
+    }
+    to {
+        bottom: 20px;
+    }
 }
 
 section#header .up-down-arrow {
-	/*font-size: 30px;*/
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	bottom: 5px;
-	animation-name: up-down;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
-	animation-duration: 1s;
-	animation-timing-function: ease-out;
+    /*font-size: 30px;*/
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 5px;
+    animation-name: up-down;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 @media screen and (max-width: 768px) {
 
-	@keyframes up-down {
-		from {
-			bottom: 0px;
-		}
-		to {
-			bottom: 15px;
-		}
-	}
+    @keyframes up-down {
+        from {
+            bottom: 0px;
+        }
+        to {
+            bottom: 15px;
+        }
+    }
 }
 
 .page-header {
-	height: 40vh;
-	padding: 2rem 1rem;
+    height: 40vh;
+    padding: 2rem 1rem;
 }
 
 /*
@@ -83,50 +110,48 @@ section#header .up-down-arrow {
 }
 */
 .page-header .btn {
-	display: block;
-	width: 100%;
-	padding: 0.75rem;
-	font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
 }
 
 .page-header .project-name {
-	font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 .page-header .project-tagline {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
-
 @media (orientation: landscape) {
-	.page-header {
-	    height: 100vh;
-		padding: 3rem 4rem;
-	}
+    .page-header {
+        height: 100vh;
+        padding: 3rem 4rem;
+    }
 
-	.page-header .project-name {
-		font-size: 2.25rem;
-	}
+    .page-header .project-name {
+        font-size: 2.25rem;
+    }
 
-	.page-header .project-tagline {
-		font-size: 1.15rem;
-	}
+    .page-header .project-tagline {
+        font-size: 1.15rem;
+    }
 
-	.page-header .btn {
-		display: inline-block;
-		width: auto;
-		padding: 0.6rem 0.9rem;
-	}
+    .page-header .btn {
+        display: inline-block;
+        width: auto;
+        padding: 0.6rem 0.9rem;
+    }
 
+    .align-bottom {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+    }
 
-	.align-bottom {
-		position: absolute;
-		bottom: 3rem;
-		left: 50%;
-	}
-
-	.align-bottom * {
-		position: relative;
-		left: -50%;
-	}
+    .align-bottom * {
+        position: relative;
+        left: -50%;
+    }
 }
