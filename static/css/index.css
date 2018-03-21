@@ -45,6 +45,9 @@ section#header .carousel .carousel-caption svg {
 
 section#header .carousel .carousel-caption {
     height: calc(100vmin - 150px);
+    bottom: 50%;
+    transform: translateY(50%);
+    padding-top: 100px;
 }
 
 section#header .carousel .polimipride-wrapper {
