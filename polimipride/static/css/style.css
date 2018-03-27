@@ -636,6 +636,10 @@ section {
     z-index: 10;
 }
 
+nav#mainNav div.container {
+    margin: auto;
+}
+
 .navbar-custom .navbar-brand {
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
@@ -773,11 +777,6 @@ div.navbar-lang p a:hover {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    nav#mainNav div.container {
-        margin-left: 0;
-    }
-}
 
 nav#mainNav.navbar-custom.fixed-top {
     background: rgba(233, 30, 99, 1);
