@@ -5,10 +5,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var top = $(window).scrollTop();
-        var max = obj.height() * .90;
-
-        if (togglebtn.is(":visible") && !togglebtn.hasClass("collapsed"))
-            return;
+        var max = obj.height() * .87;
 
         if (top >= max && !navbar.hasClass("affix"))
             navbar.addClass("affix");
