@@ -37,6 +37,16 @@ section#header .carousel-item {
 section#header .carousel .carousel-img-crop {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+section#header .carousel .carousel-img-crop img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 
 section#header .carousel .carousel-caption svg {
@@ -159,7 +169,6 @@ section#header .up-down-arrow {
     }
 }
 
-
-#support p .btn{
+#support p .btn {
     margin-top: 60px;
 }
