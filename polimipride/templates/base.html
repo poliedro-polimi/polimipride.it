@@ -33,7 +33,8 @@
             <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
             {#            <link rel="stylesheet" href="https://poliedro-polimi.it/wp-content/themes/passivello/inc/css/passivello.css"#}
             {#                  crossorigin="anonymous">#}
-            <link href="{{ url_for('static', filename='vendor/fontawesome/css/fontawesome-all.min.css') }}">
+            <link rel="stylesheet"
+                  href="{{ url_for('static', filename='vendor/fontawesome/css/fontawesome-all.min.css') }}">
 
             <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         {% endblock %}
@@ -94,7 +95,8 @@
                                     class="fa fa-external-link"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="page-scroll nav-link" href="https://poliedro-polimi.it/{{ _("en") }}/#contatti">{{ _("Contacts") }} <i
+                            <a class="page-scroll nav-link"
+                               href="https://poliedro-polimi.it/{{ _("en") }}/#contatti">{{ _("Contacts") }} <i
                                     class="fa fa-external-link"></i></a>
                         </li>
                     {% endblock %}
@@ -111,12 +113,47 @@
 
 {% block footer %}
     <footer class="site-footer">
-          <span class="site-footer-owner"><a href="https://polimipride.it">PoliMi Pride</a> è un'iniziativa realizzata da <a
-                  href="http://github.com/poliedro-polimi">PoliEdro</a> con il contributo del <a
-                  href="https://polimi.it"
-                  target="_blank">Politecnico di Milano</a>.</span>
-        <span class="site-footer-credits">Questo sito è stato generato utilizzando <a
-                href="http://github.com/poliedro-polimi/polimipride.it">GitHub Pages</a>.</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-poliedro-logo">
+                    <a href="https://poliedro-polimi.it/{{ _("en") }}/">
+                        {% include 'svg/poliedro_bw_landscape.svg' %}
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-details d-flex align-items-end">
+                    <div class="align-middle">
+                        <p class="poliedro-x-polimipride section-title">
+                            {% include 'svg/poliedro.svg' %}
+                            ✕&nbsp;
+                            {% include 'svg/polimipride.svg' %}
+                        </p>
+                        <p>
+                            {{ _("The initiative <strong>PoliMi Pride</strong> is financed by") }}
+                            <a href="https://polimi.it" rel="noopener" target="_blank">Politecnico di Milano</a>.
+                        </p>
+                        <p>
+                            {{ _("Visit <a href='https://poliedro-polimi.it'>our website</a> to discover all of our other activities.") }}
+                        </p>
+                        <p class="section-social">
+                            <a href="https://poliedro-polimi.it/{{ _("en") }}/#contatti"><i class="fas fa-at"></i></a>
+                            |
+                            <a href="https://facebook.com/poliedro.polimi/" target="_blank" rel="noopener"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            |
+                            <a href="https://instagram.com/poliedro.polimi/" target="_blank" rel="noopener"><i
+                                    class="fab fa-instagram"></i></a>
+                            |
+                            <a href="https://t.me/PoliEdroLive" target="_blank" rel="noopener"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-copyright">
+                {{ _("&copy; PoliEdro 2018") }} | <a
+                    href="https://poliedro-polimi.it/{{ _("en") }}/{{ _("credits") }}/">{{ _("Credits") }}</a>
+            </div>
+        </div>
     </footer>
 {% endblock %}
 
