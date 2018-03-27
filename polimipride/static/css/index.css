@@ -158,3 +158,8 @@ section#header .up-down-arrow {
         left: -50%;
     }
 }
+
+
+#support p .btn{
+    margin-top: 60px;
+}

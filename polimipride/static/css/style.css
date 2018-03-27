@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto+Slab');
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
 html {
@@ -229,6 +231,8 @@ td, th {
     box-sizing: border-box;
 }
 
+/* MAIN CSS */
+
 body {
     padding: 0;
     margin: 0;
@@ -236,6 +240,23 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #606c71;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p, div {
+    font-family: 'Roboto Slab', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 a {
@@ -247,11 +268,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.container-narrow {
+    max-width: 768px;
+}
+
 .btn {
     display: inline-block;
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.08);
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
     border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
     border-width: 1px;
@@ -295,6 +323,23 @@ a:hover {
         margin-top: 1rem;
         margin-left: 0;
     }
+}
+
+.btn-pink {
+    color: white;
+    border-color: transparent;
+    background-color: #e54060;
+}
+
+.btn-pink:hover,
+.btn-pink:active {
+    color: #e54060;
+    border-color: #e54060;
+    background-color: transparent;
+}
+
+.btn-pink:focus {
+    box-shadow: 0 0 0 0.2rem #e5406030;
 }
 
 .page-header {
@@ -586,12 +631,6 @@ section {
     padding: 0;
 }
 
-@media (min-width: 768px) {
-    section {
-        padding: 0;
-    }
-}
-
 .navbar-custom {
     border-color: transparent;
     z-index: 10;
@@ -792,7 +831,7 @@ nav#mainNav .navbar-lang {
 }
 
 nav#mainNav.navbar-custom.navbar-dark .navbar-nav li.nav-item a.nav-link {
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
 }
 
 .outer-center {
@@ -812,3 +851,37 @@ nav#mainNav.navbar-custom.navbar-dark .navbar-nav li.nav-item a.nav-link {
     margin: auto;
 }
 
+.section-gray {
+    background-color: #f2f2f2;
+}
+
+.section-gray h1,
+.section-gray h2,
+.section-gray h3,
+.section-gray h4,
+.section-gray h5,
+.section-gray h6 {
+    color: #e54060;
+}
+
+section {
+    padding: 60px;
+}
+
+.bullet-row [class*=" col-"] {
+    padding-left: 50px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.bullet-row [class*=" col-"]:before {
+    content: '•';
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    font-size: 40px;
+    color: #e54060;
+}
