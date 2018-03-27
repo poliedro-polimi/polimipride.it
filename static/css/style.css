@@ -383,6 +383,10 @@ section {
     z-index: 10;
 }
 
+nav {
+    z-index: 16;
+}
+
 nav#mainNav div.container {
     margin: auto;
 }
