@@ -60,6 +60,14 @@ section#header .carousel .carousel-caption {
     padding-top: 100px;
 }
 
+@media (max-width: 768px) {
+    section#header .carousel .carousel-caption {
+        transform: translateY(70%);
+        padding-top: 10px;
+    }
+
+}
+
 section#header .carousel .polimipride-wrapper {
     height: 55%;
 }
