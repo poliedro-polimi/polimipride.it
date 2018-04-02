@@ -40,7 +40,7 @@ section#header .carousel .carousel-img-crop {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
 }
 
 section#header .carousel .carousel-img-crop img {
