@@ -15,4 +15,4 @@ deploy:
   local-dir: build
   fqdn: polimipride.it
   on:
-    branch: master
+    branch: production
