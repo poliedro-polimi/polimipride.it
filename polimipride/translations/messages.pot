@@ -1,0 +1,192 @@
+# Translations template for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-04-08 18:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: polimipride/templates/base.html:2 polimipride/templates/base.html:11
+#: polimipride/templates/base.html:21 polimipride/templates/base.html:23
+#: polimipride/templates/base.html:57 polimipride/templates/base.html:64
+#: polimipride/templates/base.html:99 polimipride/templates/base.html:136
+#: polimipride/templates/base.html:152 polimipride/templates/index.html:30
+#: polimipride/templates/index.html:44 polimipride/templates/index.html:58
+#: polimipride/templates/index.html:89
+msgid "en"
+msgstr ""
+
+#: polimipride/templates/base.html:10 polimipride/templates/base.html:14
+#: polimipride/templates/base.html:18
+msgid "PoliMi Pride 2018"
+msgstr ""
+
+#: polimipride/templates/base.html:12 polimipride/templates/base.html:13
+#: polimipride/templates/base.html:18
+msgid "Politecnico's Pride"
+msgstr ""
+
+#: polimipride/templates/base.html:88
+msgid "About us"
+msgstr ""
+
+#: polimipride/templates/base.html:91
+msgid "The project"
+msgstr ""
+
+#: polimipride/templates/base.html:94
+msgid "Support us"
+msgstr ""
+
+#: polimipride/templates/base.html:99
+msgid "Contacts"
+msgstr ""
+
+#: polimipride/templates/base.html:129
+msgid "The initiative <strong>PoliMi Pride</strong> is funded by"
+msgstr ""
+
+#: polimipride/templates/base.html:133
+msgid ""
+"Visit <a href='https://poliedro-polimi.it'>our website</a> to discover "
+"all of our other activities."
+msgstr ""
+
+#: polimipride/templates/base.html:151
+msgid "&copy; PoliEdro 2018"
+msgstr ""
+
+#: polimipride/templates/base.html:152
+msgid "credits"
+msgstr ""
+
+#: polimipride/templates/base.html:152
+msgid "Credits"
+msgstr ""
+
+#: polimipride/templates/index.html:84
+msgid "LGBTI+ students of PoliMi"
+msgstr ""
+
+#: polimipride/templates/index.html:86
+msgid ""
+"We are a group of students of Politecnico di Milano. We want to raise "
+"awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, "
+"Trans*, Intersexual and all the other <i>nuances</i>) by organizing "
+"events, conferences, talks and meetings about these topics. We try to be "
+"a landmark for students who feel discriminated in the University "
+"environment."
+msgstr ""
+
+#: polimipride/templates/index.html:90
+msgid "Visit our website"
+msgstr ""
+
+#: polimipride/templates/index.html:97
+msgid "A bit of history"
+msgstr ""
+
+#: polimipride/templates/index.html:99
+msgid ""
+"In 2017, for the first time, we asked our University to sponsor Milano "
+"Pride. That’s all we wanted at first, but people in the University’s "
+"administration suggested we could do something more."
+msgstr ""
+
+#: polimipride/templates/index.html:102
+msgid ""
+"That’s how PoliMi Pride was born. By organizing events, informative "
+"stands around the campuses, and making promotional gadgets we put our "
+"effort into bringing more of our fellow students to Milano Pride"
+msgstr ""
+
+#: polimipride/templates/index.html:110
+msgid "Why we do it"
+msgstr ""
+
+#: polimipride/templates/index.html:112
+msgid ""
+"The University is a place where we spend a lot of our time, trying to "
+"develop our knoweledge and skills for a better life and career. It’s "
+"stressful sometimes, but we think it’s even worse when one feels out of "
+"place, when one doesn’t feel safe enough to be oneself."
+msgstr ""
+
+#: polimipride/templates/index.html:115
+msgid ""
+"We think a University should do its best to show its student it’s doing "
+"the best it can to make them feel at home."
+msgstr ""
+
+#: polimipride/templates/index.html:116
+msgid ""
+"We think a University should care about diversity and inclusion and "
+"promote them, so students will know they can be Proud of who they are and"
+" of what makes them different."
+msgstr ""
+
+#: polimipride/templates/index.html:119
+msgid ""
+"That’s what PoliMi Pride is all about: attending Milano Pride is the tip "
+"of the iceberg."
+msgstr ""
+
+#: polimipride/templates/index.html:126
+msgid "The program"
+msgstr ""
+
+#: polimipride/templates/index.html:129
+msgid "Coming soon"
+msgstr ""
+
+#: polimipride/templates/index.html:130
+msgid ""
+"We still don't know the details of our events. Follow our <a "
+"href='https://poliedro.polimi.it/#social'>social media</a> to stay "
+"updated with our news"
+msgstr ""
+
+#: polimipride/templates/index.html:151
+msgid "How to support the project"
+msgstr ""
+
+#: polimipride/templates/index.html:153
+msgid ""
+"We're opening a crowdfunding campaign to support our project. It's not "
+"quite ready yet, we're working hard on it, it'll be ready in a few days. "
+"Check back soon."
+msgstr ""
+
+#: polimipride/templates/index.html:155
+msgid "What you get"
+msgstr ""
+
+#: polimipride/templates/index.html:157
+msgid "PoliMi Pride-branded shirts, tank tops, stickers, pins, and sackpacks"
+msgstr ""
+
+#: polimipride/templates/index.html:159
+msgid "What we get"
+msgstr ""
+
+#: polimipride/templates/index.html:162
+msgid ""
+"The funds to pay for all the expenses of our events, and to organize "
+"better, higher quality events in the future"
+msgstr ""
+
+#: polimipride/templates/index.html:166
+msgid "(Coming soon)"
+msgstr ""
+
