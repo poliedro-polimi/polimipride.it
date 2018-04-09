@@ -10,91 +10,26 @@
     {{ super() }}
 
     <section class="jumbotron" id="header">
-        <div id="slides" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#slides" data-slide-to="0" class="active"></li>
-                <li data-target="#slides" data-slide-to="1"></li>
-                <li data-target="#slides" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-img-crop">
-                        <img src="{{ url_for('static', filename='img/bg1.jpg') }}"
-                             alt="First slide">
-                    </div>
-                    <div class="carousel-caption d-block">
-                        <div class="polimipride-wrapper">
-                            {% include 'svg/polimipride_white_optimized.svg' %}
-                        </div>
-                        <div class="insiemeper-wrapper">
-                            {% include 'svg/sub1_optimized_{}.svg'.format(_("en")) %}
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-img-crop">
-                        <img src="{{ url_for('static', filename='img/bg2.jpg') }}"
-                             alt="Second slide">
-                    </div>
-                    <div class="carousel-caption d-block">
-                        <div class=polimipride-wrapper>
-                            {% include 'svg/polimipride_white_optimized.svg' %}
-                        </div>
-                        <div class="insiemeper-wrapper">
-                            {% include 'svg/sub2_optimized_{}.svg'.format(_("en")) %}
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-img-crop">
-                        <img src="{{ url_for('static', filename='img/bg3.jpg') }}"
-                             alt="Third slide">
-                    </div>
-                    <div class="carousel-caption d-block">
-                        <div class=polimipride-wrapper>
-                            {% include 'svg/polimipride_white_optimized.svg' %}
-                        </div>
-                        <div class="insiemeper-wrapper">
-                            {% include 'svg/sub3_optimized_{}.svg'.format(_("en")) %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+        <!-- Blank: the background image is the actual header -->
     </section>
-    <!--
-    <header class="page-header">
-        <h1 class="project-name">PoliMi Pride 2018</h1>
-        <h2 class="project-tagline">Orgoglio Politecnico</h2>
-        <div class="align-bottom">
-            <a href="#" class="btn" id="scopridipiubtn">Scopri di più</a>
-        </div>
-    </header>-->
+
 
     <section id="about" class="section-white">
         <div class="container container-narrow">
-            <h1>{{ _("LGBTI+ students of PoliMi") }}</h1>
+            <h1 class="color-1">{{ _("LGBTI+ students of PoliMi") }}</h1>
             <p>
                 {{ _("We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other <i>nuances</i>) by organizing events, conferences, talks and meetings about these topics. We try to be a landmark for students who feel discriminated in the University environment.") }}
             </p>
             <p class="text-center">
                 <a href="https://poliedro-polimi.it/{{ _("en") }}/"
-                   class="btn btn-lg btn-pink">{{ _("Visit our website") }}</a>
+                   class="btn btn-lg btn-polimipride">{{ _("Visit our website") }}</a>
             </p>
         </div>
     </section>
 
-    <section id="project" class="section-gray">
+    <section id="project" class="section-white">
         <div class="container container-narrow">
-            <h1>{{ _("A bit of history") }}</h1>
+            <h1 class="color-2">{{ _("A bit of history") }}</h1>
             <p>
                 {{ _("In 2017, for the first time, we asked our University to sponsor Milano Pride. That’s all we wanted at first, but people in the University’s administration suggested we could do something more.") }}
             </p>
@@ -107,7 +42,7 @@
 
     <section class="section-white">
         <div class="container container-narrow">
-            <h1>{{ _("Why we do it") }}</h1>
+            <h1 class="color-3">{{ _("Why we do it") }}</h1>
             <p>
                 {{ _("The University is a place where we spend a lot of our time, trying to develop our knoweledge and skills for a better life and career. It’s stressful sometimes, but we think it’s even worse when one feels out of place, when one doesn’t feel safe enough to be oneself.") }}
             </p>
@@ -121,9 +56,9 @@
         </div>
     </section>
 
-    <section id="program" class="section-gray">
+    <section id="program" class="section-white">
         <div class="container container-narrow">
-            <h1>{{ _("The program") }}</h1>
+            <h1 class="color-4">{{ _("The program") }}</h1>
 
             <p>
                 {{ _("Coming soon") }} 😉<br>
@@ -148,7 +83,7 @@
 
     <section id="support" class="section-white">
         <div class="container container-narrow">
-            <h1>{{ _("How to support the project") }}</h1>
+            <h1 class="color-5">{{ _("How to support the project") }}</h1>
             <p>
                 {{ _("We're opening a crowdfunding campaign to support our project. It's not quite ready yet, we're working hard on it, it'll be ready in a few days. Check back soon.") }}
             </p>
@@ -163,7 +98,7 @@
             </ul>
             <p class="text-center">
                 <a href="#support"
-                   class="btn btn-lg btn-pink"><i>{{ _("(Coming soon)") }}</i></a>
+                   class="btn btn-lg btn-polimipride"><i>{{ _("(Coming soon)") }}</i></a>
             </p>
         </div>
     </section>

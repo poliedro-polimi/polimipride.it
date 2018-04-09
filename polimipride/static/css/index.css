@@ -1,81 +1,21 @@
+body {
+    background: white url("../img/bg_header.jpg") no-repeat 0 30px;
+    background-size: contain;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-position-y: 40px;
+    }
+}
+
 section#header {
-    height: 100vmin;
+    height: 57vw;
     padding: 0;
-    background-color: #ff0a5c;
-    color: white;
+    color: black;
+    background: none;
 }
 
-section#header .outer-center {
-    height: 100vmin;
-}
-
-@media screen and (min-width: 768px) {
-    section#header {
-        padding: 0;
-    }
-}
-
-section#header .section-title,
-section#header .section-content {
-    text-align: center;
-}
-
-section#header .section-content {
-    padding-top: 20px;
-}
-
-section#header .carousel {
-    width: 100%;
-    height: 100%;
-}
-
-section#header .carousel-inner,
-section#header .carousel-item {
-    height: 100%;
-}
-
-section#header .carousel .carousel-img-crop {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-section#header .carousel .carousel-img-crop img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
-
-section#header .carousel .carousel-caption svg {
-    height: 100%;
-}
-
-section#header .carousel .carousel-caption {
-    height: calc(100vmin - 150px);
-    bottom: 50%;
-    transform: translateY(50%);
-    padding-top: 100px;
-}
-
-@media (max-width: 768px) {
-    section#header .carousel .carousel-caption {
-        transform: translateY(70%);
-        padding-top: 10px;
-    }
-
-}
-
-section#header .carousel .polimipride-wrapper {
-    height: 55%;
-}
-
-section#header .carousel .insiemeper-wrapper {
-    height: 15%;
-    margin: 3%;
-}
 
 .section-title {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -94,18 +34,6 @@ section#header .carousel .insiemeper-wrapper {
     }
 }
 
-section#header .up-down-arrow {
-    /*font-size: 30px;*/
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 5px;
-    animation-name: up-down;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-}
 
 @media screen and (max-width: 768px) {
 

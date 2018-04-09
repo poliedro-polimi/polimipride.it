@@ -1,26 +1,31 @@
+var obj, navbar;
+
+function setNavbarTransparency() {
+    var top = $(window).scrollTop();
+    var max = obj.height() * .2;
+
+    if (top >= max && navbar.hasClass("transparent"))
+        navbar.removeClass("transparent");
+    else if (top < max && !navbar.hasClass("transparent"))
+        navbar.addClass("transparent");
+}
+
 $(document).ready(function () {
-    var obj = $("section#header");
-    var navbar = $("nav#mainNav");
+    obj = $("section#header");
+    navbar = $("nav#mainNav");
     var togglebtn = $("button.navbar-toggler");
 
-    $(window).scroll(function () {
-        var top = $(window).scrollTop();
-        var max = obj.height() * .87;
-
-        if (top >= max && !navbar.hasClass("affix"))
-            navbar.addClass("affix");
-        else if (top < max && navbar.hasClass("affix"))
-            navbar.removeClass("affix");
-    });
+    $(window).scroll(setNavbarTransparency);
 
     togglebtn.click(function () {
         setTimeout(function () {
             if (!togglebtn.hasClass("collapsed")) {
                 navbar.addClass("menu-open");
-                if (!navbar.hasClass("affix"))
-                    navbar.addClass("affix");
+                if (navbar.hasClass("transparent"))
+                    navbar.removeClass("transparent");
             } else {
-                navbar.removeClass("menu-open");
+                navbar.addClass("menu-open");
+                setNavbarTransparency();
             }
         }, 100);
     });

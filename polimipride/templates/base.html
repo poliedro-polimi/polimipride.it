@@ -5,7 +5,7 @@
         {% block meta %}
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <meta name="theme-color" content="#b0003a">
+            <meta name="theme-color" content="#ffffff">
 
             <meta property="og:title" content="{{ _("PoliMi Pride 2018") }}"/>
             <meta property="og:locale" content="{{ _("en") }}"/>
@@ -44,8 +44,8 @@
 <body>
 
 {% block navbar %}
-    <nav id="mainNav" class="navbar navbar-dark navbar-expand-lg navbar-custom fixed-top justify-content-between">
-        <div class="container">
+    <nav id="mainNav" class="navbar navbar-light navbar-expand-lg navbar-custom fixed-top justify-content-between affix transparent">
+        <div class="container container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <a class="navbar-brand page-scroll" href="https://poliedro-polimi.it">
@@ -55,22 +55,20 @@
                 <div class="navbar-lang">
                     <p>
                         {% if _("en") != "it" %}
-                            <a href="{{ url_for_self(lang_code='en') }}">IT</a>
+                            <a href="{{ url_for_self(lang_code='it') }}">IT</a>
                         {% else %}
                             IT
                         {% endif %}
                     </p>
                     <p>
                         {% if _("en") != "en" %}
-                            <a href="{{ url_for_self(lang_code='it') }}">EN</a>
+                            <a href="{{ url_for_self(lang_code='en') }}">EN</a>
                         {% else %}
                             EN
                         {% endif %}
                     </p>
 
                 </div>
-
-
             </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse"
