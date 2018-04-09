@@ -779,3 +779,7 @@ nav#mainNav .nav-important {
 nav#mainNav .nav-important a.nav-link {
     color: white;
 }
+
+section p {
+    text-align: center;
+}
