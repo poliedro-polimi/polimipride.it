@@ -770,3 +770,16 @@ footer .col-details div {
 .color-6 {
     color: #e41376;
 }
+
+nav#mainNav .nav-important {
+    background-color: #e3162e;
+    border-radius: 5px;
+}
+
+nav#mainNav .nav-important a.nav-link {
+    color: white;
+}
+
+section p {
+    text-align: center;
+}
