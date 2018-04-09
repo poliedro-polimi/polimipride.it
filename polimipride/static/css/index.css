@@ -10,10 +10,16 @@ body {
 }
 
 section#header {
-    height: 57vw;
+    height: 55vw;
     padding: 0;
     color: black;
     background: none;
+}
+
+@media screen and (max-width: 500px) {
+    section#header {
+        height: 50vw;
+    }
 }
 
 
