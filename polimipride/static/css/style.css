@@ -783,3 +783,23 @@ nav#mainNav .nav-important a.nav-link {
 section p {
     text-align: center;
 }
+
+ul.navbar-nav {
+    position: relative;
+}
+
+@media screen and (max-width: 990px) {
+    .nav-important {
+        width: 150px;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-important {
+        bottom: 5px;
+    }
+}
