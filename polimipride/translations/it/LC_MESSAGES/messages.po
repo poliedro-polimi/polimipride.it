@@ -7,8 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-08 18:26+0200\n"
-"PO-Revision-Date: 2018-04-08 18:46+0200\n"
+"POT-Creation-Date: 2018-04-09 10:52+0200\n"
+"PO-Revision-Date: 2018-04-09 10:53+0200\n"
+"Last-Translator: \n"
 "Language: it\n"
 "Language-Team: it <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -16,16 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"Last-Translator: \n"
 "X-Generator: Poedit 2.0.6\n"
 
 #: polimipride/templates/base.html:2 polimipride/templates/base.html:11
 #: polimipride/templates/base.html:21 polimipride/templates/base.html:23
 #: polimipride/templates/base.html:57 polimipride/templates/base.html:64
-#: polimipride/templates/base.html:99 polimipride/templates/base.html:136
-#: polimipride/templates/base.html:152 polimipride/templates/index.html:30
-#: polimipride/templates/index.html:44 polimipride/templates/index.html:58
-#: polimipride/templates/index.html:89
+#: polimipride/templates/base.html:96 polimipride/templates/base.html:137
+#: polimipride/templates/base.html:153 polimipride/templates/index.html:24
 msgid "en"
 msgstr "it"
 
@@ -39,149 +37,151 @@ msgstr "PoliMi Pride 2018"
 msgid "Politecnico's Pride"
 msgstr "Orgoglio Politecnico"
 
-#: polimipride/templates/base.html:88
+#: polimipride/templates/base.html:86
 msgid "About us"
 msgstr "Chi siamo"
 
-#: polimipride/templates/base.html:91
+#: polimipride/templates/base.html:89
 msgid "The project"
 msgstr "L'iniziativa"
 
-#: polimipride/templates/base.html:94
+#: polimipride/templates/base.html:92
 msgid "Support us"
 msgstr "Supportaci"
 
-#: polimipride/templates/base.html:99
+#: polimipride/templates/base.html:96
 msgid "Contacts"
 msgstr "Contatti"
 
-#: polimipride/templates/base.html:129
+#: polimipride/templates/base.html:100
+msgid "Donate now"
+msgstr "Dona ora"
+
+#: polimipride/templates/base.html:130
 msgid "The initiative <strong>PoliMi Pride</strong> is funded by"
 msgstr ""
-"L'iniziativa <strong>PoliMi Pride</strong> è realizzata con il contributo "
-"del"
+"L'iniziativa <strong>PoliMi Pride</strong> è realizzata con il contributo del"
 
-#: polimipride/templates/base.html:133
+#: polimipride/templates/base.html:134
 msgid ""
-"Visit <a href='https://poliedro-polimi.it'>our website</a> to discover all "
-"of our other activities."
+"Visit <a href='https://poliedro-polimi.it'>our website</a> to discover all of "
+"our other activities."
 msgstr ""
-"Visita il nostro <a href='https://poliedro-polimi.it'>sito</a> per "
-"scoprire tutte le altre nostre attività."
+"Visita il nostro <a href='https://poliedro-polimi.it'>sito</a> per scoprire "
+"tutte le altre nostre attività."
 
-#: polimipride/templates/base.html:151
+#: polimipride/templates/base.html:152
 msgid "&copy; PoliEdro 2018"
 msgstr "&copy; PoliEdro 2018"
 
-#: polimipride/templates/base.html:152
+#: polimipride/templates/base.html:153
 msgid "credits"
 msgstr "crediti"
 
-#: polimipride/templates/base.html:152
+#: polimipride/templates/base.html:153
 msgid "Credits"
 msgstr "Crediti"
 
-#: polimipride/templates/index.html:84
+#: polimipride/templates/index.html:19
 msgid "LGBTI+ students of PoliMi"
 msgstr "Studenti LGBTI+ del PoliMi"
 
-#: polimipride/templates/index.html:86
+#: polimipride/templates/index.html:21
 msgid ""
 "We are a group of students of Politecnico di Milano. We want to raise "
 "awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, "
-"Trans*, Intersexual and all the other <i>nuances</i>) by organizing "
-"events, conferences, talks and meetings about these topics. We try to be a "
-"landmark for students who feel discriminated in the University environment."
+"Trans*, Intersexual and all the other <i>nuances</i>) by organizing events, "
+"conferences, talks and meetings about these topics. We try to be a landmark "
+"for students who feel discriminated in the University environment."
 msgstr ""
 "Siamo un gruppo di studenti del Politecnico decisi a sensibilizzare sulle "
 "tematiche riguardanti le realtà LGBTI+ (Lesbiche, Gay, Bisessuali, "
 "Transessuali, Intersessuali, e tutte le altre sfumature), attraverso "
 "l’organizzazione di eventi, conferenze, dibattiti e riunioni a riguardo, "
-"oltre che accogliere chi, all’interno dell’ambiente universitario, si "
-"sente discriminato."
+"oltre che accogliere chi, all’interno dell’ambiente universitario, si sente "
+"discriminato."
 
-#: polimipride/templates/index.html:90
+#: polimipride/templates/index.html:25
 msgid "Visit our website"
 msgstr "Visita il nostro sito"
 
-#: polimipride/templates/index.html:97
+#: polimipride/templates/index.html:32
 msgid "A bit of history"
 msgstr "Un po' di storia"
 
-#: polimipride/templates/index.html:99
+#: polimipride/templates/index.html:34
 msgid ""
-"In 2017, for the first time, we asked our University to sponsor Milano "
-"Pride. That’s all we wanted at first, but people in the University’s "
-"administration suggested we could do something more."
+"In 2017, for the first time, we asked our University to sponsor Milano Pride. "
+"That’s all we wanted at first, but people in the University’s administration "
+"suggested we could do something more."
 msgstr ""
 "Nel 2017, per la prima volta, abbiamo chiesto alla nostra Università di "
-"patrocinare il Milano Pride. Inizialmente era l'unica cosa che "
-"desideravamo, ma alcune persone nell'amministrazione dell'Università ci "
-"suggerirono di fare di più."
+"patrocinare il Milano Pride. Inizialmente era l'unica cosa che desideravamo, "
+"ma alcune persone nell'amministrazione dell'Università ci suggerirono di fare "
+"di più."
 
-#: polimipride/templates/index.html:102
+#: polimipride/templates/index.html:37
 msgid ""
 "That’s how PoliMi Pride was born. By organizing events, informative stands "
 "around the campuses, and making promotional gadgets we put our effort into "
 "bringing more of our fellow students to Milano Pride"
 msgstr ""
-"Fu così che nacque PoliMi Pride. Ci impegnamo per far partecipare ancora "
-"più studenti al Milano Pride attraverso eventi, stand informativi in giro "
-"per i campus e gadget promozionali"
+"Fu così che nacque PoliMi Pride. Ci impegnamo per far partecipare ancora più "
+"studenti al Milano Pride attraverso eventi, stand informativi in giro per i "
+"campus e gadget promozionali"
 
-#: polimipride/templates/index.html:110
+#: polimipride/templates/index.html:45
 msgid "Why we do it"
 msgstr "Perché lo facciamo"
 
-#: polimipride/templates/index.html:112
+#: polimipride/templates/index.html:47
 msgid ""
-"The University is a place where we spend a lot of our time, trying to "
-"develop our knoweledge and skills for a better life and career. It’s "
-"stressful sometimes, but we think it’s even worse when one feels out of "
-"place, when one doesn’t feel safe enough to be oneself."
+"The University is a place where we spend a lot of our time, trying to develop "
+"our knoweledge and skills for a better life and career. It’s stressful "
+"sometimes, but we think it’s even worse when one feels out of place, when one "
+"doesn’t feel safe enough to be oneself."
 msgstr ""
-"L'Università è un luogo dove trascorriamo una grossa fetta del nostro "
-"tempo, dove cerchiamo di sviluppare le nostre conoscenze e capacità per "
-"poter avere una vita e una carriera migliore. A volte è un po' stressante, "
-"ma crediamo che quando ci si sente a casa, quando non ci si sente al "
-"sicuro, possa esserlo ancora di più."
+"L'Università è un luogo dove trascorriamo una grossa fetta del nostro tempo, "
+"dove cerchiamo di sviluppare le nostre conoscenze e capacità per poter avere "
+"una vita e una carriera migliore. A volte è un po' stressante, ma crediamo "
+"che quando ci si sente a casa, quando non ci si sente al sicuro, possa "
+"esserlo ancora di più."
 
-#: polimipride/templates/index.html:115
+#: polimipride/templates/index.html:50
 msgid ""
-"We think a University should do its best to show its student it’s doing "
-"the best it can to make them feel at home."
+"We think a University should do its best to show its student it’s doing the "
+"best it can to make them feel at home."
 msgstr ""
-"Crediamo che un'Università debba impegnarsi per mostrare ai propri "
-"studenti che sta facendo il meglio che può per farli sentire nel posto "
-"giusto."
+"Crediamo che un'Università debba impegnarsi per mostrare ai propri studenti "
+"che sta facendo il meglio che può per farli sentire nel posto giusto."
 
-#: polimipride/templates/index.html:116
+#: polimipride/templates/index.html:51
 msgid ""
-"We think a University should care about diversity and inclusion and "
-"promote them, so students will know they can be Proud of who they are and "
-"of what makes them different."
+"We think a University should care about diversity and inclusion and promote "
+"them, so students will know they can be Proud of who they are and of what "
+"makes them different."
 msgstr ""
 "Crediamo che un'Università debba preoccuparsi della <i>Diversity</i>, "
 "dell'inclusione e di promuoverle. In questo modo gli studenti sapranno di "
 "poter essere Fieri di ciò che sono e di ciò che li rende unici."
 
-#: polimipride/templates/index.html:119
+#: polimipride/templates/index.html:54
 msgid ""
-"That’s what PoliMi Pride is all about: attending Milano Pride is the tip "
-"of the iceberg."
+"That’s what PoliMi Pride is all about: attending Milano Pride is the tip of "
+"the iceberg."
 msgstr ""
 "Questi sono i valori di fondo che portiamo avanti con PoliMi Pride: la "
 "partecipazione al Milano Pride è soltanto la punta dell'iceberg."
 
-#: polimipride/templates/index.html:126
+#: polimipride/templates/index.html:61
 msgid "The program"
 msgstr "Il programma"
 
-#: polimipride/templates/index.html:129
+#: polimipride/templates/index.html:64
 msgid "Coming soon"
 msgstr "Coming soon"
 
-#: polimipride/templates/index.html:130
+#: polimipride/templates/index.html:65
 msgid ""
 "We still don't know the details of our events. Follow our <a href='https://"
 "poliedro.polimi.it/#social'>social media</a> to stay updated with our news"
@@ -190,41 +190,40 @@ msgstr ""
 "Segui i nostri <a href='https://poliedro.polimi.it/#social'>social</a> per "
 "rimanere aggiornato sulle nostre news"
 
-#: polimipride/templates/index.html:151
+#: polimipride/templates/index.html:86
 msgid "How to support the project"
 msgstr "Come supportare l'iniziativa"
 
-#: polimipride/templates/index.html:153
+#: polimipride/templates/index.html:88
 msgid ""
-"We're opening a crowdfunding campaign to support our project. It's not "
-"quite ready yet, we're working hard on it, it'll be ready in a few days. "
-"Check back soon."
+"We're opening a crowdfunding campaign to support our project. It's not quite "
+"ready yet, we're working hard on it, it'll be ready in a few days. Check back "
+"soon."
 msgstr ""
 "Stiamo per aprire una campagna di crowdfunding per sostenere l'iniziativa. "
 "Non è ancora pronta, ci stiamo lavorando duro. Sarà pronta tra qualche "
 "giorno. Ricontrolla presto."
 
-#: polimipride/templates/index.html:155
+#: polimipride/templates/index.html:90
 msgid "What you get"
 msgstr "Cosa ottieni"
 
-#: polimipride/templates/index.html:157
+#: polimipride/templates/index.html:92
 msgid "PoliMi Pride-branded shirts, tank tops, stickers, pins, and sackpacks"
-msgstr ""
-"Magliette, canotte, adesivi, spille e sacche-zaino targate PoliMi Pride"
+msgstr "Magliette, canotte, adesivi, spille e sacche-zaino targate PoliMi Pride"
 
-#: polimipride/templates/index.html:159
+#: polimipride/templates/index.html:94
 msgid "What we get"
 msgstr "Cosa otteniamo"
 
-#: polimipride/templates/index.html:162
+#: polimipride/templates/index.html:97
 msgid ""
-"The funds to pay for all the expenses of our events, and to organize "
-"better, higher quality events in the future"
+"The funds to pay for all the expenses of our events, and to organize better, "
+"higher quality events in the future"
 msgstr ""
-"La disponibilità economica per provvedere a tutte le spese degli eventi e "
-"per organizzare in futuro eventi migliori"
+"La disponibilità economica per provvedere a tutte le spese degli eventi e per "
+"organizzare in futuro eventi migliori"
 
-#: polimipride/templates/index.html:166
+#: polimipride/templates/index.html:101
 msgid "(Coming soon)"
 msgstr "(Coming soon)"
