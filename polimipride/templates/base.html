@@ -44,7 +44,8 @@
 <body>
 
 {% block navbar %}
-    <nav id="mainNav" class="navbar navbar-light navbar-expand-lg navbar-custom fixed-top justify-content-between affix transparent">
+    <nav id="mainNav"
+         class="navbar navbar-light navbar-expand-lg navbar-custom fixed-top justify-content-between affix transparent">
         <div class="container container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -89,7 +90,7 @@
                             <a class="page-scroll nav-link" href="#project">{{ _("The project") }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="page-scroll nav-link"
+                            <a class="nav-link"
                                href="https://poliedro-polimi.it/{{ _("en") }}/#contatti">{{ _("Contacts") }} <i
                                     class="fa fa-external-link"></i></a>
                         </li>
@@ -162,6 +163,7 @@
     <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 
     <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/smoothscroll.js') }}"></script>
 {% endblock %}
 </body>
 </html>
