@@ -803,3 +803,9 @@ ul.navbar-nav {
         bottom: 5px;
     }
 }
+
+nav .nav-link .fas.fa-external-link-alt {
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+}
