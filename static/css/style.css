@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700,600i|Roboto+Slab');
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
@@ -245,7 +245,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
+    font-style: italic;
     text-align: center;
 }
 
