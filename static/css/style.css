@@ -730,6 +730,12 @@ footer .col-poliedro-logo svg {
     padding-top: 30px;
 }
 
+footer .col-details div {
+    margin: auto;
+    text-align: justify;
+}
+
+
 @media (max-width: 768px) {
     footer .col-poliedro-logo {
         padding-bottom: 60px;
@@ -745,11 +751,12 @@ footer .col-poliedro-logo svg {
     footer .section-social {
         padding: 1rem;
     }
+
+    footer .col-details div {
+        text-align: center;
+    }
 }
 
-footer .col-details div {
-    margin: auto;
-}
 
 .section-copyright {
     text-align: center;
