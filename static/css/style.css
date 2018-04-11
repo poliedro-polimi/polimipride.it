@@ -735,7 +735,6 @@ footer .col-details div {
     text-align: justify;
 }
 
-
 @media (max-width: 768px) {
     footer .col-poliedro-logo {
         padding-bottom: 60px;
@@ -757,6 +756,12 @@ footer .col-details div {
     }
 }
 
+@media (min-width: 768px) {
+    .col-details, .col-poliedro-logo {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
 
 .section-copyright {
     text-align: center;
