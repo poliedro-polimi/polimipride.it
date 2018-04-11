@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-09 10:52+0200\n"
+"POT-Creation-Date: 2018-04-11 10:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,8 +20,8 @@ msgstr ""
 #: polimipride/templates/base.html:2 polimipride/templates/base.html:11
 #: polimipride/templates/base.html:21 polimipride/templates/base.html:23
 #: polimipride/templates/base.html:57 polimipride/templates/base.html:64
-#: polimipride/templates/base.html:96 polimipride/templates/base.html:137
-#: polimipride/templates/base.html:153 polimipride/templates/index.html:24
+#: polimipride/templates/base.html:93 polimipride/templates/base.html:134
+#: polimipride/templates/base.html:150 polimipride/templates/index.html:24
 msgid "en"
 msgstr ""
 
@@ -43,37 +43,33 @@ msgstr ""
 msgid "The project"
 msgstr ""
 
-#: polimipride/templates/base.html:92
-msgid "Support us"
-msgstr ""
-
-#: polimipride/templates/base.html:96
+#: polimipride/templates/base.html:93
 msgid "Contacts"
 msgstr ""
 
-#: polimipride/templates/base.html:100
-msgid "Donate now"
+#: polimipride/templates/base.html:97
+msgid "Support us now"
 msgstr ""
 
-#: polimipride/templates/base.html:130
+#: polimipride/templates/base.html:127
 msgid "The initiative <strong>PoliMi Pride</strong> is funded by"
 msgstr ""
 
-#: polimipride/templates/base.html:134
+#: polimipride/templates/base.html:131
 msgid ""
 "Visit <a href='https://poliedro-polimi.it'>our website</a> to discover "
 "all of our other activities."
 msgstr ""
 
-#: polimipride/templates/base.html:152
+#: polimipride/templates/base.html:149
 msgid "&copy; PoliEdro 2018"
 msgstr ""
 
-#: polimipride/templates/base.html:153
+#: polimipride/templates/base.html:150
 msgid "credits"
 msgstr ""
 
-#: polimipride/templates/base.html:153
+#: polimipride/templates/base.html:150
 msgid "Credits"
 msgstr ""
 
