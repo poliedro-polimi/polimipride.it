@@ -709,7 +709,8 @@ footer .col-poliedro-logo {
 }
 
 footer .col-poliedro-logo svg {
-    height: 100%;
+    width: 100%;
+    padding-top: 30px;
 }
 
 @media (max-width: 768px) {
@@ -718,9 +719,9 @@ footer .col-poliedro-logo svg {
     }
 
     footer .col-poliedro-logo svg {
+        width: auto;
         height: 100%;
         max-width: 100%;
-        width: 100%;
         padding: 1rem;
     }
 
