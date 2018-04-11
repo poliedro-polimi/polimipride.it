@@ -508,6 +508,10 @@ nav#mainNav div.container {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .navbar-custom button.navbar-toggler {
+        padding-right: 0;
+    }
 }
 
 .navbar-custom a.page-scroll:active {
