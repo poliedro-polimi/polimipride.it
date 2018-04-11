@@ -20,6 +20,7 @@ $(document).ready(function () {
     togglebtn.click(function () {
         setTimeout(function () {
             if (!togglebtn.hasClass("collapsed")) {
+                $(".navbar-toggler .navbar-red-bullet").fadeOut();
                 navbar.addClass("menu-open");
                 if (navbar.hasClass("transparent"))
                     navbar.removeClass("transparent");

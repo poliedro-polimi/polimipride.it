@@ -508,10 +508,6 @@ nav#mainNav div.container {
         padding-top: 0;
         padding-bottom: 0;
     }
-
-    .navbar-custom button.navbar-toggler {
-        padding-right: 0;
-    }
 }
 
 .navbar-custom a.page-scroll:active {
@@ -592,10 +588,27 @@ nav#mainNav.navbar-custom .navbar-toggler:focus {
     border-color: transparent;
 }
 
-/*nav#mainNav.navbar-custom.menu-open .navbar-toggler {
-    border-color: #9a2d48;
-    transition: border-color linear 300ms;
-}*/
+.navbar-custom button.navbar-toggler {
+    position: relative;
+    padding-right: 0;
+    outline: none;
+}
+
+.navbar-toggler .navbar-red-bullet {
+    color: #e3162e;
+    position: absolute;
+    top: 11px;
+    right: -8px;
+    font-size: 40px;
+    font-family: sans-serif;
+    line-height: 0;
+}
+
+@media screen and (min-width: 990px) {
+    .navbar-toggler .navbar-red-bullet {
+        display: none;
+    }
+}
 
 nav#mainNav .navbar-lang {
     text-transform: uppercase;
