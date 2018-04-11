@@ -19,7 +19,7 @@ if 'POLIMIPRIDE_CONFIG' in os.environ:
 
 # Include some static files in root directory
 
-ROOT_ASSETS = ('CNAME',)
+ROOT_ASSETS = ('CNAME', 'img/favicon.ico')
 for asset in ROOT_ASSETS:
     url = "/" + os.path.basename(asset)
     name = asset.replace(".", "_").replace("/", "_")
