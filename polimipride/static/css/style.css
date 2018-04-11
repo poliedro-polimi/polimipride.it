@@ -796,11 +796,15 @@ ul.navbar-nav {
 
 @media screen and (max-width: 990px) {
     .nav-important {
-        width: 150px;
+        max-width: 164px;
         text-align: center;
         position: absolute;
         bottom: 0px;
         right: 0;
+    }
+
+    li.nav-important a.nav-link {
+        padding: 8px;
     }
 }
 
