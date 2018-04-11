@@ -21,8 +21,8 @@ if 'POLIMIPRIDE_CONFIG' in os.environ:
 
 ROOT_ASSETS = ('CNAME',)
 for asset in ROOT_ASSETS:
-    url = "/" + asset
-    name = asset.replace(".", "_")
+    url = "/" + os.path.basename(asset)
+    name = asset.replace(".", "_").replace("/", "_")
     app.add_url_rule(url, name, partial(app.send_static_file, filename=asset))
 
 # Register localization and static site generation modules
