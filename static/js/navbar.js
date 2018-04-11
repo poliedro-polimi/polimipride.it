@@ -20,6 +20,7 @@ $(document).ready(function () {
     togglebtn.click(function () {
         setTimeout(function () {
             if (!togglebtn.hasClass("collapsed")) {
+                $(".navbar-toggler .navbar-red-bullet").fadeOut();
                 navbar.addClass("menu-open");
                 if (navbar.hasClass("transparent"))
                     navbar.removeClass("transparent");
@@ -28,5 +29,10 @@ $(document).ready(function () {
                 setNavbarTransparency();
             }
         }, 100);
+    });
+
+
+    $("nav a.nav-link").click(function () {
+        $("nav .navbar-collapse").collapse("hide");
     });
 });
