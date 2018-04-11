@@ -1,6 +1,13 @@
 body {
-    background: white url("../img/bg_header.jpg") no-repeat 0 30px;
+    background: white url("../img/bg_lands.jpg") no-repeat 0 50px;
     background-size: contain;
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url("../img/bg_portr.jpg");
+        background-position-y: 50px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -10,18 +17,17 @@ body {
 }
 
 section#header {
-    height: 60vw;
+    height: 45vw;
     padding: 0;
     color: black;
     background: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (orientation: portrait) {
     section#header {
         height: 50vw;
     }
 }
-
 
 .section-title {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
