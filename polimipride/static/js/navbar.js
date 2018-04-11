@@ -30,4 +30,9 @@ $(document).ready(function () {
             }
         }, 100);
     });
+
+
+    $("nav a.nav-link").click(function () {
+        $("nav .navbar-collapse").collapse("hide");
+    });
 });
