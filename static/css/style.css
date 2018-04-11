@@ -805,6 +805,7 @@ footer .col-details div {
 nav#mainNav .nav-important {
     background-color: #e3162e;
     border-radius: 5px;
+    margin-left: 8px;
 }
 
 nav#mainNav .nav-important a.nav-link {
@@ -821,6 +822,7 @@ ul.navbar-nav {
 
 @media screen and (max-width: 990px) {
     .nav-important {
+        margin-left: 0;
         max-width: 164px;
         text-align: center;
         position: absolute;
