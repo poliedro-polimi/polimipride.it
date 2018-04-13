@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
 {% block style %}
-    {{ super() }}
+{{ super() }}
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 {% endblock %}
 
 {% block content %}
-    {{ super() }}
+{{ super() }}
 
     <section class="jumbotron" id="header">
         <div class="svg-container">
@@ -20,93 +20,109 @@
     </section>
 
 
-    <section id="about" class="section-white">
-        <div class="container container-narrow">
-            <h1 class="color-1">{{ _("LGBTI+ students of PoliMi") }}</h1>
-            <p>
-                {{ _("We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other <i>nuances</i>) by organizing events, conferences, talks and meetings about these topics. We try to be a landmark for students who feel discriminated in the University environment.") }}
-            </p>
-            <p class="text-center">
-                <a href="https://poliedro-polimi.it/{{ _("en") }}/"
-                   class="btn btn-lg btn-polimipride">{{ _("Visit our website") }}</a>
-            </p>
+<section id="project" class="section-white">
+    <div class="container container-narrow">
+        <h1 class="color-1">{{ _("The Initiative") }}</h1>
+        <p>
+            {{ _("PoliMi Pride is PoliEdro's initiative to bring Milano Pride to the Politecnico di Milano and at the same time bring Politecnico to the Milano Pride.") }}<br>
+            {{ _("The Pride is the event and display of gays, lesbians, bisexuals, transexuals, asexuals, intersex and queer's pride: an extraordinary feast of freedom that has reached even the Politecnico di Milano.") }}
+        </p>
+        <p>
+            {{ _("The event will have its grand finale with the <a href='http://www.milanopride.it'>Milano Pride</a> parade on June 30th through the streets of Lombardy's state capital, but it's not limited to it:") }}<br>
+            {{ _("PoliMi Pride will fill the whole month of June with in-depth events on the Pride's meaning and history and on LGBTI+ themes between lectures, movies, informative booths and colourful gadgets.") }}
+        </p>
+        <!--p class="text-center">
+            <a href="https://poliedro-polimi.it/{{ _("en") }}/"
+               class="btn btn-lg btn-polimipride">{{ _("Visit our website") }}</a>
+        </p-->
+    </div>
+</section>
+
+<section id="program" class="section-white">
+    <div class="container container-narrow">
+        <h1 class="color-2">{{ _("The program") }}</h1>
+
+        <p>
+            {{ _("Coming soon") }}<br>
+            {{ _("We still don't know the details of our events. Follow our <a href='https://poliedro.polimi.it/#social'>social media</a> to stay updated with our news") }}
+        </p>
+
+        {#<div class="row bullet-row">
+        <div class="col-12 col-md-6">
+            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava
+            bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko
+            zucchini.
         </div>
-    </section>
-
-    <section id="project" class="section-white">
-        <div class="container container-narrow">
-            <h1 class="color-2">{{ _("A bit of history") }}</h1>
-            <p>
-                {{ _("In 2017, for the first time, we asked our University to sponsor Milano Pride. That’s all we wanted at first, but people in the University’s administration suggested we could do something more.") }}
-            </p>
-            <p>
-                {{ _("That’s how PoliMi Pride was born. By organizing events, informative stands around the campuses, and making promotional gadgets we put our effort into bringing more of our fellow students to Milano Pride") }}
-            </p>
+        <div class="col-12 col-md-6">
+            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
+            bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot
+            squash brussels sprout chard.
         </div>
-    </section>
+    </div>#}
+    </div>
+</section>
+
+<section id="history" class="section-white">
+    <div class="container container-narrow">
+        <h1 class="color-3">{{ _("Some History") }}</h1>
+        <p>
+            {{ _("In 2017, for the first time, we asked our Univesity to officially support the Milano Pride. The only thing we could want was the recognition of an important event for us and a sign from the Politecnico to let us know it is on our side: the recognition came stronger than we could ever expect and pushed by the support and enthusiasm of PoliMi's representatives, staff and teachers we were asked to fill the official support with the meaning it deserved.") }}
+        </p>
+        <p>
+            {{ _("This is how PoliMi Pride was born, from the synergy of the polytechnic community we brought informative booths to the campuses, we created gadgets like pins and t-shirts and we took a six-meters-long banner with flags to the Milano Pride.") }}
+        </p>
+        <p>
+            {{ _("This year PoliMi Pride comes back with its second edition and accompanied by events, booths and gadget for all of June!") }}
+        </p>
+    </div>
+</section>
+
+<section id="about" class="section-white">
+    <div class="container container-narrow">
+        <h1 class="color-4">{{ _("LGBTI+ Students of PoliMi") }}</h1>
+        <p>
+            {{ _("We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other nuances) by organizing events, conferences, talks and meetings about these topics. We try to be a landmark for students who feel discriminated in the University environment.") }}
+        </p>
+    </div>
+</section>
 
 
-    <section class="section-white">
-        <div class="container container-narrow">
-            <h1 class="color-3">{{ _("Why we do it") }}</h1>
-            <p>
-                {{ _("The University is a place where we spend a lot of our time, trying to develop our knoweledge and skills for a better life and career. It’s stressful sometimes, but we think it’s even worse when one feels out of place, when one doesn’t feel safe enough to be oneself.") }}
-            </p>
-            <p>
-                {{ _("We think a University should do its best to show its student it’s doing the best it can to make them feel at home.") }}<br>
-                {{ _("We think a University should care about diversity and inclusion and promote them, so students will know they can be Proud of who they are and of what makes them different.") }}
-            </p>
-            <p>
-                {{ _("That’s what PoliMi Pride is all about: attending Milano Pride is the tip of the iceberg.") }}
-            </p>
-        </div>
-    </section>
+<section class="section-white">
+    <div class="container container-narrow">
+        <h1 class="color-5">{{ _("Why we do it") }}</h1>
+        <p>
+            {{ _("The University is a place where we spend a lot of our time, trying to develop our knoweledge and skills for a better life and career. It’s stressful sometimes, but we think it’s even worse when one feels out of place, when one doesn’t feel safe enough to be oneself.") }}
+        </p>
+        <p>
+            {{ _("We think a University should do its best to show its student it’s doing the best it can to make them feel at home.") }}<br>
+            {{ _("We think a University should care about diversity and inclusion and promote them, so students will know they can be Proud of who they are and of what makes them different.") }}
+        </p>
+        <p>
+            {{ _("That’s what PoliMi Pride is all about: attending Milano Pride is the tip of the iceberg.") }}
+        </p>
+    </div>
+</section>
 
-    <section id="program" class="section-white">
-        <div class="container container-narrow">
-            <h1 class="color-4">{{ _("The program") }}</h1>
-
-            <p>
-                {{ _("Coming soon") }} 😉<br>
-                {{ _("We still don't know the details of our events. Follow our <a href='https://poliedro.polimi.it/#social'>social media</a> to stay updated with our news") }}
-                💪
-            </p>
-
-            {#<div class="row bullet-row">
-                <div class="col-12 col-md-6">
-                    Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava
-                    bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko
-                    zucchini.
-                </div>
-                <div class="col-12 col-md-6">
-                    Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
-                    bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot
-                    squash brussels sprout chard.
-                </div>
-            </div>#}
-        </div>
-    </section>
-
-    <section id="support" class="section-white">
-        <div class="container container-narrow">
-            <h1 class="color-5">{{ _("How to support the project") }}</h1>
-            <p>
-                {{ _("We're opening a crowdfunding campaign to support our project. It's not quite ready yet, we're working hard on it, it'll be ready in a few days. Check back soon.") }}
-            </p>
-            <p class="text-center">{{ _("What you get") }}</p>
-            <ul>
-                <li>{{ _("PoliMi Pride-branded shirts, tank tops, stickers, pins, and sackpacks") }}</li>
-            </ul>
-            <p class="text-center">{{ _("What we get") }}</p>
-
-            <ul>
-                <li>{{ _("The funds to pay for all the expenses of our events, and to organize better, higher quality events in the future") }}</li>
-            </ul>
-            <p class="text-center">
-                <a href="#support"
-                   class="btn btn-lg btn-polimipride"><i>{{ _("(Coming soon)") }}</i></a>
-            </p>
-        </div>
-    </section>
+<section id="support" class="section-white">
+    <div class="container container-narrow">
+        <h1 class="color-6">{{ _("How to support the project") }}</h1>
+        <p>
+            {{ _("Our designers team has designed a new logo and new gadgets for this edition of PoliMi Pride, for all of you and to fill with colours the march on June 30th.") }}
+        </p>
+        <p>
+            {{ _("But to be able to make them we need your support: we have launched a <strong>crowdfunding campaign</strong> to gather participations and put together the funds to order all the materials branded PoliMi Pride.") }}
+        </p>
+        <p class="text-center">{{ _("In exchange for a donation to our project:") }}</p>
+        <ul>
+            <li>{{ _("you get PoliMi Pride-branded pins, stickers, sackpacks and t-shirts.") }}</li>
+            <li>{{ _("we get the financial means to do the orders of the gadgets, provide for the expenses of our events and organize even better events for the future!") }}</li>
+        </ul>
+        <p class="text-center">
+            {{ _("Choose your favourite gadgets!") }}
+            <a href="#support"
+               class="btn btn-lg btn-polimipride"><i>{{ _("(Coming soon)") }}</i></a>
+        </p>
+    </div>
+</section>
 
 {% endblock %}
