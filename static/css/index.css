@@ -26,7 +26,7 @@ section#header {
 
 @media screen and (orientation: landscape) {
     section#header {
-        height: 42vw;
+        height: 45vw;
     }
 }
 
