@@ -1,12 +1,12 @@
 body {
-    background: white url("../img/bg_lands.jpg") no-repeat 0 50px;
-    background-size: contain;
+    background: white url("../img/bg_header.jpg") no-repeat 0 50px;
+    /* 0.62418 = img_h/img_w */
+    background-size: 100vw calc(100vw * 0.62418);
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: landscape) {
     body {
-        background-image: url("../img/bg_portr.jpg");
-        background-position-y: 50px;
+        background-size: 100vw calc(80vw * 0.62418);
     }
 }
 
@@ -17,33 +17,33 @@ body {
 }
 
 section#header {
-    height: 45vw;
+    height: 50vw;
     padding: 0;
     color: black;
     background: none;
     position: relative;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: landscape) {
     section#header {
-        height: 50vw;
+        height: 42vw;
     }
 }
 
 .svg-container {
-    width: 30vw;
+    width: 36vw;
     position: absolute;
     left: 50%;
-    /* 0.24826 = img_w/img_h/2 */
-    top: calc(100vw * 0.24826 + 50px);
+    /* 0.31209 = img_w/img_h/2 */
+    top: calc(100vw * 0.31209 + 50px);
     transform: translate(-50%, -54%);
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: landscape) {
     .svg-container {
+        width: 30vw;
         /* 0.31209 = img_w/img_h/2 */
-        top: calc(100vw * 0.31209 + 50px);
-        width: 36vw;
+        top: calc(100vw * 0.31209 * 0.8 + 50px);
     }
 }
 
