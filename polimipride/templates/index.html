@@ -10,7 +10,13 @@
     {{ super() }}
 
     <section class="jumbotron" id="header">
-        <!-- Blank: the background image is the actual header -->
+        <div class="svg-container">
+            {% if _("en") == "it" %}
+                {% include 'svg/polimipride_logo_it.svg' %}
+            {% else %}
+                {% include 'svg/polimipride_logo_en.svg' %}
+            {% endif %}
+        </div>
     </section>
 
 

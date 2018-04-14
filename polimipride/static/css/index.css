@@ -21,11 +21,35 @@ section#header {
     padding: 0;
     color: black;
     background: none;
+    position: relative;
 }
 
 @media screen and (orientation: portrait) {
     section#header {
         height: 50vw;
+    }
+}
+
+.svg-container {
+    width: 30vw;
+    position: absolute;
+    left: 50%;
+    /* 0.24826 = img_w/img_h/2 */
+    top: calc(100vw * 0.24826 + 50px);
+    transform: translate(-50%, -54%);
+}
+
+@media screen and (orientation: portrait) {
+    .svg-container {
+        /* 0.31209 = img_w/img_h/2 */
+        top: calc(100vw * 0.31209 + 50px);
+        width: 36vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .svg-container {
+        top: calc(100vw * 0.31209 + 40px);
     }
 }
 
@@ -45,7 +69,6 @@ section#header {
         bottom: 20px;
     }
 }
-
 
 @media screen and (max-width: 768px) {
 
