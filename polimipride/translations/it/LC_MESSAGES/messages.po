@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-14 03:22+0200\n"
-"PO-Revision-Date: 2018-04-14 03:37+0200\n"
+"POT-Creation-Date: 2018-04-14 03:57+0200\n"
+"PO-Revision-Date: 2018-04-14 03:57+0200\n"
 "Last-Translator: \n"
 "Language: it\n"
 "Language-Team: it <LL@li.org>\n"
@@ -17,13 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: polimipride/templates/base.html:2 polimipride/templates/base.html:11
 #: polimipride/templates/base.html:23 polimipride/templates/base.html:25
-#: polimipride/templates/base.html:60 polimipride/templates/base.html:67
-#: polimipride/templates/base.html:97 polimipride/templates/base.html:136
-#: polimipride/templates/base.html:152 polimipride/templates/index.html:14
+#: polimipride/templates/base.html:54 polimipride/templates/base.html:60
+#: polimipride/templates/base.html:67 polimipride/templates/base.html:97
+#: polimipride/templates/base.html:136 polimipride/templates/base.html:152
+#: polimipride/templates/index.html:14
 msgid "en"
 msgstr "it"
 
@@ -33,9 +34,13 @@ msgid "PoliMi Pride 2018"
 msgstr "PoliMi Pride 2018"
 
 #: polimipride/templates/base.html:12 polimipride/templates/base.html:13
-#: polimipride/templates/base.html:20 polimipride/templates/index.html:25
+#: polimipride/templates/index.html:25
 msgid "Politecnico's Pride"
 msgstr "Orgoglio Politecnico"
+
+#: polimipride/templates/base.html:20
+msgid "Integrating Diversity"
+msgstr "Integriamo le Diversità"
 
 #: polimipride/templates/base.html:90
 msgid "The project"
