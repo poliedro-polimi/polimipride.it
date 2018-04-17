@@ -568,8 +568,14 @@ nav#mainNav.navbar-custom.fixed-top.transparent {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    padding: 20px 0;
     transition: box-shadow 50ms linear, background 200ms linear, padding 200ms linear;
+}
+
+@media screen and (min-width: 900px) {
+    nav#mainNav.navbar-custom.fixed-top.transparent {
+        padding: 20px 0;
+    transition: padding 200ms linear;
+    }
 }
 
 nav#mainNav.navbar-custom.fixed-top.menu-open {
