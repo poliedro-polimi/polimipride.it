@@ -2,7 +2,7 @@ var obj, navbar;
 
 function setNavbarTransparency() {
     var top = $(window).scrollTop();
-    var max = obj.height() * .2;
+    var max = obj.height() * .05;
 
     if (top >= max && navbar.hasClass("transparent"))
         navbar.removeClass("transparent");
