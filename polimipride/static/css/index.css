@@ -143,3 +143,35 @@ section#header {
 #support p .btn {
     margin-top: 60px;
 }
+
+section#promovideo {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+    section#project {
+        padding-bottom: 30px;
+    }
+
+    section#promovideo,
+    section#promovideo .container,
+    section#promovideo .container-narrow {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
