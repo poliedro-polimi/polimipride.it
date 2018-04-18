@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-14 03:57+0200\n"
-"PO-Revision-Date: 2018-04-14 03:57+0200\n"
+"PO-Revision-Date: 2018-04-18 02:21+0200\n"
 "Last-Translator: \n"
 "Language: it\n"
 "Language-Team: it <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: polimipride/templates/base.html:2 polimipride/templates/base.html:11
 #: polimipride/templates/base.html:23 polimipride/templates/base.html:25
@@ -278,8 +278,8 @@ msgid "Pick your favourite gadgets!"
 msgstr "Scegli i gadget che più di piacciono!"
 
 #: polimipride/templates/index.html:123
-msgid "(Coming soon)"
-msgstr "(Coming soon)"
+msgid "Support Us Now"
+msgstr "Sostienici Ora"
 
 #~ msgid "Support us"
 #~ msgstr "Supportaci"
