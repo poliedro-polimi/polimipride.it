@@ -227,6 +227,6 @@ msgid "Pick your favourite gadgets!"
 msgstr ""
 
 #: polimipride/templates/index.html:123
-msgid "(Coming soon)"
+msgid "Support Us Now"
 msgstr ""
 
