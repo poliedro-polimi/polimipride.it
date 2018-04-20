@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-14 03:57+0200\n"
-"PO-Revision-Date: 2018-04-20 02:39+0200\n"
+"PO-Revision-Date: 2018-04-20 03:07+0200\n"
 "Last-Translator: \n"
 "Language: it\n"
 "Language-Team: it <LL@li.org>\n"
@@ -19,16 +19,22 @@ msgstr ""
 "Generated-By: Babel 2.5.3\n"
 "X-Generator: Poedit 1.8.11\n"
 
-#: polimipride/templates/base.html:2 polimipride/templates/base.html:11 polimipride/templates/base.html:23 polimipride/templates/base.html:25 polimipride/templates/base.html:54 polimipride/templates/base.html:60 polimipride/templates/base.html:67
-#: polimipride/templates/base.html:97 polimipride/templates/base.html:136 polimipride/templates/base.html:152 polimipride/templates/index.html:14
+#: polimipride/templates/base.html:2 polimipride/templates/base.html:11
+#: polimipride/templates/base.html:23 polimipride/templates/base.html:25
+#: polimipride/templates/base.html:54 polimipride/templates/base.html:60
+#: polimipride/templates/base.html:67 polimipride/templates/base.html:97
+#: polimipride/templates/base.html:136 polimipride/templates/base.html:152
+#: polimipride/templates/index.html:14
 msgid "en"
 msgstr "it"
 
-#: polimipride/templates/base.html:10 polimipride/templates/base.html:14 polimipride/templates/base.html:20
+#: polimipride/templates/base.html:10 polimipride/templates/base.html:14
+#: polimipride/templates/base.html:20
 msgid "PoliMi Pride 2018"
 msgstr "PoliMi Pride 2018"
 
-#: polimipride/templates/base.html:12 polimipride/templates/base.html:13 polimipride/templates/index.html:25
+#: polimipride/templates/base.html:12 polimipride/templates/base.html:13
+#: polimipride/templates/index.html:25
 msgid "Politecnico's Pride"
 msgstr "Orgoglio Politecnico"
 
@@ -51,6 +57,10 @@ msgstr "Contatti"
 #: polimipride/templates/base.html:100
 msgid "Support us now"
 msgstr "Sostienici ora"
+
+#: ../templates/base.html:120
+msgid "With the patronage of"
+msgstr "Con il patrocinio del"
 
 #: polimipride/templates/base.html:129
 msgid "The initiative <strong>PoliMi Pride</strong> is funded by"
@@ -81,9 +91,7 @@ msgid "The Pride Parade is a manifestation of gay, lesbian, bisexual, transexual
 msgstr "Il Pride è la manifestazione dell'orgoglio delle persone gay, lesbiche, bisessuali, transessuali, asessuali, intersessuali e queer: una straordinaria festa di libertà che è approdata anche al Politecnico."
 
 msgid "For the second year Politecnico di Milano has given its patronage to the Milano Pride, officially supporting our activities inside the campuses and so telling everyone that in our university diversities are an enrichment and everyone should feel welcome and safe."
-msgstr ""
-"Per il secondo anno il Politecnico di Milano ha dato il suo patrocinio al Milano Pride, supportando ufficialmente le nostre attività dentro ai campus e dicendo quindi a tutti che nella nostra università le diversità sono un arricchimento e tutti dovrebbero sentirsi "
-"accolti e al sicuro."
+msgstr "Per il secondo anno il Politecnico di Milano ha dato il suo patrocinio al Milano Pride, supportando ufficialmente le nostre attività dentro ai campus e dicendo quindi a tutti che nella nostra università le diversità sono un arricchimento e tutti dovrebbero sentirsi accolti e al sicuro."
 
 #: polimipride/templates/index.html:31
 msgid "The event will have its grand finale with the <a href='http://www.milanopride.it'>Milano Pride</a> Parade on June 30th through the streets of Lombardy's chief town, but there's more:"
@@ -110,12 +118,8 @@ msgid "A bit of history"
 msgstr "Un po' di storia"
 
 #: polimipride/templates/index.html:69
-msgid ""
-"In 2017, for the first time, we asked our Univesity to officially support Milano Pride. The only thing we were asking for was the recognition of an important event and a demonstration of Politecnico being on our side. The recognition came stronger than we could ever "
-"expect: pushed by the support and enthusiasm of PoliMi's representatives, staff and teachers, we were advised to make something bigger."
-msgstr ""
-"Nel 2017, per la prima volta, abbiamo chiesto alla nostra Università di patrocinare il Milano Pride. L'unica cosa che chiedevamo era il riconoscimento di un evento importante per noi e un gesto dal parte del Politecnico per sapere di averlo al nostro fianco: "
-"riconoscimento che è arrivato ben più forte di quanto ci potessimo aspettare e in più spinti dall'appoggio e dall'entusiasmo di rappresentanti, staff e docenti PoliMi ci è stato chiesto di riempire il semplice patrocinio con il significato che meritava."
+msgid "In 2017, for the first time, we asked our Univesity to officially support Milano Pride. The only thing we were asking for was the recognition of an important event and a demonstration of Politecnico being on our side. The recognition came stronger than we could ever expect: pushed by the support and enthusiasm of PoliMi's representatives, staff and teachers, we were advised to make something bigger."
+msgstr "Nel 2017, per la prima volta, abbiamo chiesto alla nostra Università di patrocinare il Milano Pride. L'unica cosa che chiedevamo era il riconoscimento di un evento importante per noi e un gesto dal parte del Politecnico per sapere di averlo al nostro fianco: riconoscimento che è arrivato ben più forte di quanto ci potessimo aspettare e in più spinti dall'appoggio e dall'entusiasmo di rappresentanti, staff e docenti PoliMi ci è stato chiesto di riempire il semplice patrocinio con il significato che meritava."
 
 #: polimipride/templates/index.html:72
 msgid "That's how PoliMi Pride was born: with the synergy of Polytechnic community we set up informative stands around the campuses, printed our pins, t-shirts, banners and flags and went all together to march at Milano Pride."
@@ -129,23 +133,20 @@ msgid "This June, PoliMi Pride will celebrate its second edition with more event
 msgstr "PoliMi Pride quindi ritornerà con la sua seconda edizione, accompagnato da eventi, stand e gadget per tutto Giugno!"
 
 #: polimipride/templates/index.html:84
-msgid ""
-"We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other nuances) by organizing events, conferences, talks and meetings about these topics. We "
-"try to be a landmark for students who feel discriminated in the University environment."
-msgstr ""
-"Siamo un gruppo di studenti del Politecnico decisi a sensibilizzare sulle tematiche riguardanti le realtà LGBTI+ (Lesbiche, Gay, Bisessuali, Transessuali, Intersessuali, e tutte le altre sfumature), attraverso l’organizzazione di eventi, conferenze, dibattiti e "
-"riunioni a riguardo, oltre che accogliere chi, all’interno dell’ambiente universitario, si sente discriminato."
+msgid "We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other nuances) by organizing events, conferences, talks and meetings about these topics. We try to be a landmark for students who feel discriminated in the University environment."
+msgstr "Siamo un gruppo di studenti del Politecnico decisi a sensibilizzare sulle tematiche riguardanti le realtà LGBTI+ (Lesbiche, Gay, Bisessuali, Transessuali, Intersessuali, e tutte le altre sfumature), attraverso l’organizzazione di eventi, conferenze, dibattiti e riunioni a riguardo, oltre che accogliere chi, all’interno dell’ambiente universitario, si sente discriminato."
+
+#: ../templates/index.html:87
+msgid "Visit our website"
+msgstr "Visita il nostro sito"
 
 #: polimipride/templates/index.html:92
 msgid "Why we do it"
 msgstr "Perché lo facciamo"
 
 #: polimipride/templates/index.html:94
-msgid ""
-"The University is a place where we spend a lot of our time, trying to develop our knoweledge and skills for a better life and career. It’s stressful sometimes, but we think it’s even worse when one feels out of place, when one doesn’t feel safe enough to be oneself."
-msgstr ""
-"L'Università è un luogo dove trascorriamo una grossa fetta del nostro tempo, dove cerchiamo di sviluppare le nostre conoscenze e capacità per poter avere una vita e una carriera migliore. A volte è un po' stressante, ma crediamo che quando ci si sente a casa, quando "
-"non ci si sente al sicuro, possa esserlo ancora di più."
+msgid "The University is a place where we spend a lot of our time, trying to develop our knoweledge and skills for a better life and career. It’s stressful sometimes, but we think it’s even worse when one feels out of place, when one doesn’t feel safe enough to be oneself."
+msgstr "L'Università è un luogo dove trascorriamo una grossa fetta del nostro tempo, dove cerchiamo di sviluppare le nostre conoscenze e capacità per poter avere una vita e una carriera migliore. A volte è un po' stressante, ma crediamo che quando ci si sente a casa, quando non ci si sente al sicuro, possa esserlo ancora di più."
 
 #: polimipride/templates/index.html:97
 msgid "We think a University should do its best to show its student it’s doing the best it can to make them feel at home."
@@ -191,9 +192,6 @@ msgstr "Scegli i gadget che più di piacciono!"
 msgid "Support Us Now"
 msgstr "Sostienici Ora"
 
-msgid "With the patronage of"
-msgstr "Con il patrocinio del"
-
 #~ msgid "Support us"
 #~ msgstr "Supportaci"
 
@@ -203,15 +201,8 @@ msgstr "Con il patrocinio del"
 #~ msgid "LGBTI+ students of PoliMi"
 #~ msgstr "Studenti LGBTI+ del PoliMi"
 
-#~ msgid ""
-#~ "We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other <i>nuances</i>) by organizing events, conferences, talks and meetings about these "
-#~ "topics. We try to be a landmark for students who feel discriminated in the University environment."
-#~ msgstr ""
-#~ "Siamo un gruppo di studenti del Politecnico decisi a sensibilizzare sulle tematiche riguardanti le realtà LGBTI+ (Lesbiche, Gay, Bisessuali, Transessuali, Intersessuali, e tutte le altre sfumature), attraverso l’organizzazione di eventi, conferenze, dibattiti e "
-#~ "riunioni a riguardo, oltre che accogliere chi, all’interno dell’ambiente universitario, si sente discriminato."
-
-#~ msgid "Visit our website"
-#~ msgstr "Visita il nostro sito"
+#~ msgid "We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other <i>nuances</i>) by organizing events, conferences, talks and meetings about these topics. We try to be a landmark for students who feel discriminated in the University environment."
+#~ msgstr "Siamo un gruppo di studenti del Politecnico decisi a sensibilizzare sulle tematiche riguardanti le realtà LGBTI+ (Lesbiche, Gay, Bisessuali, Transessuali, Intersessuali, e tutte le altre sfumature), attraverso l’organizzazione di eventi, conferenze, dibattiti e riunioni a riguardo, oltre che accogliere chi, all’interno dell’ambiente universitario, si sente discriminato."
 
 #~ msgid "In 2017, for the first time, we asked our University to sponsor Milano Pride. That’s all we wanted at first, but people in the University’s administration suggested we could do something more."
 #~ msgstr "Nel 2017, per la prima volta, abbiamo chiesto alla nostra Università di patrocinare il Milano Pride. Inizialmente era l'unica cosa che desideravamo, ma alcune persone nell'amministrazione dell'Università ci suggerirono di fare di più."
