@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-14 03:57+0200\n"
-"PO-Revision-Date: 2018-04-20 02:34+0200\n"
+"PO-Revision-Date: 2018-04-20 02:39+0200\n"
 "Last-Translator: \n"
 "Language: it\n"
 "Language-Team: it <LL@li.org>\n"
@@ -126,7 +126,7 @@ msgstr "Quest'anno il Politecnico ha deciso di rinnovare il suo patrocinio all'i
 
 #: polimipride/templates/index.html:75
 msgid "This June, PoliMi Pride will celebrate its second edition with more events, stands and gadgets!"
-msgstr "E quest'anno PoliMi Pride ritorna con la sua seconda edizione e accompagnato da eventi, stand e gadget per tutto Giugno!"
+msgstr "PoliMi Pride quindi ritornerà con la sua seconda edizione, accompagnato da eventi, stand e gadget per tutto Giugno!"
 
 #: polimipride/templates/index.html:84
 msgid ""
