@@ -230,3 +230,5 @@ msgstr ""
 msgid "Support Us Now"
 msgstr ""
 
+msgid "With the patronage of"
+msgstr ""

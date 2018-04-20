@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-14 03:57+0200\n"
-"PO-Revision-Date: 2018-04-18 02:21+0200\n"
+"PO-Revision-Date: 2018-04-20 01:57+0200\n"
 "Last-Translator: \n"
 "Language: it\n"
 "Language-Team: it <LL@li.org>\n"
@@ -280,6 +280,9 @@ msgstr "Scegli i gadget che più di piacciono!"
 #: polimipride/templates/index.html:123
 msgid "Support Us Now"
 msgstr "Sostienici Ora"
+
+msgid "With the patronage of"
+msgstr "Con il patrocinio del"
 
 #~ msgid "Support us"
 #~ msgstr "Supportaci"

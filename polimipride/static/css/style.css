@@ -731,8 +731,10 @@ footer .col-poliedro-logo {
 }
 
 footer .col-poliedro-logo svg {
-    width: 100%;
-    padding-top: 30px;
+    width: 80%;
+}
+footer .col-poliedro-logo #polimi svg{
+    width: 47%;
 }
 
 footer .col-details div {
@@ -745,10 +747,8 @@ footer .col-details div {
         padding-bottom: 60px;
     }
 
-    footer .col-poliedro-logo svg {
-        width: auto;
-        height: 100%;
-        max-width: 100%;
+    footer .col-poliedro-logo svg, footer .col-poliedro-logo #polimi svg {
+        width: 100%;
         padding: 1rem;
     }
 
