@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-14 03:57+0200\n"
-"PO-Revision-Date: 2018-04-20 02:30+0200\n"
+"PO-Revision-Date: 2018-04-20 02:34+0200\n"
 "Last-Translator: \n"
 "Language: it\n"
 "Language-Team: it <LL@li.org>\n"
@@ -82,8 +82,8 @@ msgstr "Il Pride è la manifestazione dell'orgoglio delle persone gay, lesbiche,
 
 msgid "For the second year Politecnico di Milano has given its patronage to the Milano Pride, officially supporting our activities inside the campuses and so telling everyone that in our university diversities are an enrichment and everyone should feel welcome and safe."
 msgstr ""
-"Per il secondo anno il Politecnico di Milano ha dato il suo patrocinio al Milano Pride, supportando ufficialmente le nostre attività dentro ai campus e dicendo quindi a tutti che nella nostra università le diversità sono un arricchimento e tutti dovrebbero sentirsi i "
-"benvenuti e al sicuro."
+"Per il secondo anno il Politecnico di Milano ha dato il suo patrocinio al Milano Pride, supportando ufficialmente le nostre attività dentro ai campus e dicendo quindi a tutti che nella nostra università le diversità sono un arricchimento e tutti dovrebbero sentirsi "
+"accolti e al sicuro."
 
 #: polimipride/templates/index.html:31
 msgid "The event will have its grand finale with the <a href='http://www.milanopride.it'>Milano Pride</a> Parade on June 30th through the streets of Lombardy's chief town, but there's more:"
