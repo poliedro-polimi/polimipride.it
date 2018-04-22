@@ -14,7 +14,7 @@
             <meta property="og:site_name" content="{{ _("PoliMi Pride 2018") }}"/>
         {% endblock %}
 
-        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
         <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon.png') }}">
 
         <title>{% block title %}{{ _("PoliMi Pride 2018") }} | {{ _("Integrating Diversity") }}{% endblock %}</title>
@@ -39,6 +39,23 @@
                   href="{{ url_for('static', filename='vendor/fontawesome/css/fontawesome-all.min.css') }}">
 
             <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        {% endblock %}
+
+        {% block googleanalytics %}
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18427027-10"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+
+                gtag('config', 'UA-18427027-10');
+            </script>
+
         {% endblock %}
 
     {% endblock %}
