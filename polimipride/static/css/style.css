@@ -952,3 +952,18 @@ nav .nav-link .fas.fa-external-link-alt {
     margin: auto;
     text-align: left;
 }
+
+
+.calendar-card.calendar-card-stands .event-title {
+    padding-top: 20px;
+}
+
+.calendar-card .polimipride-svg-wrapper,
+.calendar-card .polimipride-svg-wrapper svg {
+    width: 100%;
+}
+
+
+.calendar-card .polimipride-svg-wrapper {
+    padding: 20px 20px 90px;
+}

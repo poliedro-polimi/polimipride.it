@@ -56,7 +56,7 @@
             </p>
 
             <div class="row">
-                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -95,7 +95,7 @@
                 </div>
 
 
-                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -132,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -169,7 +169,7 @@
                     </div>
                 </div>
 
-                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -208,7 +208,7 @@
                     </div>
                 </div>
 
-                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -245,7 +245,7 @@
                     </div>
                 </div>
 
-                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -282,7 +282,7 @@
                     </div>
                 </div>
 
-                <div class="calendar-card-wrapper col-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6">
                     <div class="calendar-card calendar-card-stands">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -326,7 +326,7 @@
                 </div>
 
 
-                <div class="calendar-card-wrapper col-6 col-xs-12">
+                <div class="calendar-card-wrapper col-12 col-sm-6">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
                             {% if section == 'w' %}
@@ -349,9 +349,9 @@
                                         target="_blank" rel="noopener">Via Vitruvio - Centrale FS M2 M3</a>
                                 </p>
                             {% elif section == 't' %}
-                                <p class="event-title">
-                                    <i>{{ _("Milano Pride") }}</i>
-                                </p>
+                                <div class="event-title polimipride-svg-wrapper">
+                                    {% include 'svg/milanopride_colored.svg' %}
+                                </div>
                             {% elif section == 'b' %}
                                 <p class="event-btn">
                                     <a class="btn"
