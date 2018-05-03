@@ -851,3 +851,104 @@ nav .nav-link .fas.fa-external-link-alt {
     position: relative;
     top: -2px;
 }
+
+.calendar-card-wrapper {
+    padding: 5px;
+}
+
+.calendar-card {
+    padding: 40px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.calendar-card,
+.calendar-card * {
+    text-align: center;
+}
+
+.calendar-card a,
+.calendar-card a:visited {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+.calendar-card a:hover,
+.calendar-card a:focus {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.calendar-card .event-dow {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.calendar-card .event-day {
+    color: #e3162e;
+    font-size: 50pt;
+    font-weight: bold;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.calendar-card .event-day small {
+    font-size: 15pt;
+}
+
+.calendar-card .event-month {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15pt;
+    margin: 0;
+}
+
+.calendar-card .event-title {
+    padding-bottom: 60px;
+}
+
+.calendar-card .event-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.calendar-card .event-btn,
+.calendar-card .event-btn a.btn {
+    margin: 0;
+}
+
+.calendar-card .event-btn a.btn {
+    color: #e3162e;
+    border: 1px solid #e3162e;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.calendar-card .event-btn a.btn.focus,
+.calendar-card .event-btn a.btn:focus {
+    box-shadow: 0 0 0 .2rem #e3162e4d;
+}
+.calendar-card .event-btn a.btn.active,
+.calendar-card .event-btn a.btn:active {
+    color: white;
+    background-color: #e3162e;
+    box-shadow: 0 0 0 .2rem #e3162e4d;
+}
+
+.calendar-card.calendar-card-stands .event-loc-time {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+}

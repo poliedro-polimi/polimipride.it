@@ -55,18 +55,316 @@
                 {{ _("We're still not done with all the planning for our events. Follow our <a href='https://poliedro.polimi.it/#social'>social media</a> to stay updated with our news.") }}
             </p>
 
-            {#<div class="row bullet-row">
-        <div class="col-12 col-md-6">
-            Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava
-            bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko
-            zucchini.
-        </div>
-        <div class="col-12 col-md-6">
-            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
-            bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot
-            squash brussels sprout chard.
-        </div>
-    </div>#}
+            <div class="row">
+                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Wednesday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    16<small>{{ numeral(16) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("May") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(14, 00) }} &nbsp;
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=2278"
+                                        target="_blank" rel="noopener">Auditorium Via Pascoli, Leonardo</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    Per una cultura inclusiva e rispettosa delle differenze. Giornata mondiale contro
+                                    l’omofobia.
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="https://www.eventi.polimi.it/events/per-una-cultura-inclusiva-e-rispettosa-delle-differenze-giornata-mondiale-contro-lomofobia"
+                                       target="_blank" rel="noopener"><i class="far fa-edit"></i> {{ _("Subscribe") }}
+                                    </a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}</div>
+                </div>
+
+
+                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Tuesday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    29<small>{{ numeral(29) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(18, 15) }} &nbsp;
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=57"
+                                        target="_blank" rel="noopener">{{ _("Room") }} S.0.2, Leonardo</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    {{ _("Sharing meeting: the nature of Pride") }}
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="#" target="_blank" rel="noopener"><i
+                                            class="fab fa-facebook-f"></i> {{ _("Going") }}</a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Friday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    1<small>{{ numeral(1) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(18, 15) }} &nbsp;
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=630"
+                                        target="_blank" rel="noopener">{{ _("Room") }} LM.5, Bovisa La Masa</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    <i>{{ _("To be defined") }}</i>
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="#" target="_blank" rel="noopener"><i
+                                            class="fab fa-facebook-f"></i> {{ _("Going") }}</a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Friday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    8<small>{{ numeral(8) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(18, 15) }} &nbsp;
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=57"
+                                        target="_blank" rel="noopener">{{ _("Room") }} S.0.2, Leonardo</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    {{ _("Movie projection") }}: <a href="https://www.imdb.com/title/tt3169706/"
+                                                              target="_blank"
+                                                              rel="noopener">Pride (2014)</a>
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="#" target="_blank" rel="noopener"><i
+                                            class="fab fa-facebook-f"></i> {{ _("Going") }}</a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Thursday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    14<small>{{ numeral(14) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(11, 00) }} &nbsp;
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=4513"
+                                        target="_blank" rel="noopener">{{ _("Room") }} "De Donato", Leonardo</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    <i>{{ _("To be defined") }}</i>
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="#" target="_blank" rel="noopener"><i
+                                            class="fab fa-facebook-f"></i> {{ _("Going") }}</a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="calendar-card-wrapper col-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Friday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    22<small>{{ numeral(22) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(18, 15) }} &nbsp;
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=57"
+                                        target="_blank" rel="noopener">{{ _("Room") }} S.0.2, Leonardo</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    <i>{{ _("To be defined") }}</i>
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="#" target="_blank" rel="noopener"><i
+                                            class="fab fa-facebook-f"></i> {{ _("Going") }}</a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="calendar-card-wrapper col-6 col-xs-12">
+                    <div class="calendar-card calendar-card-stands">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Monday") }} - {{ _("Friday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    25<small>{{ numeral(25) }}</small>-29<small>{{ numeral(29) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="text-center"><i class="far fa-clock"></i> {{ localtime(10, 00) }}-{{ localtime(16, 00) }}<br></p>
+                                <p class="event-loc-time">
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://goo.gl/maps/shM8yrZMyWF2"
+                                        target="_blank" rel="noopener">{{ _("Solarium Square") }}, Leonardo</a><br>
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://goo.gl/maps/PGseBXs9SNF2"
+                                        target="_blank" rel="noopener">{{ _("Oval Square") }}, Bovisa Candiani</a><br>
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://goo.gl/maps/hQKDXXtu1E32"
+                                        target="_blank" rel="noopener">{{ _("BL27-BL28 Buildings") }}, Bovisa La Masa</a><br>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    <i>{{ _("PoliMi Pride stands! Come pick up your gadgets!") }}</i>
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="#" target="_blank" rel="noopener"><i
+                                            class="fab fa-facebook-f"></i> {{ _("Going") }}</a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+
+                <div class="calendar-card-wrapper col-6 col-xs-12">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Saturday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    30<small>{{ numeral(30) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(14, 00) }}<br>
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://goo.gl/maps/Ss4dwhCo5HR2"
+                                        target="_blank" rel="noopener">Via Vitruvio - Centrale FS M2 M3</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    <i>{{ _("Milano Pride") }}</i>
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="http://milanopride.it/" target="_blank" rel="noopener"><i
+                                            class="fas fa-external-link-alt"></i> {{ _("Visit website") }}</a>
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
@@ -80,7 +378,7 @@
                 {{ _("That's how PoliMi Pride was born: with the synergy of Polytechnic community we set up informative stands around the campuses, printed our pins, t-shirts, banners and flags and went all together to march at Milano Pride.") }}
             </p>
             <p>
-              {{ _("This year Politecnico decided to renew its patronage to the initiative, and we couldn't be more happy and proud of our university.") }}
+                {{ _("This year Politecnico decided to renew its patronage to the initiative, and we couldn't be more happy and proud of our university.") }}
             </p>
             <p>
                 {{ _("This June, PoliMi Pride will celebrate its second edition with more events, stands and gadgets!") }}
@@ -95,8 +393,9 @@
                 {{ _("We are a group of students of Politecnico di Milano. We want to raise awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, Trans*, Intersexual and all the other nuances) by organizing events, conferences, talks and meetings about these topics. We try to be a landmark for students who feel discriminated in the University environment.") }}
             </p>
             <p class="text-center">
-              <a href="https://poliedro-polimi.it/{{ _("en") }}/" target="_blank"
-                class="btn btn-lg btn-polimipride">{{ _("Visit our website") }} <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://poliedro-polimi.it/{{ _("en") }}/" target="_blank"
+                   class="btn btn-lg btn-polimipride">{{ _("Visit our website") }} <i
+                        class="fas fa-external-link-alt"></i></a>
             </p>
         </div>
     </section>
