@@ -869,6 +869,10 @@ nav .nav-link .fas.fa-external-link-alt {
     text-align: center;
 }
 
+.calendar-card.past {
+    opacity: 0.3;
+}
+
 .calendar-card a,
 .calendar-card a:visited {
     color: black;

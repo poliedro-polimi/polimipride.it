@@ -1,3 +1,5 @@
+import time
+
 from flask import render_template
 from flask_babel import gettext as _
 
@@ -30,6 +32,12 @@ def localtime(h, m):
     return "{}:{:02d}{}".format(h, m, ampm)
 
 
+def expire_on(timestamp):
+    if timestamp > time.time():
+        return "past"
+    return ""
+
+
 @app.route('/')
 @app.route('/<lang_code>/')
 def index():
@@ -40,4 +48,4 @@ def index():
     # - l = location + time
     # - t = title
     # - b = button
-    return render_template("index.html", calendar_card_order=_("wmdltb"), numeral=_get_numeral, localtime=localtime)
+    return render_template("index.html", calendar_card_order=_("wmdltb"), numeral=_get_numeral, localtime=localtime, expire_on=expire_on)
