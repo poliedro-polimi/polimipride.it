@@ -7,6 +7,8 @@ from . import app
 
 
 def _get_numeral(number):
+    if _("en") == "it":
+        return ""
     if number == 1:
         return _("st")
     elif number == 2:
