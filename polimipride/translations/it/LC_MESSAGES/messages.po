@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-05-06 21:01+0200\n"
-"PO-Revision-Date: 2018-05-11 15:58+0200\n"
+"PO-Revision-Date: 2018-05-19 18:37+0200\n"
 "Last-Translator: Davide Depau <davide@depau.eu>\n"
 "Language: it\n"
 "Language-Team: Italian <>\n"
@@ -204,8 +204,8 @@ msgid "Room"
 msgstr "Aula"
 
 #: polimipride/templates/index.html:120
-msgid "Sharing meeting: the nature of Pride"
-msgstr "Incontro di sharing: La natura del Pride"
+msgid "Discussion meeting: the nature of Pride"
+msgstr "Incontro di Discussione: La natura del Pride"
 
 #: polimipride/templates/index.html:126 polimipride/templates/index.html:163
 #: polimipride/templates/index.html:202 polimipride/templates/index.html:239

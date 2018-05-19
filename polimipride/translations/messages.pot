@@ -181,7 +181,7 @@ msgid "Room"
 msgstr ""
 
 #: polimipride/templates/index.html:120
-msgid "Sharing meeting: the nature of Pride"
+msgid "Discussion meeting: the nature of Pride"
 msgstr ""
 
 #: polimipride/templates/index.html:126 polimipride/templates/index.html:163
