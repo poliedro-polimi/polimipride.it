@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-05-06 21:01+0200\n"
-"PO-Revision-Date: 2018-05-06 21:03+0200\n"
+"PO-Revision-Date: 2018-05-19 18:37+0200\n"
 "Last-Translator: Davide Depau <davide@depau.eu>\n"
 "Language: it\n"
 "Language-Team: Italian <>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: polimipride/views.py:11
 msgid "st"
@@ -204,8 +204,8 @@ msgid "Room"
 msgstr "Aula"
 
 #: polimipride/templates/index.html:120
-msgid "Sharing meeting: the nature of Pride"
-msgstr "Incontro di sharing: La natura del Pride"
+msgid "Discussion meeting: the nature of Pride"
+msgstr "Incontro di Discussione: La natura del Pride"
 
 #: polimipride/templates/index.html:126 polimipride/templates/index.html:163
 #: polimipride/templates/index.html:202 polimipride/templates/index.html:239
@@ -404,7 +404,7 @@ msgstr "Con una piccola donazione al nostro progetto:"
 
 #: polimipride/templates/index.html:429
 msgid "you get PoliMi Pride-branded pins, stickers, sackpacks and t-shirts."
-msgstr "tu ottieni spille, adesivi, sacche e t-shirti targate PoliMi Pride"
+msgstr "tu ottieni spille, adesivi, sacche e t-shirt targate PoliMi Pride"
 
 #: polimipride/templates/index.html:430
 msgid ""
