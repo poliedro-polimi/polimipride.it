@@ -869,7 +869,7 @@ nav .nav-link .fas.fa-external-link-alt {
     text-align: center;
 }
 
-.calendar-card.past {
+.calendar-card-wrapper.past {
     opacity: 0.3;
 }
 
