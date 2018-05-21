@@ -35,7 +35,7 @@ def localtime(h, m):
 
 
 def expire_on(timestamp):
-    if timestamp > time.time():
+    if timestamp < time.time():
         return "past"
     return ""
 
