@@ -1,21 +1,21 @@
-# Translations template for PROJECT.
-# Copyright (C) 2018 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-06 21:01+0200\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-30 18:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
 
 #: polimipride/views.py:11
 msgid "st"
@@ -74,6 +74,7 @@ msgid "The project"
 msgstr ""
 
 #: polimipride/templates/base.html:110 polimipride/templates/index.html:389
+#: polimipride/templates/index.html:388
 msgid "About us"
 msgstr ""
 
@@ -82,6 +83,7 @@ msgid "Contacts"
 msgstr ""
 
 #: polimipride/templates/base.html:117 polimipride/templates/index.html:436
+#: polimipride/templates/index.html:435
 msgid "Support us now"
 msgstr ""
 
@@ -95,8 +97,8 @@ msgstr ""
 
 #: polimipride/templates/base.html:156
 msgid ""
-"Visit <a href='https://poliedro-polimi.it'>our website</a> to discover "
-"all of our other activities."
+"Visit <a href='https://poliedro-polimi.it'>our website</a> to discover all "
+"of our other activities."
 msgstr ""
 
 #: polimipride/templates/base.html:174
@@ -113,37 +115,36 @@ msgstr ""
 
 #: polimipride/templates/index.html:27
 msgid ""
-"PoliMi Pride is PoliEdro's initiative to bring Milano Pride to "
-"Politecnico di Milano and, at the same time, to bring Politecnico to "
-"Milano Pride."
+"PoliMi Pride is PoliEdro's initiative to bring Milano Pride to Politecnico "
+"di Milano and, at the same time, to bring Politecnico to Milano Pride."
 msgstr ""
 
 #: polimipride/templates/index.html:28
 msgid ""
-"The Pride Parade is a manifestation of gay, lesbian, bisexual, "
-"transexual, asexual, intersex and queer pride: an extraordinary "
-"celebration of freedom that has now reached Politecnico di Milano."
+"The Pride Parade is a manifestation of gay, lesbian, bisexual, transexual, "
+"asexual, intersex and queer pride: an extraordinary celebration of freedom "
+"that has now reached Politecnico di Milano."
 msgstr ""
 
 #: polimipride/templates/index.html:31
 msgid ""
 "For the second year Politecnico di Milano has given its patronage to the "
-"Milano Pride, officially supporting our activities inside the campuses "
-"and so telling everyone that in our university diversities are an "
-"enrichment and everyone should feel welcome and safe."
+"Milano Pride, officially supporting our activities inside the campuses and "
+"so telling everyone that in our university diversities are an enrichment and "
+"everyone should feel welcome and safe."
 msgstr ""
 
 #: polimipride/templates/index.html:34
 msgid ""
-"The event will have its grand finale with the <a "
-"href='http://www.milanopride.it'>Milano Pride</a> Parade on June 30th "
-"through the streets of Lombardy's chief town, but there's more:"
+"The event will have its grand finale with the <a href='http://www."
+"milanopride.it'>Milano Pride</a> Parade on June 30th through the streets of "
+"Lombardy's chief town, but there's more:"
 msgstr ""
 
 #: polimipride/templates/index.html:35
 msgid ""
-"PoliMi Pride will span through whole month of June with in-depth events "
-"on the meaning and the history of Pride and on LGBTI+ themes. We'll have "
+"PoliMi Pride will span through whole month of June with in-depth events on "
+"the meaning and the history of Pride and on LGBTI+ themes. We'll have "
 "conferences, movies, informative stands and colorful gadgets."
 msgstr ""
 
@@ -154,8 +155,8 @@ msgstr ""
 #: polimipride/templates/index.html:53
 msgid ""
 "We're still not done with all the planning for our events. Follow our <a "
-"href='https://poliedro.polimi.it/#social'>social media</a> to stay "
-"updated with our news."
+"href='https://poliedro.polimi.it/#social'>social media</a> to stay updated "
+"with our news."
 msgstr ""
 
 #: polimipride/templates/index.html:62
@@ -176,7 +177,8 @@ msgstr ""
 
 #: polimipride/templates/index.html:116 polimipride/templates/index.html:153
 #: polimipride/templates/index.html:190 polimipride/templates/index.html:229
-#: polimipride/templates/index.html:266
+#: polimipride/templates/index.html:266 polimipride/templates/index.html:189
+#: polimipride/templates/index.html:228 polimipride/templates/index.html:265
 msgid "Room"
 msgstr ""
 
@@ -187,17 +189,24 @@ msgstr ""
 #: polimipride/templates/index.html:126 polimipride/templates/index.html:163
 #: polimipride/templates/index.html:202 polimipride/templates/index.html:239
 #: polimipride/templates/index.html:276 polimipride/templates/index.html:319
+#: polimipride/templates/index.html:201 polimipride/templates/index.html:238
+#: polimipride/templates/index.html:275 polimipride/templates/index.html:318
 msgid "Facebook event"
 msgstr ""
 
 #: polimipride/templates/index.html:138 polimipride/templates/index.html:175
 #: polimipride/templates/index.html:251 polimipride/templates/index.html:288
+#: polimipride/templates/index.html:174 polimipride/templates/index.html:250
+#: polimipride/templates/index.html:287
 msgid "Friday"
 msgstr ""
 
 #: polimipride/templates/index.html:146 polimipride/templates/index.html:183
 #: polimipride/templates/index.html:222 polimipride/templates/index.html:259
 #: polimipride/templates/index.html:296 polimipride/templates/index.html:340
+#: polimipride/templates/index.html:182 polimipride/templates/index.html:221
+#: polimipride/templates/index.html:258 polimipride/templates/index.html:295
+#: polimipride/templates/index.html:339
 msgid "June"
 msgstr ""
 
@@ -206,95 +215,93 @@ msgstr ""
 msgid "To be defined"
 msgstr ""
 
-#: polimipride/templates/index.html:194
+#: polimipride/templates/index.html:194 polimipride/templates/index.html:193
 msgid "Movie projection"
 msgstr ""
 
-#: polimipride/templates/index.html:214
+#: polimipride/templates/index.html:214 polimipride/templates/index.html:213
 msgid "Thursday"
 msgstr ""
 
-#: polimipride/templates/index.html:288
+#: polimipride/templates/index.html:288 polimipride/templates/index.html:287
 msgid "Monday"
 msgstr ""
 
-#: polimipride/templates/index.html:303
+#: polimipride/templates/index.html:303 polimipride/templates/index.html:302
 msgid "Solarium Square"
 msgstr ""
 
-#: polimipride/templates/index.html:306
+#: polimipride/templates/index.html:306 polimipride/templates/index.html:305
 msgid "Oval Square"
 msgstr ""
 
-#: polimipride/templates/index.html:309
+#: polimipride/templates/index.html:309 polimipride/templates/index.html:308
 msgid "BL27-BL28 Buildings"
 msgstr ""
 
-#: polimipride/templates/index.html:313
+#: polimipride/templates/index.html:313 polimipride/templates/index.html:312
 msgid "PoliMi Pride stands! Come pick up your gadgets!"
 msgstr ""
 
-#: polimipride/templates/index.html:332
+#: polimipride/templates/index.html:332 polimipride/templates/index.html:331
 msgid "Saturday"
 msgstr ""
 
-#: polimipride/templates/index.html:357
+#: polimipride/templates/index.html:357 polimipride/templates/index.html:356
 msgid "Visit website"
 msgstr ""
 
-#: polimipride/templates/index.html:371
+#: polimipride/templates/index.html:371 polimipride/templates/index.html:370
 msgid "A bit of history"
 msgstr ""
 
-#: polimipride/templates/index.html:373
+#: polimipride/templates/index.html:373 polimipride/templates/index.html:372
 msgid ""
-"In 2017, for the first time, we asked our Univesity to officially support"
-" Milano Pride. The only thing we were asking for was the recognition of "
-"an important event and a demonstration of Politecnico being on our side. "
-"The recognition came stronger than we could ever expect: pushed by the "
-"support and enthusiasm of PoliMi's representatives, staff and teachers, "
-"we were advised to make something bigger."
+"In 2017, for the first time, we asked our Univesity to officially support "
+"Milano Pride. The only thing we were asking for was the recognition of an "
+"important event and a demonstration of Politecnico being on our side. The "
+"recognition came stronger than we could ever expect: pushed by the support "
+"and enthusiasm of PoliMi's representatives, staff and teachers, we were "
+"advised to make something bigger."
 msgstr ""
 
-#: polimipride/templates/index.html:376
+#: polimipride/templates/index.html:376 polimipride/templates/index.html:375
 msgid ""
-"That's how PoliMi Pride was born: with the synergy of Polytechnic "
-"community we set up informative stands around the campuses, printed our "
-"pins, t-shirts, banners and flags and went all together to march at "
-"Milano Pride."
+"That's how PoliMi Pride was born: with the synergy of Polytechnic community "
+"we set up informative stands around the campuses, printed our pins, t-"
+"shirts, banners and flags and went all together to march at Milano Pride."
 msgstr ""
 
-#: polimipride/templates/index.html:379
+#: polimipride/templates/index.html:379 polimipride/templates/index.html:378
 msgid ""
-"This year Politecnico decided to renew its patronage to the initiative, "
-"and we couldn't be more happy and proud of our university."
+"This year Politecnico decided to renew its patronage to the initiative, and "
+"we couldn't be more happy and proud of our university."
 msgstr ""
 
-#: polimipride/templates/index.html:382
+#: polimipride/templates/index.html:382 polimipride/templates/index.html:381
 msgid ""
-"This June, PoliMi Pride will celebrate its second edition with more "
-"events, stands and gadgets!"
+"This June, PoliMi Pride will celebrate its second edition with more events, "
+"stands and gadgets!"
 msgstr ""
 
-#: polimipride/templates/index.html:391
+#: polimipride/templates/index.html:391 polimipride/templates/index.html:390
 msgid ""
 "We are a group of students of Politecnico di Milano. We want to raise "
 "awareness of the issues of the LGBTI+ community (Lesbian, Gay, Bisexual, "
 "Trans*, Intersexual and all the other nuances) by organizing events, "
-"conferences, talks and meetings about these topics. We try to be a "
-"landmark for students who feel discriminated in the University "
-"environment."
+"conferences, talks and meetings about these topics. We try to be a landmark "
+"for students who feel discriminated in the University environment."
 msgstr ""
 
-#: polimipride/templates/index.html:395
+#: polimipride/templates/index.html:395 polimipride/templates/index.html:394
 msgid "Visit our website"
 msgstr ""
 
-#: polimipride/templates/index.html:404
+#: polimipride/templates/index.html:404 polimipride/templates/index.html:403
 msgid "Why we do it"
 msgstr ""
 
-#: polimipride/templates/index.html:406
+#: polimipride/templates/index.html:406 polimipride/templates/index.html:405
 msgid ""
 "The University is a place where we spend a lot of our time, trying to "
 "develop our knoweledge and skills for a better life and career. It’s "
@@ -302,58 +309,71 @@ msgid ""
 "place, when one doesn’t feel safe enough to be oneself."
 msgstr ""
 
-#: polimipride/templates/index.html:409
+#: polimipride/templates/index.html:409 polimipride/templates/index.html:408
 msgid ""
-"We think a University should do its best to show its student it’s doing "
-"the best it can to make them feel at home."
+"We think a University should do its best to show its student it’s doing the "
+"best it can to make them feel at home."
 msgstr ""
 
-#: polimipride/templates/index.html:410
+#: polimipride/templates/index.html:410 polimipride/templates/index.html:409
 msgid ""
-"We think a University should care about diversity and inclusion and "
-"promote them, so students will know they can be Proud of who they are and"
-" of what makes them different."
+"We think a University should care about diversity and inclusion and promote "
+"them, so students will know they can be Proud of who they are and of what "
+"makes them different."
 msgstr ""
 
-#: polimipride/templates/index.html:413
+#: polimipride/templates/index.html:413 polimipride/templates/index.html:412
 msgid ""
-"That’s what PoliMi Pride is all about: attending Milano Pride is the tip "
-"of the iceberg."
+"That’s what PoliMi Pride is all about: attending Milano Pride is the tip of "
+"the iceberg."
 msgstr ""
 
-#: polimipride/templates/index.html:420
+#: polimipride/templates/index.html:420 polimipride/templates/index.html:419
 msgid "How to support the project"
 msgstr ""
 
-#: polimipride/templates/index.html:422
+#: polimipride/templates/index.html:422 polimipride/templates/index.html:421
 msgid ""
-"Our designer team made new graphics and gadgets for this edition of "
-"PoliMi Pride, so all of us can join the colors of the Parade on June "
-"30th."
+"Our designer team made new graphics and gadgets for this edition of PoliMi "
+"Pride, so all of us can join the colors of the Parade on June 30th."
 msgstr ""
 
-#: polimipride/templates/index.html:425
+#: polimipride/templates/index.html:425 polimipride/templates/index.html:424
 msgid ""
-"We need your support: we launched a <strong>crowdfunding "
-"campaign</strong> to gather all the funds we need to order all PoliMi "
-"Pride gadgets."
+"We need your support: we launched a <strong>crowdfunding campaign</strong> "
+"to gather all the funds we need to order all PoliMi Pride gadgets."
 msgstr ""
 
-#: polimipride/templates/index.html:427
+#: polimipride/templates/index.html:427 polimipride/templates/index.html:426
 msgid "With a small donation to our project:"
 msgstr ""
 
-#: polimipride/templates/index.html:429
+#: polimipride/templates/index.html:429 polimipride/templates/index.html:428
 msgid "you get PoliMi Pride-branded pins, stickers, sackpacks and t-shirts."
 msgstr ""
 
-#: polimipride/templates/index.html:430
+#: polimipride/templates/index.html:430 polimipride/templates/index.html:429
 msgid ""
-"we get the money we need to order the gadgets, provide for the expenses "
-"of our events and organize even better events in the future!"
+"we get the money we need to order the gadgets, provide for the expenses of "
+"our events and organize even better events in the future!"
 msgstr ""
 
-#: polimipride/templates/index.html:433
+#: polimipride/templates/index.html:433 polimipride/templates/index.html:432
 msgid "Pick your favourite gadgets!"
 msgstr ""
 
+#: polimipride/templates/index.html:157
+msgid "PoliMi Pride on Poli.Radio"
+msgstr ""
+
+#: polimipride/templates/index.html:162
+msgid "Listen to Us"
+msgstr ""
+
+#: polimipride/templates/index.html:232
+msgid "LGBTI+ Rights with Monica Cirinnà and Ivan Scalfarotto"
+msgstr ""
+
+#: polimipride/templates/index.html:269
+msgid "P.A.R.T.Y. Exhibition Presentation"
+msgstr ""
