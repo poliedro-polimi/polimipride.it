@@ -205,43 +205,6 @@
                     </div>
                 </div>
 
-                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4 {{ expire_on(1528965000) }}">
-                    <div class="calendar-card">
-                        {% for section in calendar_card_order %}
-                            {% if section == 'w' %}
-                                <p class="event-dow">
-                                    {{ _("Thursday") }}
-                                </p>
-                            {% elif section == 'd' %}
-                                <p class="event-day">
-                                    14<small>{{ numeral(14) }}</small>
-                                </p>
-                            {% elif section == 'm' %}
-                                <p class="event-month">
-                                    {{ _("June") }}
-                                </p>
-                            {% elif section == 'l' %}
-                                <p class="event-loc-time">
-                                    <i class="far fa-clock"></i> {{ localtime(10, 30) }} &nbsp;
-                                    <i class="fas fa-map-marker"></i> <a
-                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=4513"
-                                        target="_blank" rel="noopener">{{ _("Room") }} "De Donato", Leonardo</a>
-                                </p>
-                            {% elif section == 't' %}
-                                <p class="event-title">
-                                    <i>{{ _("LGBTI+ Rights with Monica Cirinnà and Ivan Scalfarotto") }}</i>
-                                </p>
-                            {% elif section == 'b' %}
-                                <p class="event-btn">
-                                    <a class="btn"
-                                       href="https://www.facebook.com/events/1777197962323657/" target="_blank" rel="noopener"><i
-                                            class="fab fa-facebook-f"></i> {{ _("Facebook event") }}</a>
-                                </p>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
-
                 <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4 {{ expire_on(1529684100) }}">
                     <div class="calendar-card">
                         {% for section in calendar_card_order %}
@@ -268,12 +231,49 @@
                                 <p class="event-title">
                                     <i>{{ _("P.A.R.T.Y. Exhibition Presentation") }}</i>
                                 </p>
-                            {#{% elif section == 'b' %}
+                            {% elif section == 'b' %}
                                 <p class="event-btn">
                                     <a class="btn"
-                                       href="#" target="_blank" rel="noopener"><i
+                                       href="https://www.facebook.com/events/331080257422545/" target="_blank" rel="noopener"><i
                                             class="fab fa-facebook-f"></i> {{ _("Facebook event") }}</a>
-                                </p>#}
+                                </p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="calendar-card-wrapper col-12 col-sm-6 col-md-4 {{ expire_on(1529938800) }}">
+                    <div class="calendar-card">
+                        {% for section in calendar_card_order %}
+                            {% if section == 'w' %}
+                                <p class="event-dow">
+                                    {{ _("Monday") }}
+                                </p>
+                            {% elif section == 'd' %}
+                                <p class="event-day">
+                                    25<small>{{ numeral(25) }}</small>
+                                </p>
+                            {% elif section == 'm' %}
+                                <p class="event-month">
+                                    {{ _("June") }}
+                                </p>
+                            {% elif section == 'l' %}
+                                <p class="event-loc-time">
+                                    <i class="far fa-clock"></i> {{ localtime(17, 00) }} &nbsp;
+                                    <i class="fas fa-map-marker"></i> <a
+                                        href="https://www7.ceda.polimi.it/spazi/spazi/controller/Aula.do?idaula=4513"
+                                        target="_blank" rel="noopener">{{ _("Room") }} C.I.1 "Giulio Natta", Leonardo</a>
+                                </p>
+                            {% elif section == 't' %}
+                                <p class="event-title">
+                                    <i>{{ _("LGBTI+ Rights with Ivan Scalfarotto") }}</i>
+                                </p>
+                            {% elif section == 'b' %}
+                                <p class="event-btn">
+                                    <a class="btn"
+                                       href="https://www.facebook.com/events/1777197962323657/" target="_blank" rel="noopener"><i
+                                            class="fab fa-facebook-f"></i> {{ _("Facebook event") }}</a>
+                                </p>
                             {% endif %}
                         {% endfor %}
                     </div>
