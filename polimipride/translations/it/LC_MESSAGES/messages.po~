@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 22:34+0200\n"
-"PO-Revision-Date: 2018-06-11 22:36+0200\n"
+"POT-Creation-Date: 2018-05-30 18:35+0200\n"
+"PO-Revision-Date: 2018-05-30 18:38+0200\n"
 "Last-Translator: Davide Depau <davide@depau.eu>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -221,7 +221,7 @@ msgstr "Evento Facebook"
 #: polimipride/templates/index.html:138 polimipride/templates/index.html:175
 #: polimipride/templates/index.html:251 polimipride/templates/index.html:288
 #: polimipride/templates/index.html:174 polimipride/templates/index.html:250
-#: polimipride/templates/index.html:287 polimipride/templates/index.html:213
+#: polimipride/templates/index.html:287
 msgid "Friday"
 msgstr "Venerdì"
 
@@ -248,7 +248,6 @@ msgid "Thursday"
 msgstr "Giovedì"
 
 #: polimipride/templates/index.html:288 polimipride/templates/index.html:287
-#: polimipride/templates/index.html:250
 msgid "Monday"
 msgstr "Lunedì"
 
@@ -441,13 +440,9 @@ msgstr "Ascoltaci"
 msgid "LGBTI+ Rights with Monica Cirinnà and Ivan Scalfarotto"
 msgstr "Diritti LGBTI+ con Monica Cirinnà e Ivan Scalfarotto"
 
-#: polimipride/templates/index.html:269 polimipride/templates/index.html:232
+#: polimipride/templates/index.html:269
 msgid "P.A.R.T.Y. Exhibition Presentation"
 msgstr "Presentazione della Mostra P.A.R.T.Y."
-
-#: polimipride/templates/index.html:269
-msgid "LGBTI+ Rights with Ivan Scalfarotto"
-msgstr "Diritti LGBTI+ con Ivan Scalfarotto"
 
 #~ msgid "Support us"
 #~ msgstr "Supportaci"

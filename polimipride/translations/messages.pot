@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-30 18:35+0200\n"
+"POT-Creation-Date: 2018-06-11 22:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,7 +197,7 @@ msgstr ""
 #: polimipride/templates/index.html:138 polimipride/templates/index.html:175
 #: polimipride/templates/index.html:251 polimipride/templates/index.html:288
 #: polimipride/templates/index.html:174 polimipride/templates/index.html:250
-#: polimipride/templates/index.html:287
+#: polimipride/templates/index.html:287 polimipride/templates/index.html:213
 msgid "Friday"
 msgstr ""
 
@@ -224,6 +224,7 @@ msgid "Thursday"
 msgstr ""
 
 #: polimipride/templates/index.html:288 polimipride/templates/index.html:287
+#: polimipride/templates/index.html:250
 msgid "Monday"
 msgstr ""
 
@@ -374,6 +375,10 @@ msgstr ""
 msgid "LGBTI+ Rights with Monica Cirinnà and Ivan Scalfarotto"
 msgstr ""
 
-#: polimipride/templates/index.html:269
+#: polimipride/templates/index.html:269 polimipride/templates/index.html:232
 msgid "P.A.R.T.Y. Exhibition Presentation"
+msgstr ""
+
+#: polimipride/templates/index.html:269
+msgid "LGBTI+ Rights with Ivan Scalfarotto"
 msgstr ""
