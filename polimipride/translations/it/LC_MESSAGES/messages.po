@@ -60,8 +60,8 @@ msgstr "wdmltb"
 
 #: polimipride/templates/base.html:10 polimipride/templates/base.html:14
 #: polimipride/templates/base.html:20
-msgid "PoliMi Pride 2018"
-msgstr "PoliMi Pride 2018"
+msgid "PoliMi Pride 2019"
+msgstr "PoliMi Pride 2019"
 
 #: polimipride/templates/base.html:12 polimipride/templates/base.html:13
 #: polimipride/templates/index.html:25
@@ -108,8 +108,8 @@ msgstr ""
 "tutte le altre nostre attività."
 
 #: polimipride/templates/base.html:174
-msgid "&copy; PoliEdro 2018"
-msgstr "&copy; PoliEdro 2018"
+msgid "&copy; PoliEdro 2019"
+msgstr "&copy; PoliEdro 2019"
 
 #: polimipride/templates/base.html:175
 msgid "credits"
@@ -139,12 +139,12 @@ msgstr ""
 
 #: polimipride/templates/index.html:31
 msgid ""
-"For the second year Politecnico di Milano has given its patronage to the "
+"For the third year Politecnico di Milano has given its patronage to the "
 "Milano Pride, officially supporting our activities inside the campuses and "
 "so telling everyone that in our university diversities are an enrichment and "
 "everyone should feel welcome and safe."
 msgstr ""
-"Per il secondo anno il Politecnico di Milano ha dato il suo patrocinio al "
+"Per il terzo anno il Politecnico di Milano ha dato il suo patrocinio al "
 "Milano Pride, supportando ufficialmente le nostre attività dentro ai campus "
 "e dicendo quindi a tutti che nella nostra università le diversità sono un "
 "arricchimento e tutti dovrebbero sentirsi accolti e al sicuro."
@@ -152,22 +152,22 @@ msgstr ""
 #: polimipride/templates/index.html:34
 msgid ""
 "The event will have its grand finale with the <a href='http://www."
-"milanopride.it'>Milano Pride</a> Parade on June 30th through the streets of "
+"milanopride.it'>Milano Pride</a> Parade on June 29th through the streets of "
 "Lombardy's chief town, but there's more:"
 msgstr ""
 "L'evento terminerà con la parata del <a href='http://www.milanopride."
-"it'>Milano Pride</a> il 30 Giugno tra le vie del capoluogo lombardo, ma non "
+"it'>Milano Pride</a> il 29 Giugno tra le vie del capoluogo lombardo, ma non "
 "si limita a questo:"
 
 #: polimipride/templates/index.html:35
 msgid ""
-"PoliMi Pride will span through whole month of June with in-depth events on "
-"the meaning and the history of Pride and on LGBTI+ themes. We'll have "
-"conferences, movies, informative stands and colorful gadgets."
+"PoliMi Pride will span through whole month of May with in-depth events on "
+"the meaning and the history of Pride and on LGBTI+ themes "
+"in order to celebrate all together the 50th anniversary of Stonewall!"
 msgstr ""
-"PoliMi Pride colorerà l'intero mese di Giugno con eventi di approfondimento "
+"PoliMi Pride colorerà l'intero mese di Maggio con eventi di approfondimento "
 "sul significato e la storia del Pride e sulle tematiche LGBTI+ tra "
-"conferenze, proiezioni di film, stand informativi e gadget arcobaleno."
+"conferenze e mostre informative per celebrare tutti insieme i 50 anni dai moti di Stonewall!"
 
 #: polimipride/templates/index.html:51
 msgid "Events"
@@ -282,16 +282,16 @@ msgstr "Un po' di storia"
 
 #: polimipride/templates/index.html:373 polimipride/templates/index.html:372
 msgid ""
-"In 2017, for the first time, we asked our Univesity to officially support "
+"In 2017, for the first time, we asked our University to officially support "
 "Milano Pride. The only thing we were asking for was the recognition of an "
 "important event and a demonstration of Politecnico being on our side. The "
 "recognition came stronger than we could ever expect: pushed by the support "
 "and enthusiasm of PoliMi's representatives, staff and teachers, we were "
-"advised to make something bigger."
+"advised to make something bigger. "
 msgstr ""
 "Nel 2017, per la prima volta, abbiamo chiesto alla nostra Università di "
 "patrocinare il Milano Pride. L'unica cosa che chiedevamo era il "
-"riconoscimento di un evento importante per noi e un gesto dal parte del "
+"riconoscimento di un evento importante per noi e un gesto da parte del "
 "Politecnico per sapere di averlo al nostro fianco: riconoscimento che è "
 "arrivato ben più forte di quanto ci potessimo aspettare e in più spinti "
 "dall'appoggio e dall'entusiasmo di rappresentanti, staff e docenti PoliMi ci "
@@ -319,11 +319,10 @@ msgstr ""
 
 #: polimipride/templates/index.html:382 polimipride/templates/index.html:381
 msgid ""
-"This June, PoliMi Pride will celebrate its second edition with more events, "
-"stands and gadgets!"
+"PoliMi Pride will celebrate its third edition with more events, stands and gadgets!"
 msgstr ""
-"PoliMi Pride quindi ritornerà con la sua seconda edizione, accompagnato da "
-"eventi, stand e gadget per tutto Giugno!"
+"PoliMi Pride quindi ritornerà con la sua terza edizione, accompagnato da "
+"eventi, stand e gadget!"
 
 #: polimipride/templates/index.html:391 polimipride/templates/index.html:390
 msgid ""
@@ -351,7 +350,7 @@ msgstr "Perché lo facciamo"
 #: polimipride/templates/index.html:406 polimipride/templates/index.html:405
 msgid ""
 "The University is a place where we spend a lot of our time, trying to "
-"develop our knoweledge and skills for a better life and career. It’s "
+"develop our knowledge and skills for a better life and career. It’s "
 "stressful sometimes, but we think it’s even worse when one feels out of "
 "place, when one doesn’t feel safe enough to be oneself."
 msgstr ""
@@ -376,7 +375,7 @@ msgid ""
 "makes them different."
 msgstr ""
 "Crediamo che un'Università debba preoccuparsi della <i>Diversity</i>, "
-"dell'inclusione e di promuoverle. In questo modo gli studenti sapranno di "
+"dell'inclusione e della loro promozione. In questo modo gli studenti sapranno di "
 "poter essere Fieri di ciò che sono e di ciò che li rende unici."
 
 #: polimipride/templates/index.html:413 polimipride/templates/index.html:412
@@ -394,28 +393,28 @@ msgstr "Come supportare l'iniziativa"
 #: polimipride/templates/index.html:422 polimipride/templates/index.html:421
 msgid ""
 "Our designer team made new graphics and gadgets for this edition of PoliMi "
-"Pride, so all of us can join the colors of the Parade on June 30th."
+"Pride, so all of us can join the colors of the Parade on June 29th."
 msgstr ""
-"Il nostro team di designer ha progettato un nuovo logo e nuovi gadget per "
-"questa edizione di PoliMi Pride, così che tutti noi possiamo riempire di "
-"colori la marcia del 30 Giugno."
+"Anche quest’anno Poliedro ha progettato un nuovo logo e nuovi gadget per "
+"questa edizione di PoliMi Pride, così che possa continuare la tradizione di portare in piazza, "
+"o meglio in strada, il nostro orgoglio nella marcia del 29 Giugno."
 
 #: polimipride/templates/index.html:425 polimipride/templates/index.html:424
 msgid ""
 "We need your support: we launched a <strong>crowdfunding campaign</strong> "
 "to gather all the funds we need to order all PoliMi Pride gadgets."
 msgstr ""
-"Ma per realizzarli abbiamo bisogno del vostro sostegno: abbiamo lanciato una "
-"<strong>campagna di crowdfunding</strong> per mettere insieme i fondi per "
-"ordinare tutti i materiali targati PoliMi Pride."
+"Per realizzare l’iniziativa abbiamo bisogno del vostro sostegno: con l’obiettivo di ripetere "
+"l successo dell’anno passato abbiamo lanciato una <strong>campagna di crowdfunding</strong> "
+"per mettere insieme i fondi per ordinare tutti i materiali targati PoliMi Pride."
 
 #: polimipride/templates/index.html:427 polimipride/templates/index.html:426
 msgid "With a small donation to our project:"
 msgstr "Con una piccola donazione al nostro progetto:"
 
 #: polimipride/templates/index.html:429 polimipride/templates/index.html:428
-msgid "you get PoliMi Pride-branded pins, stickers, sackpacks and t-shirts."
-msgstr "tu ottieni spille, adesivi, sacche e t-shirt targate PoliMi Pride"
+msgid "you get PoliMi Pride-branded pins, wristbands, pullers, sackpacks and t-shirts."
+msgstr "tu ottieni spille, sacche, bracciali, tiralampo e t-shirt targate PoliMi Pride"
 
 #: polimipride/templates/index.html:430 polimipride/templates/index.html:429
 msgid ""
