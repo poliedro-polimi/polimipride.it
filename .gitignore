@@ -103,3 +103,6 @@ venv.bak/
 
 # JetBrains
 .idea
+
+#Autosave files
+*~
