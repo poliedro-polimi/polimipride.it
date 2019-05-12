@@ -915,6 +915,8 @@ nav .nav-link .fas.fa-external-link-alt {
 
 .calendar-card .event-title {
     padding-bottom: 60px;
+    font-size: 1.05em;
+    font-weight: bold;
 }
 
 .calendar-card .event-btn {
