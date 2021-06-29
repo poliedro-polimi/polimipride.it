@@ -41,22 +41,24 @@
             <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         {% endblock %}
 
-        {% block googleanalytics %}
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18427027-10"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-
-                gtag('js', new Date());
-
-                gtag('config', 'UA-18427027-10');
+        {% block matomoanalytics %}
+           <!-- Matomo -->
+           <script type="text/javascript">
+               var _paq = window._paq = window._paq || [];
+               /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+               _paq.push(['trackPageView']);
+               _paq.push(['enableLinkTracking']);
+               (function() {
+                   var u="https://analytics.poliedro-polimi.it/";
+                   _paq.push(['setTrackerUrl', u+'matomo.php']);
+                   _paq.push(['setSiteId', '2']);
+                   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                   g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+               })();
             </script>
-
-        {% endblock %}
+            <noscript><p><img src="https://analytics.poliedro-polimi.it/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+            <!-- End Matomo Code -->
+	{% endblock %}
 
     {% endblock %}
 </head>
