@@ -1,0 +1,18 @@
+.social-button{
+    padding: var(--padding-full);
+}
+
+#about-section{
+    display:flex;
+    padding:var(--padding-full)
+}
+
+#about-img{
+    height:100px;
+    width: 400px;
+}
+
+#about-title, #website-title{
+    font-size: var(--text-size-biggest);
+    ma
+}
