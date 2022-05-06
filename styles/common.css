@@ -92,6 +92,13 @@ body div, body span {
     justify-content: center;
 }
 
+.index-section {
+    height: calc(100vh - var(--navbar-height));
+    margin: 0 10%;
+    padding: calc(3 * var(--padding-full));
+    box-sizing: border-box;
+}
+
 #footer {
     display: flex;
     padding: var(--padding-full);
