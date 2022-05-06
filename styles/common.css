@@ -28,6 +28,44 @@ body div, body span {
     background: white;
 }
 
+#nav-banner {
+    position: fixed;
+    height: var(--navbar-height);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+#bar-logo {
+    height: 60px;
+    width: 100px;
+    display: block;
+    margin-left: calc(6 * var(--margin-full));
+    margin-right: var(--margin-half)
+}
+
+.menu-link {
+    margin: 0 var(--margin-half);
+    padding: var(--padding-full);
+    font-size: 1.25em;
+}
+
+#language-container {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: calc(6 * var(--margin-full));
+}
+
+#language-container > span {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #footer {
     display: flex;
     padding: var(--padding-full);
