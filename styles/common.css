@@ -4,6 +4,13 @@
     --padding-full: 10px;
     --padding-half: 5px;
     --navbar-height: calc(60px + var(--margin-full) * 2);
+    --text-size-smaller: 0.7em;
+    --text-size-small: 0.75em;
+    --text-size-normal: 1em;
+    --text-size-big: 1.25em;
+    --text-size-bigger: 1.5em;
+    --text-size-biggest: 2em;
+    --text-size-huge: 2.5em;
 }
 
 html {
@@ -18,14 +25,23 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    overflow-y: auto;
-    padding: var(--navbar-height) 0 0;
+    overflow-y: hidden;
     font-family: sans-serif;
+    padding: var(--navbar-height) 0 0;
 }
 
 body div, body span {
     outline: solid black 2px;
+    outline-offset: -1px;
     background: white;
+}
+
+.img {
+    background: lightgray;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #nav-banner {
@@ -35,13 +51,13 @@ body div, body span {
     display: flex;
     align-items: center;
     top: 0;
-    z-index: 10000; /*z-index navbar*/
+    left: 0;
+    z-index: 100;
 }
 
 #bar-logo {
     height: 60px;
     width: 100px;
-    display: block;
     margin-left: calc(6 * var(--margin-full));
     margin-right: var(--margin-half)
 }
@@ -49,7 +65,7 @@ body div, body span {
 .menu-link {
     margin: 0 var(--margin-half);
     padding: var(--padding-full);
-    font-size: 1.25em;
+    font-size: var(--text-size-big);
 }
 
 #language-container {
@@ -100,7 +116,6 @@ body div, body span {
     margin: var(--margin-full) var(--margin-half);
     width: 25px;
     height: 25px;
-    display: inline-block;
 }
 
 .handle-icon:first-child {
@@ -112,13 +127,14 @@ body div, body span {
 }
 
 #handle, #hashtag {
-    font-size: 1.5em;
+    font-size: var(--text-size-bigger);
     padding: var(--padding-full);
 }
 
 #footer-sponsor>span {
-    width: 300px;
-    height: 150px;
+    width: 48%;
+    margin: 0.7%;
+    aspect-ratio: 2;
 
 }
 

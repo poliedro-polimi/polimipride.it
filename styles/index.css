@@ -1,78 +1,237 @@
-#eventi {
-    margin: var(--margin-full);
+.index-section {
+    height: calc(100vh - var(--navbar-height));
+    margin: 0 15%;
+    padding: calc(3 * var(--padding-full));
+    box-sizing: border-box;
 }
 
-#eventi-title{
-    font-size:1.5em;
+#content-container {
+    overflow-y: auto;
+    box-sizing: border-box;
+    height: calc(100% - var(--navbar-height));
 }
 
-.evento {
+.section-title {
+    padding: var(--padding-full);
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.section-title>.section-title-text {
+    font-size: var(--text-size-biggest);
+}
+
+.section-more {
+    font-size: var(--text-size-big);
+    padding: var(--padding-half);
+    display: flex;
+    align-items: center;
+}
+
+.section-more::after {
+    width: 20px;
+    height: 20px;
+    content: "n";
+    text-align: center;
+    background: lightgray;
+    margin: 0 0 0 var(--margin-full);
+}
+
+
+
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title>div {
+    font-size: 150px;
+}
+
+
+
+#events {
+    display: flex;
+    flex-direction: column;
+}
+
+#events-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    width: 70%;
+}
+
+.event-img {
     position: relative;
     aspect-ratio: 16/9;
-    display: inline-block;
-    height: 150px;
     margin: var(--margin-full);
 }
 
-.evento-title {
+.event-info {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.event-title {
     position: absolute;
     bottom: var(--margin-full);
     left: var(--margin-full);
+    font-size: var(--text-size-biggest);
 }
 
-#pat-poli {
+.event-info>span {
+    display: flex;
+    align-items: center;
+}
+
+.event-info-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: var(--text-size-bigger);
+    margin: var(--margin-half) var(--margin-full) var(--margin-half) 0;
+}
+
+.event-icon {
+    width: 30px;
+    height: 30px;
     margin: var(--margin-full);
+}
+
+
+
+
+#goal {
+    display: flex;
+    flex-direction: column;
+}
+
+#goal-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#goal-img {
+    aspect-ratio: 8/3;
+}
+
+#goal-text {
+    flex-grow: 1;
+    padding: var(--margin-full) calc(var(--margin-full) * 5);
+}
+
+.goal-subtitle {
+    font-size: var(--text-size-bigger);
+}
+
+#goal-text > * {
+    display: block;
+    margin: var(--margin-full);
+}
+
+
+
+
+#sponsor {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pat-poli-box{
-    padding: var(--padding-full);
-    height:80px;
+#sponsor-title {
+    font-size: var(--text-size-huge);
+    padding: 20px;
 }
 
+#sponsor-logo {
+    width: 400px;
+    height: 200px;
+}
+
+#sponsor-text {
+    width: 65%;
+    padding: var(--padding-full);
+    font-size: var(--text-size-big);
+}
+
+
+
+
 #pap {
-    margin: var(--margin-full);
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
-.pap-cards{
-    display:flex;
+.pap-cards {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width:100%;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .pap-card {
     margin: var(--margin-full);
-    width:200px
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
-.pap-card-title{
-    font-size:1.25em;
+.pap-card-title {
+    font-size: var(--text-size-biggest);
+    padding: var(--padding-full);
+    display: block;
 }
 
 .pap-card-box {
     margin: var(--margin-full);
-    height: 80px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;;
+    justify-content: space-evenly;
 }
 
-.pap-button{
+.pap-card-box.pap-second {
+    flex-grow: 1;
+}
+
+.pap-card-comment {
+    font-size: var(--text-size-big);
     padding: var(--padding-full);
-    margin: var(--margin-full)
+    text-align: center;
 }
 
-.pap-card-date, .pap-card-time {
+.pap-card-subtitle {
     padding: var(--padding-full);
+    font-size: var(--text-size-bigger);
 }
 
-.pap-card-time{
-    text-align:center;
+.pap-button {
+    padding: var(--padding-full);
+    margin: var(--margin-full);
+    font-size: var(--text-size-bigger);
 }
+
