@@ -1,0 +1,109 @@
+#nav-banner {
+    position: fixed;
+    height: var(--navbar-height);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+#bar-logo {
+    height: 60px;
+    width: 100px;
+    display: block;
+    margin-left: calc(6 * var(--margin-full));
+    margin-right: var(--margin-half)
+}
+
+.menu-link {
+    margin: 0 var(--margin-half);
+    padding: var(--padding-full);
+    font-size: 1.25em;
+}
+
+#language-container {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: calc(6 * var(--margin-full));
+}
+
+#language-container > span {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#eventi {
+    margin: var(--margin-full);
+}
+
+.evento {
+    position: relative;
+    aspect-ratio: 16/9;
+    display: inline-block;
+    height: 150px;
+    margin: var(--margin-full);
+}
+
+.evento-title {
+    position: absolute;
+    bottom: var(--margin-full);
+    left: var(--margin-full);
+}
+
+#pat-poli {
+    margin: var(--margin-full);
+    display: flex;
+    flex-direction: column;
+
+}
+.pat-poli-box{
+}
+
+#pap {
+    margin: var(--margin-full);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pap-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.pap-card {
+    margin: var(--margin-full);
+    width:200px
+}
+
+.pap-card-title{
+    font-size:1.25em;
+}
+
+.pap-card-box {
+    margin: var(--margin-full);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;;
+}
+
+.pap-button{
+    padding: var(--padding-full);
+    margin: var(--margin-full)
+}
+
+.pap-card-date, .pap-card-time {
+    padding: var(--padding-full);
+}
+
+.pap-card-time{
+    text-align:center;
+}
