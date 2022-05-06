@@ -35,6 +35,7 @@ body div, body span {
     display: flex;
     align-items: center;
     top: 0;
+    z-index: 10000; /*z-index navbar*/
 }
 
 #bar-logo {
