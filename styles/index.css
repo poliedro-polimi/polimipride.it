@@ -2,6 +2,10 @@
     margin: var(--margin-full);
 }
 
+#eventi-title{
+    font-size:1.5em;
+}
+
 .evento {
     position: relative;
     aspect-ratio: 16/9;
@@ -20,9 +24,12 @@
     margin: var(--margin-full);
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
+
 .pat-poli-box{
+    padding: var(--padding-full);
+    height:80px;
 }
 
 #pap {
