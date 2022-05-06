@@ -40,7 +40,7 @@ body {
 }
 
 body div, body span {
-    outline: solid black 2px;
+    outline: solid transparent 2px;
     outline-offset: -1px;
     background: white;
 }
@@ -160,3 +160,13 @@ body div, body span {
     background: transparent;
 }
 
+.section-title {
+    padding: var(--padding-full);
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.section-title>.section-title-text {
+    font-size: var(--text-size-biggest);
+}
