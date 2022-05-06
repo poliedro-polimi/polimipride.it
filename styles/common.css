@@ -1,0 +1,201 @@
+:root {
+    --margin-full: 10px;
+    --margin-half: 5px;
+    --padding-full: 10px;
+    --padding-half: 5px;
+    --navbar-height: calc(60px + var(--margin-full) * 2);
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: var(--navbar-height) 0 0;
+    font-family: sans-serif;
+}
+
+body div, body span {
+    outline: solid black 2px;
+    background: white;
+}
+
+#nav-banner {
+    position: fixed;
+    height: var(--navbar-height);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+#bar-logo {
+    height: 60px;
+    width: 100px;
+    display: block;
+    margin-left: calc(6 * var(--margin-full));
+    margin-right: var(--margin-half)
+}
+
+.menu-link {
+    margin: 0 var(--margin-half);
+    padding: var(--padding-full);
+    font-size: 1.25em;
+}
+
+#language-container {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: calc(6 * var(--margin-full));
+}
+
+#language-container > span {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#eventi {
+    margin: var(--margin-full);
+}
+
+.evento {
+    position: relative;
+    aspect-ratio: 16/9;
+    display: inline-block;
+    height: 150px;
+    margin: var(--margin-full);
+}
+
+.evento-title {
+    position: absolute;
+    bottom: var(--margin-full);
+    left: var(--margin-full);
+}
+
+#pat-poli {
+    margin: var(--margin-full);
+    display: flex;
+    flex-direction: column;
+
+}
+.pat-poli-box{
+}
+
+#pap {
+    margin: var(--margin-full);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pap-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.pap-card {
+    margin: var(--margin-full);
+    width:200px
+}
+
+.pap-card-title{
+    font-size:1.25em;
+}
+
+.pap-card-box {
+    margin: var(--margin-full);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;;
+}
+
+.pap-button{
+    padding: var(--padding-full);
+    margin: var(--margin-full)
+}
+
+.pap-card-date, .pap-card-time {
+    padding: var(--padding-full);
+}
+
+.pap-card-time{
+    text-align:center;
+}
+
+#footer {
+    display: flex;
+    padding: var(--padding-full);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-poliedro,
+#footer-sponsor {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-sponsor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#handle-container {
+    display: flex;
+    padding: var(--padding-half);
+}
+
+#handle-text {
+    padding: var(--padding-full);
+}
+
+.handle-icon {
+    margin: var(--margin-full) var(--margin-half);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.handle-icon:first-child {
+    margin-left: var(--margin-full);
+}
+
+.handle-icon:last-child {
+    margin-right: var(--margin-full);
+}
+
+#handle, #hashtag {
+    font-size: 1.5em;
+    padding: var(--padding-full);
+}
+
+#footer-sponsor>span {
+    width: 300px;
+    height: 150px;
+
+}
+
+.space {
+    flex-grow: 1;
+    outline: none;
+    background: transparent;
+}
+
