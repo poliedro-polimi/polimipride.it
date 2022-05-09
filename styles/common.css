@@ -38,7 +38,7 @@ body {
 }
 
 body div, body span {
-    /*outline: solid black 2px;*/
+    outline: solid black 2px;
     outline-offset: -1px;
     background: white;
 }
@@ -49,6 +49,10 @@ body div, body span {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
 #nav-banner {
@@ -62,7 +66,71 @@ body div, body span {
     z-index: 100;
 }
 
-#bar-logo {
+#nav-mobile {
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+#nav-mobile.visible {
+    display: block;
+}
+
+#nav-mobile > table {
+    width: 100%;
+}
+
+#nav-mobile td {
+    position: relative;
+    text-align: center;
+    height: var(--navbar-height);
+    box-sizing: border-box;
+}
+
+table > * {
+
+    border-spacing: 0;
+}
+
+#nav-mobile .language-container {
+    flex-direction: row;
+    column-gap: 15px;
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+#nav-mobile .bar-logo {
+    margin: 0;
+}
+
+#bar-close {
+    position: absolute;
+    right: var(--margin-full);
+    top: var(--margin-full);
+}
+
+#bar-close,
+#bar-open {
+    width: calc(var(--navbar-height) - 2 * var(--margin-full));
+    height: calc(var(--navbar-height) - 2 * var(--margin-full));
+}
+
+#bar-open,
+#bar-open-counter {
+    margin: var(--margin-full);
+}
+
+#bar-open-counter {
+    width: calc(var(--navbar-height) - 2 * var(--margin-full));
+}
+
+.bar-logo {
     height: 60px;
     width: 100px;
     margin-left: calc(6 * var(--margin-full));
@@ -75,14 +143,14 @@ body div, body span {
     font-size: var(--text-size-big);
 }
 
-#language-container {
+.language-container {
     width: 30px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     margin-right: calc(6 * var(--margin-full));
 }
 
-#language-container > span {
+.language-container > span {
     width: 30px;
     height: 20px;
     display: flex;
@@ -184,6 +252,21 @@ body div, body span {
 
     .index-section {
         margin: 0 10px;
+    }
+
+    #nav-banner > .bar-logo {
+        margin: 0;
+    }
+
+    #nav-banner > .menu-link,
+    #nav-banner > .space:not(.hidden),
+    #nav-banner > .language-container
+    {
+        display: none;
+    }
+
+    #nav-banner > .hidden {
+        display: block;
     }
 }
 

@@ -6,25 +6,60 @@
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="/styles/index.css">
     <script src="/scripts/common.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 </head>
 <body>
 <div id="nav-banner">
-    <span id="bar-logo" class="img">PolimiPride logo</span><span class="space"></span>
+    <span id="bar-open-counter" class="hidden"></span>
+    <span class="space hidden"></span>
+    <span class="bar-logo img">PolimiPride logo</span><span class="space"></span>
     <span class="menu-link"><a href="/storia/">Storia</a></span><span class="space"></span>
     <span class="menu-link"><a href="/contatti/">Contatti</a></span><span class="space"></span>
     <span class="menu-link"><a href="/poliedro/">Poliedro</a></span><span class="space"></span>
     <span class="menu-link"><a href="/eventi/">Eventi</a></span><span class="space"></span>
     <span class="menu-link"><a href="/partecipa/">Come partecipare</a></span><span class="space"></span>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <span id="language-container">
-        <span id="language-it">IT</span>
-        <span id="language-en">EN</span>
+    <span class="space hidden"></span>
+    <span class="language-container">
+        <span class="language-it">IT</span>
+        <span class="language-en">EN</span>
     </span>
+    <span id="bar-open" class="img hidden">=</span>
+</div>
+<div id="nav-mobile">
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2"><span class="bar-logo img">PolimiPride logo</span><span id="bar-close" class="img">X</span></td>
+            </tr>
+            <tr>
+                <td><span class="menu-link"><a href="/storia/">Storia</a></span></td>
+                <td><span class="menu-link"><a href="/contatti/">Contatti</a></span></td>
+            </tr>
+            <tr>
+                <td><span class="menu-link"><a href="/poliedro/">Poliedro</a></span></td>
+                <td><span class="menu-link"><a href="/eventi/">Eventi</a></span></td>
+            </tr>
+            <tr>
+                <td><span class="menu-link"><a href="/partecipa/">Partecipa</a></span></td>
+                <td>
+                    <span class="language-container">
+                        <span class="language-it">IT</span>
+                        <span class="language-en">EN</span>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div id="content-container">
 
+    <div id="title" class="index-section">
+        <div>POLIMI</div>
+        <div>PRIDE</div>
+    </div>
     <div id="events" class="index-section">
-        <div id="events-title" class="section-title"><span class="section-title-text">Gli eventi in programma</span><span class="space"></span><span class="section-more">Scopri di più</span><span class="section-more-icon img">n</span> </div>
+        <div id="events-title" class="section-title"><span class="section-title-text">Gli eventi in programma</span><span class="space"></span><span class="section-more">Scopri di più</span><span
+                class="section-more-icon img">n</span></div>
         <div id="events-container">
             <!-- For icons: dr=drop map sign, si=street sign, cal=calendar, ck=clock -->
             <span class="event">
@@ -63,12 +98,8 @@
 
         </div>
     </div>
-    <div id="title" class="index-section">
-        <div>POLIMI</div>
-        <div>PRIDE</div>
-    </div>
     <div id="goal" class="index-section">
-        <div id="goal-title" class="section-title"><span class="section-title-text">I nostri obiettivi</span><span class="space"></span><span class="section-more">Scopri di più</span> </div>
+        <div id="goal-title" class="section-title"><span class="section-title-text">I nostri obiettivi</span><span class="space"></span><span class="section-more">Scopri di più</span></div>
         <div id="goal-content">
             <span id="goal-img" class="img">immagine a caso</span>
             <span id="goal-text">
@@ -93,7 +124,7 @@
         <span class="space"></span>
     </div>
     <div id="pap" class="index-section">
-        <div id="pap-title" class="section-title"><span class="space"></span><span class="section-more">Scopri come partecipare</span> </div>
+        <div id="pap-title" class="section-title"><span class="space"></span><span class="section-more">Scopri come partecipare</span></div>
         <div class="pap-cards">
         <span class="pap-card img">
             <span class="pap-card-title">Dove</span>
