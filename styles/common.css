@@ -180,7 +180,7 @@ table > * {
 
 #title-short>div {
     font-size: calc(var(--text-size-biggest)*2);
-    margin: calc(var(--padding-full)*8 ) auto;
+    margin: calc(var(--padding-full)*15) auto;
     text-align: center;
 }
 
