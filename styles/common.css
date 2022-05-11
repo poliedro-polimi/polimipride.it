@@ -158,12 +158,32 @@ table > * {
     justify-content: center;
 }
 
-.index-section {
-    height: calc(100vh - var(--navbar-height));
-    margin: 0 10%;
-    padding: calc(3 * var(--padding-full));
-    box-sizing: border-box;
+
+
+.section-title {
+    padding: var(--padding-full);
+    display: flex;
+    align-items: center;
+    align-self: stretch;
 }
+
+.section-title>.section-title-text {
+    font-size: var(--text-size-biggest);
+}
+
+#title-short {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-short>div {
+    font-size: calc(var(--text-size-biggest)*2);
+    margin: calc(var(--padding-full)*8 ) auto;
+    text-align: center;
+}
+
 
 #footer {
     display: flex;
