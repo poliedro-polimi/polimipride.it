@@ -38,7 +38,7 @@ body {
 }
 
 body div, body span {
-    outline: solid black 2px;
+    /*outline: solid black 2px;*/
     outline-offset: -1px;
     background: white;
 }
@@ -267,6 +267,13 @@ table > * {
 
     #nav-banner > .hidden {
         display: block;
+    }
+
+
+    #footer-sponsor>span {
+        width: 90%;
+        margin: 0.7%;
+        aspect-ratio: 2;
     }
 }
 

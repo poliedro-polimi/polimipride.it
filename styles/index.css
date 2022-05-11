@@ -122,21 +122,28 @@ body {
 }
 
 #goal-img {
-    aspect-ratio: 8/3;
+    flex-grow: 4;
 }
 
 #goal-text {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.goal-paragraph,
+.goal-subtitle {
     padding: var(--margin-full) calc(var(--margin-full) * 5);
 }
-
 .goal-subtitle {
+    margin: var(--margin-full) 0;
     font-size: var(--text-size-bigger);
 }
 
-#goal-text > * {
-    display: block;
-    margin: var(--margin-full);
+.goal-space-big {
+    flex-grow: 1;
+}
+.goal-space-small {
+    flex-grow: 0.15;
 }
 
 
@@ -154,8 +161,10 @@ body {
 }
 
 #sponsor-logo {
-    width: 400px;
-    height: 200px;
+    width: 50vw;
+    height: 25vw;
+    max-width: 400px;
+    max-height: 200px;
 }
 
 #sponsor-text {
@@ -171,7 +180,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: 0;
 }
 
 .pap-cards {
@@ -185,8 +194,8 @@ body {
 
 .pap-card {
     margin: var(--margin-full);
-    width: 300px;
-    height: 400px;
+    width: calc(28vw - var(--padding-full));
+    height: 60vh;
     display: flex;
     flex-direction: column;
 }
@@ -299,6 +308,30 @@ body {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    @media screen and (max-aspect-ratio: 1/1) {
+        .pap-cards {
+            flex-direction: column;
+        }
+
+        .pap-card {
+            width: 90%;
+            flex-direction: row;
+            height: calc(33% - 2 * var(--margin-full));
+        }
+
+        .pap-card-piece-first {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .pap-card-box.pap-second {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    }
+}
+
 @media screen and (max-width: 720px) {
 
     .event {
@@ -307,7 +340,7 @@ body {
         height: 33.3%;
     }
 
-    .section-more {
+    .section-more.collapsible {
         display: none;
     }
 
@@ -319,6 +352,17 @@ body {
     .event-info {
         flex-basis: 0;
     }
+
+    #sponsor-text {
+        width: 80%;
+    }
+
+    #sponsor-logo {
+        width: 80vw;
+        height:40vw;
+        max-width: 400px;
+        max-height: 200px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -326,5 +370,23 @@ body {
     .event-img {
         width: 30vw;
         height: 22vh;
+    }
+    #sponsor-text {
+        width: 100%;
+        padding: var(--padding-full);
+    }
+
+    .pap-card {
+        flex-direction: column;
+    }
+
+    .pap-card-title {
+        font-size: var(--text-size-bigger);
+    }
+    .pap-card-subtitle {
+        font-size: var(--text-size-big);
+    }
+    .pap-card-comment {
+        font-size: var(--text-size-normal);
     }
 }
