@@ -43,8 +43,12 @@ body {
     margin: 0 0 0 var(--margin-full);
 }
 
-
-
+.index-section {
+    height: calc(100vh - var(--navbar-height));
+    margin: 0 10%;
+    padding: calc(3 * var(--padding-full));
+    box-sizing: border-box;
+}
 
 #title {
     height: calc(100vh + 2 * var(--navbar-height));

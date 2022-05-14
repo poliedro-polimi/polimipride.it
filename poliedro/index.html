@@ -6,69 +6,76 @@
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="/styles/poliedro.css">
     <script src="/scripts/common.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 </head>
-<body>
-<div id="nav-banner">
-    <span id="bar-logo" class="img">PolimiPride logo</span><span class="space"></span>
+<body><div id="nav-banner">
+    <span id="bar-open-counter" class="hidden"></span>
+    <span class="space hidden"></span>
+    <span class="bar-logo img">PolimiPride logo</span><span class="space"></span>
     <span class="menu-link"><a href="/storia/">Storia</a></span><span class="space"></span>
     <span class="menu-link"><a href="/contatti/">Contatti</a></span><span class="space"></span>
     <span class="menu-link"><a href="/">Home</a></span><span class="space"></span>
     <span class="menu-link"><a href="/eventi/">Eventi</a></span><span class="space"></span>
-    <span class="menu-link"><a href="/partecipa/">Come partecipare</a></span><span class="space"></span>
-    <span id="language-container">
-        <span id="language-it">IT</span>
-        <span id="language-en">EN</span>
+    <span class="menu-link"><a href="/partecipa/">Partecipa</a></span><span class="space"></span>
+    <span class="space hidden"></span>
+    <span class="language-container">
+        <span class="language-it">IT</span>
+        <span class="language-en">EN</span>
     </span>
+    <span id="bar-open" class="img hidden">=</span>
+</div>
+<div id="nav-mobile">
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2"><span class="bar-logo img">PolimiPride logo</span><span id="bar-close" class="img">X</span></td>
+            </tr>
+            <tr>
+                <td><span class="menu-link"><a href="/storia/">Storia</a></span></td>
+                <td><span class="menu-link"><a href="/contatti/">Contatti</a></span></td>
+            </tr>
+            <tr>
+                <td><span class="menu-link"><a href="/">Home</a></span></td>
+                <td><span class="menu-link"><a href="/eventi/">Eventi</a></span></td>
+            </tr>
+            <tr>
+                <td><span class="menu-link"><a href="/partecipa/">Partecipa</a></span></td>
+                <td>
+                    <span class="language-container">
+                        <span class="language-it">IT</span>
+                        <span class="language-en">EN</span>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div id="content-container">
-
-    <div class="index-section">
-        <div id="about">
-            <div id="about-title">Chi siamo</div>
-            <div id="about-section">
-                <div class="about-section-column">
-                    <div id="about-text">Nem id magnam archillacea ius sum, nis mollam ea-ruptate volorae occaepelitae estem aut</div>
-                    <div id="social-buttons">
-                        Follow us on social media
-                        <span class="social-button"id="sb-facebook"></span>
-                        <span class="social-button"id="sb-twitter"></span>
-                        <span class="social-button"id="sb-instagram"></span>
-                        <span class="social-button"id="sb-youtube"></span>
-                        <span class="social-button"id="sb-linkedin"></span>
-                        <span class="social-button"id="sb-telegram"></span>
-                    </div>
-                
-                </div>
-                <div class="about-section-column">
-                    <div id="about-img" class="img"></div>
-                </div>
-
-            </div>
-        </div>
-        <div id="website">
-            <div id="website-title">Website</div>
-            <div id="website-text">Visita il nostro sito</div>
-        </div>
+    
+    <div id="title-short" class="index-section">
+        <div>POLIEDRO</div>
     </div>
 
-    <div id="footer">
-        <span id="footer-poliedro">
-            <span id="handle">@poliedro.polimi</span>
-            <span id="handle-text">Seguici sui nostri profili social e tagga le tue esperienze Pride utilizzando l'hashtag ufficiale!</span>
-            <span id="handle-container">
-                <span class="handle-icon img">ig</span>
-                <span class="handle-icon img">tg</span>
-                <span class="handle-icon img">fb</span>
-                <span class="handle-icon img">em</span>
-            </span>
-            <span id="hashtag">#polimipride</span>
+
+<div id="footer">
+    <span id="footer-poliedro">
+        <span id="handle">@poliedro.polimi</span>
+        <span id="handle-text">Seguici sui nostri profili social e tagga le tue esperienze Pride utilizzando l'hashtag ufficiale!</span>
+        <span id="handle-container">
+            <span class="handle-icon img">ig</span>
+            <span class="handle-icon img">tg</span>
+            <span class="handle-icon img">fb</span>
+            <span class="handle-icon img">em</span>
         </span>
-        <span id="footer-sponsor">
-            <span class="img">Polimi</span>
-            <span class="img">Milano Pride</span>
-            <span class="img">Poliedro</span>
-        </span>
-    </div>
+        <span id="hashtag">#polimipride</span>
+    </span>
+    <span id="footer-sponsor">
+        <span class="img">Polimi</span>
+        <span class="img">Milano Pride</span>
+        <span class="img">Poliedro</span>
+    </span>
+</div>
+</div>
 </div>
 </body>
 </html>
