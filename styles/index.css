@@ -3,6 +3,10 @@ body {
     overflow-x:hidden;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 #height-probe  {
     height: 100vh;
     width: 0;
@@ -52,6 +56,33 @@ body {
 
 #title {
     height: calc(100vh + 2 * var(--navbar-height));
+    margin: 0;
+    padding: 0;
+}
+
+#scroll-down {
+    width: 100%;
+    position: absolute;
+    bottom: calc(2 * var(--margin-full));
+    left: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#scroll-down > span {
+    font-size: var(--text-size-big);
+    font-weight: 700;
+    margin: var(--margin-half);
+    color: white;
+    text-transform: uppercase;
+}
+
+#scroll-down > img {
+    width: var(--text-size-bigger);
+    height: var(--text-size-bigger);
+    margin-top: var(--margin-half);
+    color: #FFFFFF;
 }
 
 
@@ -353,37 +384,37 @@ body {
 }
 
 #brush-1 {
-    background-image: url('/res/brush1.png');
+    background-image: url('/res/brushes/brush1.png');
     clip-path: url(#brush-stroke-full-1);
 }
 
 #brush-2 {
-    background-image: url('/res/brush2.png');
+    background-image: url('/res/brushes/brush2.png');
     clip-path: url(#brush-stroke-full-2);
 }
 
 #brush-3 {
-    background-image: url('/res/brush3.png');
+    background-image: url('/res/brushes/brush3.png');
     clip-path: url(#brush-stroke-full-3);
 }
 
 #brush-4 {
-    background-image: url('/res/brush4.png');
+    background-image: url('/res/brushes/brush4.png');
     clip-path: url(#brush-stroke-full-4);
 }
 
 #brush-5 {
-    background-image: url('/res/brush5.png');
+    background-image: url('/res/brushes/brush5.png');
     clip-path: url(#brush-stroke-full-5);
 }
 
 #brush-6 {
-    background-image: url('/res/brush6.png');
+    background-image: url('/res/brushes/brush6.png');
     clip-path: url(#brush-stroke-full-6);
 }
 
 #brush-7 {
-    background-image: url('/res/brush7.png');
+    background-image: url('/res/brushes/brush7.png');
     clip-path: url(#brush-stroke-full-7);
 }
 
