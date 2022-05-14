@@ -1,5 +1,21 @@
 body {
     box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+#height-probe  {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+}
+
+#nav-banner {
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+}
+
+#nav-banner.nav-drop {
+    transform: translateY(0);
 }
 
 .section-title {
@@ -31,14 +47,7 @@ body {
 
 
 #title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#title>div {
-    font-size: 150px;
+    height: calc(100vh + 2 * var(--navbar-height));
 }
 
 
@@ -297,6 +306,81 @@ body {
     #title>div {
         font-size: 25vw;
     }
+}
+
+
+
+
+
+/* Graphics */
+
+
+
+
+#logo {
+    position: absolute;
+    left: 0;
+    top: 17.5vh;
+    display: block;
+    width: 100vw;
+    height: 65vh;
+    z-index: 1;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    #logo {
+        top: 0;
+        left: 12.5vw;
+        height: 100vh;
+        width: 75vw;
+    }
+}
+
+.brush-animated {
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    z-index: -1;
+    background-color: transparent;
+}
+
+#brush-1 {
+    background-image: url('/res/brush1.png');
+    clip-path: url(#brush-stroke-full-1);
+}
+
+#brush-2 {
+    background-image: url('/res/brush2.png');
+    clip-path: url(#brush-stroke-full-2);
+}
+
+#brush-3 {
+    background-image: url('/res/brush3.png');
+    clip-path: url(#brush-stroke-full-3);
+}
+
+#brush-4 {
+    background-image: url('/res/brush4.png');
+    clip-path: url(#brush-stroke-full-4);
+}
+
+#brush-5 {
+    background-image: url('/res/brush5.png');
+    clip-path: url(#brush-stroke-full-5);
+}
+
+#brush-6 {
+    background-image: url('/res/brush6.png');
+    clip-path: url(#brush-stroke-full-6);
+}
+
+#brush-7 {
+    background-image: url('/res/brush7.png');
+    clip-path: url(#brush-stroke-full-7);
 }
 
 
