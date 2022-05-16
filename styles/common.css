@@ -32,9 +32,9 @@ a:active {
 body {
     width: 100%;
     min-height: 100%;
-    font-family: sans-serif;
     font-size: 16px;
     margin: var(--navbar-height) 0 0;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 body div, body span {
@@ -59,8 +59,10 @@ body div, body span {
     position: fixed;
     height: var(--navbar-height);
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
     align-items: center;
+    justify-items: center;
     top: 0;
     left: 0;
     z-index: 100;
@@ -133,21 +135,30 @@ table > * {
 .bar-logo {
     height: 60px;
     width: 100px;
-    margin-left: calc(6 * var(--margin-full));
-    margin-right: var(--margin-half)
 }
 
-.menu-link {
-    margin: 0 var(--margin-half);
-    padding: var(--padding-full);
-    font-size: var(--text-size-big);
+.nav-appear:not(.nav-appeared) {
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-appear.nav-appeared {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.menu-link a {
+    font-size: var(--text-size-bigger);
+    font-weight: 700;
+    color: white;
 }
 
 .language-container {
     width: 30px;
     display: inline-flex;
     flex-direction: column;
-    margin-right: calc(6 * var(--margin-full));
 }
 
 .language-container > span {
@@ -156,6 +167,8 @@ table > * {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
+    color: white;
 }
 
 

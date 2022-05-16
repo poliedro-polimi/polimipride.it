@@ -14,8 +14,8 @@ html {
 }
 
 #nav-banner {
-    transform: translateY(-100%);
-    transition: transform 0.5s;
+    /*transform: translateY(-100%);*/
+    /*transition: transform 0.5s;*/
 }
 
 #nav-banner.nav-drop {
@@ -68,6 +68,27 @@ html {
     align-items: center;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+
+@keyframes jump-scroll-text {
+    90% {
+        transform: translateY(0);
+    }
+    92% {
+        transform: translateY(calc(0px - var(--text-size-big) / 4));
+    }
+    94% {
+        transform: translateY(0);
+    }
+    96% {
+        transform: translateY(calc(0px - var(--text-size-big) / 4));
+    }
+    98% {
+        transform: translateY(0);
+    }
 }
 
 #scroll-down > span {
@@ -76,6 +97,24 @@ html {
     margin: var(--margin-half);
     color: white;
     text-transform: uppercase;
+    animation-name: jump-scroll-text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes float-arrow {
+    0% {
+        transform: translateY(calc(var(--text-size-big) / 4));
+    }
+
+    50% {
+        transform: translateY(calc(0px - var(--text-size-big) / 4));
+    }
+
+    100% {
+        transform: translateY(calc(var(--text-size-big) / 4));
+    }
 }
 
 #scroll-down > img {
@@ -83,6 +122,10 @@ html {
     height: var(--text-size-bigger);
     margin-top: var(--margin-half);
     color: #FFFFFF;
+    animation-name: float-arrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.45, 0.25, 0.60, 0.95);
 }
 
 
@@ -337,10 +380,6 @@ html {
         width: 40vw;
         height: 25vw;
     }
-
-    #title>div {
-        font-size: 25vw;
-    }
 }
 
 
@@ -417,6 +456,70 @@ html {
     background-image: url('/res/brushes/brush7.png');
     clip-path: url(#brush-stroke-full-7);
 }
+
+#brush-nav-1 {
+    background-image: url('/res/brushes/brush_nav_1.png');
+    height: calc(var(--navbar-height) * 1.4);
+    width: calc(var(--navbar-height) * 1.4 * 966 / 279);
+    top: calc(var(--navbar-height) * -0.2);
+    left: calc(100% / 7 * 0.5 - var(--navbar-height) * 1.4 * 966 / 279 / 2);
+    clip-path: url(#brush-stroke-full-nav-1);
+}
+
+#brush-nav-2 {
+    background-image: url('/res/brushes/brush_nav_2.png');
+    height: calc(var(--navbar-height) * 1.4);
+    width: calc(var(--navbar-height) * 1.4 * 422 / 238);
+    top: calc(var(--navbar-height) * -0.2);
+    left: calc(100% / 7 * 1.5 - var(--navbar-height) * 1.4 * 422 / 238 / 2);
+    clip-path: url(#brush-stroke-full-nav-2);
+}
+
+#brush-nav-3 {
+    background-image: url('/res/brushes/brush_nav_3.png');
+    height: calc(var(--navbar-height) * 1.4);
+    width: calc(var(--navbar-height) * 1.4 * 1001 / 262);
+    top: calc(var(--navbar-height) * -0.2);
+    left: calc(100% / 7 * 2.5 - var(--navbar-height) * 1.4 * 1001 / 262 / 2);
+    clip-path: url(#brush-stroke-full-nav-3);
+}
+
+#brush-nav-4 {
+    background-image: url('/res/brushes/brush_nav_4.png');
+    height: calc(var(--navbar-height) * 1.4);
+    width: calc(var(--navbar-height) * 1.4 * 544 / 224);
+    top: calc(var(--navbar-height) * -0.2);
+    left: calc(100% / 7 * 3.5 - var(--navbar-height) * 1.4 * 544 / 224 / 2);
+    clip-path: url(#brush-stroke-full-nav-4);
+}
+
+#brush-nav-5 {
+    background-image: url('/res/brushes/brush_nav_5.png');
+    height: calc(var(--navbar-height) * 1.4);
+    width: calc(var(--navbar-height) * 1.4 * 873 / 235);
+    top: calc(var(--navbar-height) * -0.2);
+    left: calc(100% / 7 * 4.5 - var(--navbar-height) * 1.4 * 873 / 235 / 2);
+    clip-path: url(#brush-stroke-full-nav-5);
+}
+
+#brush-nav-6 {
+    background-image: url('/res/brushes/brush_nav_6.png');
+    height: calc(var(--navbar-height) * 1.4);
+    width: calc(var(--navbar-height) * 1.4 * 572 / 256);
+    top: calc(var(--navbar-height) * -0.2);
+    left: calc(100% / 7 * 5.5 - var(--navbar-height) * 1.4 * 572 / 256 / 2);
+    clip-path: url(#brush-stroke-full-nav-6);
+}
+
+#brush-nav-7 {
+    background-image: url('/res/brushes/brush_nav_7.png');
+    height: calc(var(--navbar-height) * 1.4);
+    width: calc(var(--navbar-height) * 1.4 * 835 / 252);
+    top: calc(var(--navbar-height) * -0.2);
+    left: calc(100% / 7 * 6.5 - var(--navbar-height) * 1.4 * 835 / 252 / 2);
+    clip-path: url(#brush-stroke-full-nav-7);
+}
+
 
 
 @media screen and (max-aspect-ratio: 2/3) {

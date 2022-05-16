@@ -99,7 +99,11 @@ window.onresize = function () {
         document.getElementById(brush).style.transform = transform
         document.getElementById(brush).style.height = correctHeight + "px"
     }
-    return horizontal;
+    if (!horizontal) {
+        document.getElementById("scroll-down").style.bottom = deltaY + "px"
+    } else {
+        document.getElementById("scroll-down").style.bottom = ""
+    }
 }
 
 window.onload = () => {
@@ -119,20 +123,86 @@ window.onload = () => {
                 document.getElementById("polimi-inside-shadow").style.opacity = "0.4";
             }, 2400)
         } else {
-            
             setTimeout(() => {
                 document.getElementById("pride-inside-shadow").style.opacity = "0.4";
                 document.getElementById("polimi-inside-shadow").style.opacity = "0.4";
             }, 4000)
         }
+        setTimeout(() => {
+            document.getElementById("scroll-down").style.opacity = "1";
+        }, 4500)
     }
 }
 
+let barVisible = false;
+let barTimeouts = [];
+
 document.onscroll = () => {
-    if (document.documentElement.scrollTop > 0) {
-        document.getElementById("nav-banner").classList.add("nav-drop")
-    } else {
-        document.getElementById("nav-banner").classList.remove("nav-drop")
+    let vHeight = document.getElementById("height-probe").offsetHeight;
+    let barHeight = document.getElementById("nav-banner").offsetHeight;
+    if ((document.documentElement.scrollTop > vHeight + barHeight) && !barVisible) {
+        barVisible = true;
+        barTimeouts.forEach(t => clearTimeout(t));
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-1"), true);
+            document.getElementById("nav-logo").classList.add("nav-appeared")
+        }, 0))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-7"), true);
+            document.getElementById("nav-language").classList.add("nav-appeared")
+        }, 200))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-5"), true);
+            document.getElementById("nav-link-4").classList.add("nav-appeared")
+        }, 400))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-3"), true);
+            document.getElementById("nav-link-2").classList.add("nav-appeared")
+        }, 400))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-4"), true);
+            document.getElementById("nav-link-3").classList.add("nav-appeared")
+        }, 600))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-2"), true);
+            document.getElementById("nav-link-1").classList.add("nav-appeared")
+        }, 800))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-6"), true);
+            document.getElementById("nav-link-5").classList.add("nav-appeared")
+        }, 800))
+    }
+    if ((document.documentElement.scrollTop < vHeight) && barVisible) {
+        barVisible = false;
+        barTimeouts.forEach(t => clearTimeout(t));
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-1"), false);
+            document.getElementById("nav-logo").classList.remove("nav-appeared")
+        }, 800))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-7"), false);
+            document.getElementById("nav-language").classList.remove("nav-appeared")
+        }, 600))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-5"), false);
+            document.getElementById("nav-link-4").classList.remove("nav-appeared")
+        }, 400))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-3"), false);
+            document.getElementById("nav-link-2").classList.remove("nav-appeared")
+        }, 400))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-4"), false);
+            document.getElementById("nav-link-3").classList.remove("nav-appeared")
+        }, 100))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-2"), false);
+            document.getElementById("nav-link-1").classList.remove("nav-appeared")
+        }, 0))
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-6"), false);
+            document.getElementById("nav-link-5").classList.remove("nav-appeared")
+        }, 0))
     }
 }
 
