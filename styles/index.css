@@ -58,6 +58,7 @@ html {
     height: calc(100vh + 2 * var(--navbar-height));
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #scroll-down {
@@ -117,7 +118,7 @@ html {
     }
 }
 
-#scroll-down > img {
+#scroll-down > svg {
     width: var(--text-size-bigger);
     height: var(--text-size-bigger);
     margin-top: var(--margin-half);
@@ -410,114 +411,39 @@ html {
     }
 }
 
-.brush-animated {
-    width: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: top left;
-    z-index: -1;
-    background-color: transparent;
-}
-
 #brush-1 {
     background-image: url('/res/brushes/brush1.png');
-    clip-path: url(#brush-stroke-full-1);
+    clip-path: url(#clip-brush-1);
 }
 
 #brush-2 {
     background-image: url('/res/brushes/brush2.png');
-    clip-path: url(#brush-stroke-full-2);
+    clip-path: url(#clip-brush-2);
 }
 
 #brush-3 {
     background-image: url('/res/brushes/brush3.png');
-    clip-path: url(#brush-stroke-full-3);
+    clip-path: url(#clip-brush-3);
 }
 
 #brush-4 {
     background-image: url('/res/brushes/brush4.png');
-    clip-path: url(#brush-stroke-full-4);
+    clip-path: url(#clip-brush-4);
 }
 
 #brush-5 {
     background-image: url('/res/brushes/brush5.png');
-    clip-path: url(#brush-stroke-full-5);
+    clip-path: url(#clip-brush-5);
 }
 
 #brush-6 {
     background-image: url('/res/brushes/brush6.png');
-    clip-path: url(#brush-stroke-full-6);
+    clip-path: url(#clip-brush-6);
 }
 
 #brush-7 {
     background-image: url('/res/brushes/brush7.png');
-    clip-path: url(#brush-stroke-full-7);
-}
-
-#brush-nav-1 {
-    background-image: url('/res/brushes/brush_nav_1.png');
-    height: calc(var(--navbar-height) * 1.4);
-    width: calc(var(--navbar-height) * 1.4 * 966 / 279);
-    top: calc(var(--navbar-height) * -0.2);
-    left: calc(100% / 7 * 0.5 - var(--navbar-height) * 1.4 * 966 / 279 / 2);
-    clip-path: url(#brush-stroke-full-nav-1);
-}
-
-#brush-nav-2 {
-    background-image: url('/res/brushes/brush_nav_2.png');
-    height: calc(var(--navbar-height) * 1.4);
-    width: calc(var(--navbar-height) * 1.4 * 422 / 238);
-    top: calc(var(--navbar-height) * -0.2);
-    left: calc(100% / 7 * 1.5 - var(--navbar-height) * 1.4 * 422 / 238 / 2);
-    clip-path: url(#brush-stroke-full-nav-2);
-}
-
-#brush-nav-3 {
-    background-image: url('/res/brushes/brush_nav_3.png');
-    height: calc(var(--navbar-height) * 1.4);
-    width: calc(var(--navbar-height) * 1.4 * 1001 / 262);
-    top: calc(var(--navbar-height) * -0.2);
-    left: calc(100% / 7 * 2.5 - var(--navbar-height) * 1.4 * 1001 / 262 / 2);
-    clip-path: url(#brush-stroke-full-nav-3);
-}
-
-#brush-nav-4 {
-    background-image: url('/res/brushes/brush_nav_4.png');
-    height: calc(var(--navbar-height) * 1.4);
-    width: calc(var(--navbar-height) * 1.4 * 544 / 224);
-    top: calc(var(--navbar-height) * -0.2);
-    left: calc(100% / 7 * 3.5 - var(--navbar-height) * 1.4 * 544 / 224 / 2);
-    clip-path: url(#brush-stroke-full-nav-4);
-}
-
-#brush-nav-5 {
-    background-image: url('/res/brushes/brush_nav_5.png');
-    height: calc(var(--navbar-height) * 1.4);
-    width: calc(var(--navbar-height) * 1.4 * 873 / 235);
-    top: calc(var(--navbar-height) * -0.2);
-    left: calc(100% / 7 * 4.5 - var(--navbar-height) * 1.4 * 873 / 235 / 2);
-    clip-path: url(#brush-stroke-full-nav-5);
-}
-
-#brush-nav-6 {
-    background-image: url('/res/brushes/brush_nav_6.png');
-    height: calc(var(--navbar-height) * 1.4);
-    width: calc(var(--navbar-height) * 1.4 * 572 / 256);
-    top: calc(var(--navbar-height) * -0.2);
-    left: calc(100% / 7 * 5.5 - var(--navbar-height) * 1.4 * 572 / 256 / 2);
-    clip-path: url(#brush-stroke-full-nav-6);
-}
-
-#brush-nav-7 {
-    background-image: url('/res/brushes/brush_nav_7.png');
-    height: calc(var(--navbar-height) * 1.4);
-    width: calc(var(--navbar-height) * 1.4 * 835 / 252);
-    top: calc(var(--navbar-height) * -0.2);
-    left: calc(100% / 7 * 6.5 - var(--navbar-height) * 1.4 * 835 / 252 / 2);
-    clip-path: url(#brush-stroke-full-nav-7);
+    clip-path: url(#clip-brush-7);
 }
 
 

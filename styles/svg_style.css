@@ -1,0 +1,17 @@
+body.design {
+    --svg-fill: white;
+    --svg-stroke: transparent;
+    --svg-stroke-width: 0;
+}
+
+body.eng {
+    --svg-fill: #FFFFFF33;
+    --svg-stroke: white;
+    --svg-stroke-width: 2;
+}
+
+.svg-white-icon {
+    fill: var(--svg-fill);
+    stroke: var(--svg-stroke);
+    stroke-width: var(--svg-stroke-width);
+}

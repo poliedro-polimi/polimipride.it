@@ -58,13 +58,11 @@ Number.prototype.map = function (outFrom, outTo) {
     return this * (outTo - outFrom) + outFrom;
 }
 
-window.onresize = function () {
+let indexResize = function () {
     let innerHeight = document.getElementById('height-probe').clientHeight;
-    console.log(deltaTop)
     let horizontal = window.innerWidth > innerHeight;
     let deltaX = (window.innerWidth - innerHeight / 3 * 4) / 2;
     let deltaY = (innerHeight - window.innerWidth / 3 * 4) / 2;
-    console.log(document.getElementById("logo").style.transform = "translateY(-" + deltaTop / 2 + "px)")
     for (let brush of Object.keys(transforms)) {
         let correctTranslationX = transforms[brush].translate[0] * (horizontal ? innerHeight : window.innerWidth) - deltaTop / 2;
         let correctTranslationY = transforms[brush].translate[1] * (horizontal ? innerHeight : window.innerWidth);
@@ -105,11 +103,13 @@ window.onresize = function () {
         document.getElementById("scroll-down").style.bottom = ""
     }
 }
+onresizes.push(indexResize);
 
-window.onload = () => {
+onloads.push(() => {
     let innerHeight = document.getElementById('height-probe').clientHeight;
     deltaTop = innerHeight - window.innerHeight;
-    window.onresize();
+    indexResize()
+    ;
     let horizontal = window.innerWidth > innerHeight;
     for (let brush of Object.keys(transforms)) {
         setTimeout(() => {
@@ -132,12 +132,12 @@ window.onload = () => {
             document.getElementById("scroll-down").style.opacity = "1";
         }, 4500)
     }
-}
+});
 
 let barVisible = false;
 let barTimeouts = [];
 
-document.onscroll = () => {
+let indexScroll = () => {
     let vHeight = document.getElementById("height-probe").offsetHeight;
     let barHeight = document.getElementById("nav-banner").offsetHeight;
     if ((document.documentElement.scrollTop > vHeight + barHeight) && !barVisible) {
@@ -150,6 +150,7 @@ document.onscroll = () => {
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-7"), true);
             document.getElementById("nav-language").classList.add("nav-appeared")
+            document.getElementById("bar-open").classList.add("nav-appeared")
         }, 200))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-5"), true);
@@ -182,6 +183,7 @@ document.onscroll = () => {
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-7"), false);
             document.getElementById("nav-language").classList.remove("nav-appeared")
+            document.getElementById("bar-open").classList.remove("nav-appeared")
         }, 600))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-5"), false);
@@ -203,68 +205,7 @@ document.onscroll = () => {
             animateBrush(document.getElementById("brush-nav-6"), false);
             document.getElementById("nav-link-5").classList.remove("nav-appeared")
         }, 0))
+        closeMobileBar();
     }
 }
-
-let animations = {};
-
-stringifyTransform = (transform) => {
-    let values = transform.values;
-    return transform.command + "(" + values.map(a => a.toFixed(5)).join(",") + ")"
-}
-
-animateBrush = (element, direction) => {
-    let info = element.getAttribute("brush-animation").split(";");
-    let duration = parseFloat(element.getAttribute("brush-duration") || "1000");
-    let id = element.getAttribute("id");
-    info = info
-        .map(a => a.split(/[(,)]/).filter(a => a !== ""))
-        .map(a => ({
-            command: a[0],
-            from: a.slice(1).filter((number, index) => index % 2 === 0).map(number => parseFloat(number)),
-            to: a.slice(1).filter((number, index) => index % 2 === 1).map(number => parseFloat(number)),
-        }));
-    if (!direction) {
-        info.forEach(e => {
-            let temp = e.to;
-            e.to = e.from;
-            e.from = temp;
-        })
-    }
-    if (animations[id] != null) {
-        for (let i = 0; i < animations[id].currentValues.length; i++) {
-            let transform = animations[id].currentValues[i];
-            info[i].from = transform.values.map(a => a);
-        }
-        clearInterval(animations[id].animation);
-    }
-    let start = new Date().getTime();
-    let path = document.getElementById(element.getAttribute("brush-path"))
-    let animation = animations[id] = {
-        "start": start,
-        "duration": duration,
-        currentValues: info.map(a => ({command: a.command, values: a.from})),
-        animation: setInterval(() => {
-            let delta = new Date().getTime() - start;
-            let progress = Math.min(delta / duration, 1);
-            let interpolated = interpolation(progress);
-            animation.currentValues = [];
-            for (let transform of info) {
-                animation.currentValues.push(
-                    {
-                        command: transform.command,
-                        values: transform.from.map((value, index) => interpolated.map(value, transform.to[index]))
-                    })
-            }
-            let strings = [];
-            strings.push("scale(" + element.offsetWidth / 100 + "," + element.offsetHeight / 100 + ")");
-            strings.push("scale(100, 100)")
-            strings.push(...animation.currentValues.map(a => stringifyTransform(a, element)).reverse());
-            strings.push("scale(" + 1 / 100 + "," + 1 / 100 + ")");
-            path.setAttribute("transform", strings.join(" "))
-            if (progress === 1) {
-                clearInterval(animation.animation);
-            }
-        }, 1000 / 60)
-    }
-}
+onscrolls.push(indexScroll);
