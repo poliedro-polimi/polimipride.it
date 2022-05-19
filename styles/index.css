@@ -1,5 +1,5 @@
 :root {
-    --fixed-pause-height: 300px;
+    --fixed-pause-height: 600px;
 }
 
 body {
@@ -53,6 +53,7 @@ html {
 
 .index-section {
     height: calc(100vh - var(--navbar-height));
+    width: 80%;
     margin: 0 10%;
     padding: calc(3 * var(--padding-full));
     box-sizing: border-box;
@@ -183,7 +184,7 @@ html {
     align-items: center;
     height: 30%;
     position: relative;
-    transition: opacity .8s, transform .5s, height .5s, background-image .5s;
+    transition: opacity .8s, transform .5s, height .5s, width .5s, background-image .5s;
 }
 
 
@@ -222,6 +223,12 @@ html {
     height: 20vh;
     width: 30vh;
     margin: var(--margin-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
 }
 
 .event-info {
@@ -234,16 +241,15 @@ html {
 }
 
 .event-title {
-    position: absolute;
-    bottom: var(--margin-full);
-    left: var(--margin-full);
-    font-size: var(--text-size-bigger);
+    color: white;
 }
 
 
 .event-info>span {
     display: flex;
     align-items: center;
+    height: var(--text-size-huge);
+    transition: opacity 0.5s, height 0.5s;
 }
 
 .event-info-text {
@@ -252,13 +258,14 @@ html {
     flex-basis: 0;
     flex-grow: 1;
     font-size: var(--text-size-big);
-    margin: var(--margin-half) var(--margin-full) var(--margin-half) 0;
+    line-height: var(--text-size-normal);
+    margin: var(--margin-half) var(--margin-full);
 }
 
 .event-icon {
     width: var(--text-size-big);
     height: var(--text-size-big);
-    margin: var(--margin-half);
+    margin: var(--margin-full);
 }
 
 
@@ -391,6 +398,13 @@ html {
 }
 
 
+#progress {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 @media screen and (min-aspect-ratio: 4/3) {
     #events-container {
         flex-direction: row;
@@ -433,23 +447,29 @@ html {
 
 @media screen and (max-aspect-ratio: 1/1) {
 
-    .event-icon {
-        width: var(--text-size-bigger);
-        height: var(--text-size-bigger);
-        margin: var(--margin-half);
+    .event:not(.highlighted) {
+        height: var(--navbar-height);
     }
 
-    .event-info-text {
-        font-size: var(--text-size-bigger);
-        margin-left: calc(var(--margin-half) * 2);
+    .event.highlighted {
+        width: calc(100% - 4 * var(--margin-full));
     }
 
-    .event-img {
-        width: 40vw;
-        height: 25vw;
+    .event.highlighted {
+        transform: scale(1, 1);
+        color: white;
+    }
+
+    .event:not(.highlighted)>.event-img {
+        height: 100%;
+    }
+
+    .event:not(.highlighted)>.event-info>span:nth-child(2),
+    .event:not(.highlighted)>.event-info>span:nth-child(4) {
+        height: 0;
+        opacity: 0;
     }
 }
-
 
 
 
@@ -567,6 +587,7 @@ html {
     .index-section {
         margin-left: 10px;
         margin-right: 10px;
+        width: calc(100% - 20px)
     }
 
     .event-info {
@@ -590,10 +611,15 @@ html {
     .index-section {
         margin-left: 5px;
         margin-right: 5px;
+        width: calc(100% - 10px);
     }
     .event-img {
         width: 30vw;
         height: 22vh;
+    }
+
+    .event-info-text {
+        font-size: var(--text-size-normal);
     }
     #sponsor-text {
         width: 100%;

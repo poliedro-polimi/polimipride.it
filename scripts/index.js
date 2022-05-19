@@ -220,11 +220,12 @@ let indexScroll = () => {
             let fixedPercent;
             let fixedHeight = parseInt(getComputedStyle(document.documentElement)
                 .getPropertyValue('--fixed-pause-height'));
+            let spaceElement = document.getElementById(space);
             e.classList.remove("section-fixed")
             e.classList.remove("section-passed")
+            spaceElement.style.display = "none"
             e.offsetWidth;
             let sectionPosition = e.offsetTop - document.documentElement.scrollTop;
-            let spaceElement = document.getElementById(space);
             if (sectionPosition > barHeight) {
                 fixedPercent = 0;
                 e.classList.remove("section-fixed")
@@ -258,6 +259,7 @@ let indexScroll = () => {
                     }
                 }
             }
+            e.offsetWidth;
         }
     })
 }
