@@ -1,17 +1,34 @@
+
+
 body.design {
     --svg-fill: white;
     --svg-stroke: transparent;
     --svg-stroke-width: 0;
+    --svg-fill-color: 0, 0, 0;
+    --svg-stroke-color: 0, 0, 0;
+    --svg-fill-color-opacity: 1;
+    --svg-stroke-color-opacity: 1;
 }
 
 body.eng {
     --svg-fill: #FFFFFF33;
     --svg-stroke: white;
-    --svg-stroke-width: 2;
+    --svg-stroke-width: 1.5%;
+    --svg-fill-color: 0, 0, 0;
+    --svg-stroke-color: 0, 0, 0;
+    --svg-fill-color-opacity: 0.5;
+    --svg-stroke-color-opacity: 1;
 }
 
 .svg-white-icon {
     fill: var(--svg-fill);
     stroke: var(--svg-stroke);
     stroke-width: var(--svg-stroke-width);
+}
+
+.svg-colored-icon {
+    fill: rgba(var(--svg-fill-color), var(--svg-fill-color-opacity));
+    stroke: rgba(var(--svg-stroke-color), var(--svg-stroke-color-opacity));
+    stroke-width: var(--svg-stroke-width);
+    transition: fill .5s;
 }

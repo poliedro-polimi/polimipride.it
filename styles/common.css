@@ -3,7 +3,7 @@
     --margin-half: 5px;
     --padding-full: 10px;
     --padding-half: 5px;
-    --navbar-height: calc(60px + var(--margin-full) * 2);
+    --navbar-height: calc(60px);
     --text-size-smaller: 0.7em;
     --text-size-small: 0.75em;
     --text-size-normal: 1em;
@@ -392,9 +392,6 @@ table > * {
         display: block;
     }
 
-    .index-section {
-        margin: 0 10px;
-    }
 
     #nav-banner > .bar-logo {
         margin: 0;
@@ -439,7 +436,4 @@ table > * {
         --padding-half: 2px;
     }
 
-    .index-section {
-        margin: 0 5px;
-    }
 }

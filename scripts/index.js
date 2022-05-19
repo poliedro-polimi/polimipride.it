@@ -109,7 +109,6 @@ onloads.push(() => {
     let innerHeight = document.getElementById('height-probe').clientHeight;
     deltaTop = innerHeight - window.innerHeight;
     indexResize()
-    ;
     let horizontal = window.innerWidth > innerHeight;
     for (let brush of Object.keys(transforms)) {
         setTimeout(() => {
@@ -140,7 +139,7 @@ let barTimeouts = [];
 let indexScroll = () => {
     let vHeight = document.getElementById("height-probe").offsetHeight;
     let barHeight = document.getElementById("nav-banner").offsetHeight;
-    if ((document.documentElement.scrollTop > vHeight + barHeight) && !barVisible) {
+    if ((document.documentElement.scrollTop > vHeight * 0.7) && !barVisible) {
         barVisible = true;
         barTimeouts.forEach(t => clearTimeout(t));
         barTimeouts.push(setTimeout(() => {
@@ -173,7 +172,7 @@ let indexScroll = () => {
             document.getElementById("nav-link-5").classList.add("nav-appeared")
         }, 800))
     }
-    if ((document.documentElement.scrollTop < vHeight) && barVisible) {
+    if ((document.documentElement.scrollTop < vHeight * 0.7 - barHeight) && barVisible) {
         barVisible = false;
         barTimeouts.forEach(t => clearTimeout(t));
         barTimeouts.push(setTimeout(() => {
@@ -207,5 +206,59 @@ let indexScroll = () => {
         }, 0))
         closeMobileBar();
     }
+    document.querySelectorAll("#events-container>.event,#events-title").forEach(e => {
+        let eventPosition = e.getBoundingClientRect().top;
+        if ((eventPosition + e.offsetHeight * 0.8 < vHeight) && (eventPosition > barHeight)) {
+            e.classList.remove("hidden")
+        } else {
+            e.classList.add("hidden")
+        }
+    })
+    document.querySelectorAll(".index-section").forEach(e => {
+        let space = e.getAttribute("space");
+        if (space != null) {
+            let fixedPercent;
+            let fixedHeight = parseInt(getComputedStyle(document.documentElement)
+                .getPropertyValue('--fixed-pause-height'));
+            e.classList.remove("section-fixed")
+            e.classList.remove("section-passed")
+            e.offsetWidth;
+            let sectionPosition = e.offsetTop - document.documentElement.scrollTop;
+            let spaceElement = document.getElementById(space);
+            if (sectionPosition > barHeight) {
+                fixedPercent = 0;
+                e.classList.remove("section-fixed")
+                e.classList.remove("section-passed")
+                spaceElement.style.display = "none"
+            } else if (sectionPosition > -fixedHeight + barHeight) {
+                fixedPercent = (sectionPosition - barHeight) / -fixedHeight
+                e.classList.add("section-fixed")
+                e.classList.remove("section-passed")
+                spaceElement.style.display = "block"
+            } else {
+                fixedPercent = 1;
+                e.classList.remove("section-fixed")
+                e.classList.add("section-passed")
+                spaceElement.style.display = "none"
+            }
+            if (fixedPercent != null) {
+                switch (e.getAttribute("id")) {
+                    case "events": {
+                        let selectedChild = Math.min(2, Math.floor(fixedPercent * 3));
+                        let oldSelected = parseInt(e.getAttribute("selected"));
+                        if (oldSelected !== selectedChild) {
+                            e.querySelectorAll("#events-container>.event").forEach(card => card.classList.remove("highlighted"))
+                            e.querySelector("#events-container>.event:nth-child(" + (selectedChild + 1) + ")").classList.add("highlighted")
+                            e.setAttribute("selected", selectedChild + "");
+                            for (let i = 1; i < 4; i++) {
+                                animateBrush(document.getElementById("event-brush-" + i), (i - 1) === selectedChild);
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+    })
 }
 onscrolls.push(indexScroll);

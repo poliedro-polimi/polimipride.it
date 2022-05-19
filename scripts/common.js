@@ -10,9 +10,14 @@ stringifyTransform = (transform) => {
 }
 
 animateBrush = (element, direction) => {
+    if (element === null)
+        return;
+    let id = element.getAttribute("id");
+    if (!direction && animations[id] == null) {
+        return;
+    }
     let info = element.getAttribute("brush-animation").split(";");
     let duration = parseFloat(element.getAttribute("brush-duration") || "1000");
-    let id = element.getAttribute("id");
     info = info
         .map(a => a.split(/[(,)]/).filter(a => a !== ""))
         .map(a => ({

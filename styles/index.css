@@ -1,3 +1,7 @@
+:root {
+    --fixed-pause-height: 300px;
+}
+
 body {
     box-sizing: border-box;
     overflow-x:hidden;
@@ -54,8 +58,29 @@ html {
     box-sizing: border-box;
 }
 
+.index-section[space] {
+    margin-top: 0;
+    margin-bottom: var(--fixed-pause-height);
+}
+
+
+.index-section.section-fixed {
+    position: fixed;
+    top: var(--navbar-height);
+}
+
+.index-section.section-passed {
+    margin-top: var(--fixed-pause-height);
+    margin-bottom: 0;
+}
+
+.index-section-space {
+    display: none;
+    height: calc(100vh - var(--navbar-height) + var(--fixed-pause-height));
+}
+
 #title {
-    height: calc(100vh + 2 * var(--navbar-height));
+    height: calc(100vh + var(--navbar-height));
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -136,6 +161,14 @@ html {
     flex-direction: column;
 }
 
+#events-title {
+    transition: opacity 1s;
+}
+
+#events-title.hidden {
+    opacity: 0;
+}
+
 #events-container {
     flex-grow: 1;
     display: flex;
@@ -149,9 +182,42 @@ html {
     flex-direction: row;
     align-items: center;
     height: 30%;
+    position: relative;
+    transition: opacity .8s, transform .5s, height .5s, background-image .5s;
+}
+
+
+.event.hidden {
+    opacity: 0;
+}
+
+.event.highlighted {
+    transform: scale(1.1, 1.1);
+    color: white;
+}
+
+.event.highlighted svg {
+    --svg-fill-color: 255, 255, 255 !important;
+    --svg-stroke-color: 255, 255, 255 !important;
+}
+
+.event-background {
+    width: calc(100% + 3 * var(--margin-full));
+    height: calc(100% + 5 * var(--margin-full));
+    top: calc(-2.5 * var(--margin-full));
+    left: calc(-1.5 * var(--margin-full));
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.event.highlighted>.event-background {
+    opacity: 1;
 }
 
 .event-img {
+    clip-path: url(#clip-brush-fixed);
     position: relative;
     height: 20vh;
     width: 30vh;
@@ -173,6 +239,7 @@ html {
     left: var(--margin-full);
     font-size: var(--text-size-bigger);
 }
+
 
 .event-info>span {
     display: flex;
@@ -497,6 +564,11 @@ html {
         height: 2.5em;
     }
 
+    .index-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .event-info {
         flex-basis: 0;
     }
@@ -515,6 +587,10 @@ html {
 
 @media screen and (max-width: 480px) {
 
+    .index-section {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .event-img {
         width: 30vw;
         height: 22vh;
