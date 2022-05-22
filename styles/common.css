@@ -13,11 +13,20 @@
     --text-size-huge: 2.5em;
 }
 
+#content-container>* {
+    overflow-y: hidden;
+}
+
+#content-container>* {
+    /*overflow-y: hidden;*/
+}
+
 html {
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
+    overflow-y: auto;
 }
 
 /* unvisited link */
