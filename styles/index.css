@@ -233,8 +233,8 @@ html {
 .event-img {
     clip-path: url(#clip-brush-fixed);
     position: relative;
-    height: 20vh;
-    width: 30vh;
+    height: 100%;
+    width: 30vw;
     margin: var(--margin-full);
     display: flex;
     align-items: center;
@@ -291,34 +291,31 @@ html {
 
 #goal-content {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    padding-bottom: var(--margin-full);
+    overflow: hidden;
 }
 
 #goal-img {
-    flex-grow: 4;
+    background-image: url("/res/goals.jpg");
+    background-position: center;
+    display: block;
+    background-size: 120% auto;
+    background-repeat: no-repeat;
+    clip-path: url(#clip-brush-fixed);
 }
 
 #goal-text {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 .goal-paragraph,
 .goal-subtitle {
     padding: var(--margin-full) calc(var(--margin-full) * 5);
+    display: block;
 }
 .goal-subtitle {
-    margin: var(--margin-full) 0;
+    padding: calc(2 * var(--margin-full)) calc(var(--margin-full) * 5);
     font-size: var(--text-size-bigger);
-}
-
-.goal-space-big {
-    flex-grow: 1;
-}
-.goal-space-small {
-    flex-grow: 0.15;
 }
 
 
@@ -611,6 +608,9 @@ html {
         height: 33.3%;
     }
 
+    #events-container {
+        overflow: hidden;
+    }
     .section-more.collapsible {
         display: none;
     }

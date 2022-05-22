@@ -3,7 +3,7 @@ var deltaTop = 0;
 // 2, 5, 6, 4, 7, 3, 1
 transforms = {
     "brush-1": {
-        size: [1738 / 1080*.9, 625 / 1080*.9],
+        size: [1738 / 1080 * .9, 625 / 1080 * .9],
         translate: [-120 / 1080, 480 / 1080],
         rotate: -6,
         delay: 100,
@@ -216,16 +216,19 @@ let indexScroll = () => {
     })
     document.querySelectorAll(".index-section").forEach(e => {
         let space = e.getAttribute("space");
-        if (space != null) {
             let fixedPercent;
             let fixedHeight = parseInt(getComputedStyle(document.documentElement)
-                .getPropertyValue('--fixed-pause-height'));
-            let spaceElement = document.getElementById(space);
+                                           .getPropertyValue('--fixed-pause-height'));
+        let spaceElement;
+        if (space != null) {
+            spaceElement = document.getElementById(space);
             e.classList.remove("section-fixed")
             e.classList.remove("section-passed")
             spaceElement.style.display = "none"
             e.offsetWidth;
-            let sectionPosition = e.offsetTop - document.documentElement.scrollTop;
+        }
+        let sectionPosition = e.offsetTop - document.documentElement.scrollTop;
+        if (space != null) {
             if (sectionPosition > barHeight) {
                 fixedPercent = 0;
                 e.classList.remove("section-fixed")
@@ -257,10 +260,39 @@ let indexScroll = () => {
                         }
                         break;
                     }
+                    case "goal": {
+                        break;
+                    }
                 }
             }
             e.offsetWidth;
         }
+    
+        switch (e.getAttribute("id")) {
+    
+            case "goal": {
+                let goalsContent = document.getElementById("goal-content");
+                let picture = document.getElementById("goal-img");
+                let textChild = new Array(
+                    ...document.querySelectorAll(
+                        "#goal-content>.goal-subtitle,#goal-content>.goal-paragraph"));
+                let heightDifferenceA = textChild.slice(0, 2)
+                                                 .reduce((sum, el) => sum + el.getBoundingClientRect().height, 0);
+                let heightDifferenceB = textChild.slice(2, 4)
+                                                 .reduce((sum, el) => sum + el.getBoundingClientRect().height, 0);
+                // if (fixedPercent < 0.2) {
+                //     picture.style.height = goalsContent.offsetHeight - (fixedPercent / 0.2) * heightDifferenceA + "px";
+                // } else if (fixedPercent < 0.5) {
+                //     picture.style.height = goalsContent.offsetHeight - heightDifferenceA + "px";
+                // } else if (fixedPercent < 0.7) {
+                //     picture.style.height = goalsContent.offsetHeight - heightDifferenceA - ((fixedPercent - 0.5) / 0.2) * heightDifferenceB + "px";
+                // } else {
+                picture.style.height = goalsContent.offsetHeight - heightDifferenceA - heightDifferenceB + "px";
+                // }
+                picture.style.backgroundPositionX = 100 * (sectionPosition - barHeight - fixedHeight) / -(fixedHeight * 3) + "%"
+            }
+        }
     })
+    
 }
 onscrolls.push(indexScroll);
