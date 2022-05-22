@@ -102,6 +102,9 @@ let indexResize = function () {
     } else {
         document.getElementById("scroll-down").style.bottom = ""
     }
+    document.getElementById("sponsor-background").style.display = "block";
+    document.getElementById("sponsor-background").style.top = document.getElementById("sponsor").offsetTop + "px";
+    
 }
 onresizes.push(indexResize);
 
@@ -143,6 +146,9 @@ let indexScroll = () => {
         barVisible = true;
         barTimeouts.forEach(t => clearTimeout(t));
         barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-back"), true);
+        }, 1000))
+        barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-1"), true);
             document.getElementById("nav-logo").classList.add("nav-appeared")
         }, 0))
@@ -175,6 +181,9 @@ let indexScroll = () => {
     if ((document.documentElement.scrollTop < vHeight * 0.7 - barHeight) && barVisible) {
         barVisible = false;
         barTimeouts.forEach(t => clearTimeout(t));
+        barTimeouts.push(setTimeout(() => {
+            animateBrush(document.getElementById("brush-nav-back"), false);
+        }, 0))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-1"), false);
             document.getElementById("nav-logo").classList.remove("nav-appeared")
@@ -280,19 +289,15 @@ let indexScroll = () => {
                                                  .reduce((sum, el) => sum + el.getBoundingClientRect().height, 0);
                 let heightDifferenceB = textChild.slice(2, 4)
                                                  .reduce((sum, el) => sum + el.getBoundingClientRect().height, 0);
-                // if (fixedPercent < 0.2) {
-                //     picture.style.height = goalsContent.offsetHeight - (fixedPercent / 0.2) * heightDifferenceA + "px";
-                // } else if (fixedPercent < 0.5) {
-                //     picture.style.height = goalsContent.offsetHeight - heightDifferenceA + "px";
-                // } else if (fixedPercent < 0.7) {
-                //     picture.style.height = goalsContent.offsetHeight - heightDifferenceA - ((fixedPercent - 0.5) / 0.2) * heightDifferenceB + "px";
-                // } else {
                 picture.style.height = goalsContent.offsetHeight - heightDifferenceA - heightDifferenceB + "px";
-                // }
                 picture.style.backgroundPositionX = 100 * (sectionPosition - barHeight - fixedHeight) / -(fixedHeight * 3) + "%"
             }
         }
     })
-    
+    document
+        .getElementById("sponsor-background")
+        .style
+        .transform = "translateY(" +
+                     (document.getElementById("sponsor").offsetTop - document.documentElement.scrollTop - vHeight / 2) / vHeight * barHeight * 2.5 + "px)"
 }
 onscrolls.push(indexScroll);

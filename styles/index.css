@@ -301,7 +301,7 @@ html {
     display: block;
     background-size: 120% auto;
     background-repeat: no-repeat;
-    clip-path: url(#clip-brush-fixed);
+    clip-path: url(#clip-brush-fixed-big);
 }
 
 #goal-text {
@@ -320,6 +320,17 @@ html {
 
 
 
+#sponsor-background {
+    position: absolute;
+    background-image: url("/res/brushes/brush_goal_bg.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: -1;
+}
 
 #sponsor {
     display: flex;
@@ -330,6 +341,7 @@ html {
 #sponsor-title {
     font-size: var(--text-size-huge);
     padding: 20px;
+    color: white;
 }
 
 #sponsor-logo {
@@ -343,6 +355,7 @@ html {
     width: 65%;
     padding: var(--padding-full);
     font-size: var(--text-size-big);
+    color: white;
 }
 
 

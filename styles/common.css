@@ -91,6 +91,19 @@ body div, body span {
 }
 
 
+#brush-nav-back {
+    background-image: url('/res/brushes/brush_nav_back.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: calc(var(--navbar-height) * 1.4);
+    width: 100%;
+    top: calc(var(--navbar-height) * -0.2);
+    left: 0;
+    z-index: -1;
+    clip-path: url(#clip-brush-nav-back);
+    opacity: 0;
+}
+
 #brush-nav-1 {
     background-image: url('/res/brushes/brush_nav_1.png');
     height: calc(var(--navbar-height) * 1.4);
@@ -443,6 +456,12 @@ table > * {
         --margin-half: 2px;
         --padding-full: 4px;
         --padding-half: 2px;
+    }
+
+}
+@media screen and (min-width: 1300px) {
+    #brush-nav-back {
+        opacity: 1;
     }
 
 }
