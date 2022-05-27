@@ -81,35 +81,13 @@ document.onscroll = function (evt) {
 }
 
 onresizes.push(() => {
-    let navBar = document.getElementById("nav-banner");
     let navBrush = document.getElementById("brush-mobile-1");
-    let brushHeight = navBar.offsetHeight * 2.5;
-    let brushWidth = brushHeight / 289 * 865;
+    let brushWidth = window.innerWidth * 1.2;
+    let brushHeight = brushWidth / 2402 * 1631;
     navBrush.style.height = brushHeight + "px";
     navBrush.style.width = brushWidth + "px";
-    navBrush.style.left = -(brushWidth - window.innerWidth / 2) / 2 + "px";
-    navBrush.style.top = navBar.offsetHeight * .45 + "px";
-    navBrush = document.getElementById("brush-mobile-2");
-    brushHeight = navBar.offsetHeight * 2.5;
-    brushWidth = brushHeight / 307 * 810;
-    navBrush.style.height = brushHeight + "px";
-    navBrush.style.width = brushWidth + "px";
-    navBrush.style.left = -(brushWidth - window.innerWidth * 1.5) / 2 + "px";
-    navBrush.style.top = navBar.offsetHeight * .45 + "px";
-    navBrush = document.getElementById("brush-mobile-3");
-    brushHeight = navBar.offsetHeight * 2.5;
-    brushWidth = brushHeight / 280 * 874;
-    navBrush.style.height = brushHeight + "px";
-    navBrush.style.width = brushWidth + "px";
-    navBrush.style.left = -(brushWidth - window.innerWidth * 0.5) / 2 + "px";
-    navBrush.style.top = navBar.offsetHeight * 1.95 + "px";
-    navBrush = document.getElementById("brush-mobile-4");
-    brushHeight = navBar.offsetHeight * 2.5;
-    brushWidth = brushHeight / 247 * 873;
-    navBrush.style.height = brushHeight + "px";
-    navBrush.style.width = brushWidth + "px";
-    navBrush.style.left = -(brushWidth - window.innerWidth * 1.5) / 2 + "px";
-    navBrush.style.top = navBar.offsetHeight * 1.8 + "px";
+    navBrush.style.left = -window.innerWidth * 0.1 + "px";
+    navBrush.style.top = "calc(4 * var(--navbar-height) - 77vw)";
 })
 
 function openMobileBar() {

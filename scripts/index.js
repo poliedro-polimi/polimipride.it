@@ -215,14 +215,6 @@ let indexScroll = () => {
         }, 0))
         closeMobileBar();
     }
-    document.querySelectorAll("#events-container>.event,#events-title").forEach(e => {
-        let eventPosition = e.getBoundingClientRect().top;
-        if ((eventPosition + e.offsetHeight * 0.8 < vHeight) && (eventPosition > barHeight)) {
-            e.classList.remove("hidden")
-        } else {
-            e.classList.add("hidden")
-        }
-    })
     document.querySelectorAll(".index-section").forEach(e => {
         let space = e.getAttribute("space");
             let fixedPercent;
@@ -269,7 +261,17 @@ let indexScroll = () => {
                         }
                         break;
                     }
-                    case "goal": {
+                    case "pap": {
+                        let selectedChild = Math.min(2, Math.floor(fixedPercent * 3));
+                        let oldSelected = parseInt(e.getAttribute("selected"));
+                        if (oldSelected !== selectedChild) {
+                            e.querySelectorAll("#pap-container>.pap").forEach(card => card.classList.remove("highlighted"))
+                            e.querySelector("#pap-container>.pap:nth-child(" + (selectedChild + 1) + ")").classList.add("highlighted")
+                            e.setAttribute("selected", selectedChild + "");
+                            for (let i = 1; i < 4; i++) {
+                                animateBrush(document.getElementById("pap-brush-" + i), (i - 1) === selectedChild);
+                            }
+                        }
                         break;
                     }
                 }
