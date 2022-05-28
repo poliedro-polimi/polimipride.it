@@ -1,5 +1,5 @@
 :root {
-    --fixed-pause-height: 600px;
+    --fixed-pause-height: 300px;
 }
 
 body {
@@ -123,7 +123,6 @@ html {
     font-weight: 700;
     margin: var(--margin-half);
     color: white;
-    text-transform: uppercase;
     animation-name: jump-scroll-text;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -187,6 +186,7 @@ html {
     height: 30%;
     position: relative;
     transition: opacity .8s, transform .5s, height .5s, width .5s, background-image .5s;
+    cursor: pointer;
 }
 
 
@@ -353,6 +353,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 #sponsor-title {
@@ -442,6 +443,11 @@ html {
 }
 
 @media screen and (min-aspect-ratio: 4/3) {
+
+    :root {
+        --fixed-pause-height: 0px;
+    }
+
     #pap-container,
     #events-container {
         flex-direction: row;
@@ -525,6 +531,7 @@ html {
     }
 
     .pap:not(.highlighted)>.pap-info>span:nth-child(2),
+    .pap:not(.highlighted)>.pap-info>span:nth-child(3),
     .pap:not(.highlighted)>.pap-info>span:nth-child(4),
     .event:not(.highlighted)>.event-info>span:nth-child(2),
     .event:not(.highlighted)>.event-info>span:nth-child(4) {
@@ -602,7 +609,6 @@ html {
     .pap-img,
     .event-img {
         width: 40vw;
-        height: 40vw;
     }
 }
 
@@ -685,7 +691,6 @@ html {
     .pap-img,
     .event-img {
         width: 30vw;
-        height: 22vh;
     }
 
     .pap-info-text,

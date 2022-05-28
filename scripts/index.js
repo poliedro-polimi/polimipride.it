@@ -1,4 +1,8 @@
 var deltaTop = 0;
+var eventInterval = null;
+var eventSelected = 0;
+var papInterval = null;
+var papSelected = 0;
 
 // 2, 5, 6, 4, 7, 3, 1
 transforms = {
@@ -57,6 +61,40 @@ Number.prototype.mapFull = function (inFrom, inTo, outFrom, outTo) {
 Number.prototype.map = function (outFrom, outTo) {
     return this * (outTo - outFrom) + outFrom;
 }
+let setSelectedCard = (containerSelector, pos) => {
+    document.querySelectorAll(containerSelector + " > *").forEach((el, elpos) => {
+        if (elpos === pos) {
+            el.classList.add("highlighted");
+        } else {
+            el.classList.remove("highlighted");
+        }
+    })
+}
+
+function startCarousel() {
+    if (window.innerWidth / window.innerHeight >= 4 / 3) {
+        
+        if (eventInterval == null) {
+            setSelectedCard("#events-container", eventSelected)
+            eventInterval = setInterval(() => {
+                eventSelected++;
+                eventSelected %= 3;
+                setSelectedCard("#events-container", eventSelected);
+            }, 4000);
+        }
+        if (papInterval == null) {
+            setSelectedCard("#pap-container", papSelected)
+            papInterval = setInterval(() => {
+                papSelected++;
+                papSelected %= 3;
+                setSelectedCard("#pap-container", papSelected);
+            }, 4000);
+        }
+    } else {
+        clearInterval(eventInterval);
+        clearInterval(papInterval);
+    }
+}
 
 let indexResize = function () {
     let innerHeight = document.getElementById('height-probe').clientHeight;
@@ -104,14 +142,14 @@ let indexResize = function () {
     }
     document.getElementById("sponsor-background").style.display = "block";
     document.getElementById("sponsor-background").style.top = document.getElementById("sponsor").offsetTop + "px";
-    
+    startCarousel();
 }
 onresizes.push(indexResize);
 
 onloads.push(() => {
     let innerHeight = document.getElementById('height-probe').clientHeight;
     deltaTop = innerHeight - window.innerHeight;
-    indexResize()
+    indexResize();
     let horizontal = window.innerWidth > innerHeight;
     for (let brush of Object.keys(transforms)) {
         setTimeout(() => {
@@ -134,6 +172,32 @@ onloads.push(() => {
             document.getElementById("scroll-down").style.opacity = "1";
         }, 4500)
     }
+    document.querySelectorAll(".event").forEach((el , pos) => {
+        el.onmousemove = () => {
+            clearInterval(eventInterval);
+            eventInterval = null;
+            eventSelected = pos;
+            setSelectedCard("#events-container", eventSelected);
+        }
+        el.onmouseout = () => {
+            clearInterval(eventInterval);
+            eventInterval = null;
+            startCarousel();
+        }
+    })
+    document.querySelectorAll(".pap").forEach((el , pos) => {
+        el.onmousemove = () => {
+            clearInterval(papInterval);
+            papInterval = null;
+            papSelected = pos;
+            setSelectedCard("#pap-container", papSelected);
+        }
+        el.onmouseout = () => {
+            clearInterval(papInterval);
+            papInterval = null;
+            startCarousel();
+        }
+    })
 });
 
 let barVisible = false;
@@ -217,11 +281,11 @@ let indexScroll = () => {
     }
     document.querySelectorAll(".index-section").forEach(e => {
         let space = e.getAttribute("space");
-            let fixedPercent;
-            let fixedHeight = parseInt(getComputedStyle(document.documentElement)
-                                           .getPropertyValue('--fixed-pause-height'));
+        let fixedPercent;
+        let fixedHeight = parseInt(getComputedStyle(document.documentElement)
+                                       .getPropertyValue('--fixed-pause-height'));
         let spaceElement;
-        if (space != null) {
+        if ((space != null) && (window.innerWidth / window.innerHeight < 4 / 3)) {
             spaceElement = document.getElementById(space);
             e.classList.remove("section-fixed")
             e.classList.remove("section-passed")
@@ -229,7 +293,7 @@ let indexScroll = () => {
             e.offsetWidth;
         }
         let sectionPosition = e.offsetTop - document.documentElement.scrollTop;
-        if (space != null) {
+        if ((space != null) && (window.innerWidth / window.innerHeight < 4 / 3)) {
             if (sectionPosition > barHeight) {
                 fixedPercent = 0;
                 e.classList.remove("section-fixed")
@@ -278,9 +342,9 @@ let indexScroll = () => {
             }
             e.offsetWidth;
         }
-    
+        
         switch (e.getAttribute("id")) {
-    
+            
             case "goal": {
                 let goalsContent = document.getElementById("goal-content");
                 let picture = document.getElementById("goal-img");
