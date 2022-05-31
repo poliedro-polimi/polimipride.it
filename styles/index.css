@@ -122,7 +122,7 @@ html {
     font-size: var(--text-size-big);
     font-weight: 700;
     margin: var(--margin-half);
-    color: white;
+    color: var(--text-color-negative);
     animation-name: jump-scroll-text;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -198,7 +198,7 @@ html {
 .pap.highlighted,
 .event.highlighted {
     transform: scale(1.1, 1.1);
-    color: white;
+    color: var(--text-color-negative);
 }
 
 .pap.highlighted svg,
@@ -267,7 +267,7 @@ html {
 
 .pap-title,
 .event-title {
-    color: white;
+    color: var(--text-color-negative);
     text-align: center;
 }
 
@@ -359,7 +359,7 @@ html {
 #sponsor-title {
     font-size: var(--text-size-huge);
     padding: 20px;
-    color: white;
+    color: var(--text-color-negative);
 }
 
 #sponsor-logo {
@@ -373,7 +373,7 @@ html {
     width: 65%;
     padding: var(--padding-full);
     font-size: var(--text-size-big);
-    color: white;
+    color: var(--text-color-negative);
     max-width: 80vh;
 }
 
@@ -522,7 +522,7 @@ html {
     .pap.highlighted,
     .event.highlighted {
         transform: scale(1, 1);
-        color: white;
+        color: var(--text-color-negative);
     }
 
     .pap:not(.highlighted)>.pap-img,

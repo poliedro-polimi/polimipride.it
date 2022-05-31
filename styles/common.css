@@ -11,6 +11,12 @@
     --text-size-bigger: 1.5em;
     --text-size-biggest: 2em;
     --text-size-huge: 2.5em;
+    --text-color-positive: #222;
+    --background-positive: #FFF;
+    --background-day-night: var(--background-positive);
+    --text-color-day-night: var(--text-color-positive);
+    --text-color-negative: #F8F8F8;
+    --background-negative: #111;
 }
 
 #content-container > * {
@@ -35,7 +41,7 @@ a:visited,
 a:hover,
 a:active {
     position: relative;
-    color: black;
+    color: var(--text-color-day-night);
     text-decoration: none;
 }
 
@@ -49,7 +55,7 @@ a:active {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #000;
+        background-color: var(--link-underline-color);
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
@@ -65,14 +71,38 @@ body {
     font-size: 16px;
     margin: var(--navbar-height) 0 0;
     font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--background-day-night);
+    --link-underline-color: var(--text-color-day-night);
+    color: var(--text-color-day-night);
+    transition: color 1s, background-color 1s;
 }
 
-body div, body span {
-    /*outline: solid black 2px;*/
-    outline-offset: -1px;
-    /*background: white;*/
+body.dark {
+    --background-day-night: var(--background-negative);
+    --text-color-day-night: var(--text-color-negative);
 }
 
+#day,
+#night {
+    transition: transform 1s;
+    transform-origin: 125px 125px;
+}
+
+#day {
+    transform: rotate(0deg) translate(35px);
+}
+
+#night {
+    transform: rotate(-180deg) translate(35px);
+}
+
+body.dark #night {
+    transform: rotate(0deg) translate(35px);
+}
+
+body.dark #day {
+    transform: rotate(180deg) translate(35px);
+}
 
 .brush-animated {
     width: 100px;
@@ -92,6 +122,22 @@ body div, body span {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.block-container {
+    margin: 0 calc(var(--margin-full) * 4);
+}
+
+.simple-text {
+    font-size: var(--text-size-big);
+    line-height: calc(var(--text-size-big) * 1.5);
+    margin: var(--text-size-big) 0;
+}
+
+.text-image {
+    clip-path: url(#clip-brush-fixed-big);
+    width: 100%;
+    height: auto;
 }
 
 .hidden {
@@ -283,16 +329,12 @@ table > * {
 #footer a,
 .menu-link a {
     color: white;
+    --link-underline-color: white;
 }
 
 .menu-link a {
     font-size: var(--text-size-bigger);
     font-weight: 700;
-}
-
-#footer a::before,
-.menu-link a::before {
-    background-color: white;
 }
 
 .language-container {
@@ -308,7 +350,7 @@ table > * {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    color: white;
+    color: var(--text-color-negative);
 }
 
 #brush-mobile-1 {
@@ -342,19 +384,36 @@ table > * {
     font-size: var(--text-size-biggest);
 }
 
-#title-short {
+.subpage-title {
+    font-size: min(100px, 16vw);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--text-color-negative);
+    height: min(300px, 40vw);
+    width: 100%;
+    background-image: url("/res/brushes/subpage.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding-bottom: min(50px, 8vw);
 }
 
-#title-short > div {
-    font-size: calc(var(--text-size-biggest) * 2);
-    margin: calc(var(--padding-full) * 15) auto;
+.subpage-subtitle {
+    font-size: var(--text-size-biggest);
+    margin: calc(2 * var(--margin-full));
+    padding: calc(0.3 * var(--text-size-biggest));
+    background-image: url("/res/brushes/brush3.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--text-color-negative);
     text-align: center;
+    align-self: stretch;
 }
-
 
 #footer {
     display: flex;
@@ -364,7 +423,7 @@ table > * {
     background-repeat: repeat-x;
     justify-content: space-evenly;
     align-items: center;
-    color: white;
+    color: var(--text-color-negative);
     font-size: 1.2em;
 }
 
@@ -376,8 +435,9 @@ table > * {
 }
 
 #footer-poliedro {
-   align-items: start
+    align-items: start
 }
+
 #footer-sponsor {
     align-items: end
 }
@@ -528,6 +588,10 @@ table > * {
 @media screen and (min-width: 1300px) {
     #brush-nav-back {
         opacity: 1;
+    }
+
+    .block-container {
+        margin: 0 10%;
     }
 
 }

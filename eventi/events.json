@@ -1,0 +1,63 @@
+[
+  {
+    "day": 32,
+    "title": "La parata - Test",
+    "where": {
+      "coarse": "Piazza Duca D'Aosta",
+      "fine": "Angolo Via Vitruvio"
+    },
+    "when": {
+      "coarse": "Sabato 2 Luglio",
+      "fine": "15:00"
+    },
+    "description": "La parata finale è l'evento cardine del pride. Partecipa con noi!",
+    "event": {
+      "dateStart": "2022-06-11 18:30",
+      "dateEnd": "2022-06-11 20:00",
+      "location": ["Piazza Duca D'aosta, Milano"],
+      "duration": 4
+    },
+    "info": "/partecipa"
+  },
+  {
+    "day": 27,
+    "title": "Pride Week - Test",
+    "where": {
+      "coarse": "Campus Leonardo e Bovisa",
+      "fine": "Banchetti nei campus"
+    },
+    "when": {
+      "coarse": "Da Lunedì 27 Giugno a Venerdì 1 Luglio",
+      "fine": "Dalle 10 alle 16"
+    },
+    "description": "Vieni a trovarci ai banchetti ai campus! Tanti gadget e attività da fare!",
+    "event": {
+      "dateStart": "2022-06-27 10:00",
+      "dateEnd": "2022-06-27 16:00",
+      "location": ["Solarium, Politecnico di Milano, Piazza Leonardo da Vinci, 42, 20133 Milano MI", "Ovale"],
+      "duration": 5
+    }
+  },
+  {
+    "day": 11,
+    "title": "Evento random - Test",
+    "where": {
+      "coarse": "Campus Leonardo",
+      "fine": "Aula a caso"
+    },
+    "when": {
+      "coarse": "Venerdì 11 giugno",
+      "fine": "18:30"
+    },
+    "description": "Lorem ipsum dolor sit amet quesque plotens cuprume!",
+    "instagram": "https://www.instagram.com/p/Cd04fZcIlr2/",
+    "facebook": "https://www.facebook.com/events/733398757844784?ref=newsfeed",
+    "maps": ["https://goo.gl/maps/m1pnHwZy5h3h7dMB9"],
+    "event": {
+      "dateStart": "2022-06-11 18:30",
+      "dateEnd": "2022-06-11 20:00",
+      "location": ["Edificio 5, Politecnico di Milano, Piazza Leonardo da Vinci, 42, 20133 Milano MI"],
+      "duration": 1
+    }
+  }
+]

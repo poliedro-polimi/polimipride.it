@@ -1,0 +1,182 @@
+:root {
+    --picture-top: 20%;
+    --picture-left: 30%;
+}
+
+#end,
+#start {
+    width: 100%;
+    height: calc(var(--navbar-height) * 2);
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: calc(var(--navbar-height) * 1.5);
+    font-weight: bolder;
+    color: var(--text-color-negative);
+}
+
+
+#start {
+
+    background-image: url("/res/brushes/brush2.png");
+    background-position: center 70%;
+}
+#end {
+    background-image: url("/res/brushes/brush3.png");
+    background-position: center;
+}
+
+#line {
+    position: absolute;
+    width: var(--navbar-height);
+    left: calc(50% - var(--navbar-height) / 2);
+    height: calc(100% - min(300px, 40vw) - 3 * var(--navbar-height));
+    top: calc(min(300px, 40vw) + 1.5 * var(--navbar-height) + 10vh);
+    background-image: url("/res/brushes/brush_timeline.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    z-index: -1;
+}
+
+.history-event {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.photo-panel {
+    min-width: 300px;
+    width: 35vw;
+    position: relative;
+    padding: var(--padding-full);
+    min-height: 500px;
+}
+
+.photo-panel>img {
+    width: 100%;
+    height: auto;
+    transition: filter 1s;
+}
+
+.photo-panel>img.center-picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.photo-panel>img.back-picture {
+    position: absolute;
+    top: calc(100% - var(--picture-top));
+    left: calc(100% - var(--picture-left));
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(35%);
+    z-index: 0;
+}
+
+.photo-panel>img.front-picture {
+    position: absolute;
+    top: var(--picture-top);
+    left: var(--picture-left);
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(45%);
+    z-index: 2;
+}
+
+.date-panel {
+    width: 20vw;
+    height: calc(var(--navbar-height) * 1.5);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: min(calc(var(--navbar-height) * 1), 4vw);
+    font-weight: bolder;
+    color: var(--text-color-negative);
+    background-image: url("/res/brushes/brush2.png");
+    background-position: center;
+}
+
+
+.info-panel {
+    min-width: 300px;
+    width: 35vw;
+    padding: var(--padding-full);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--text-size-big);
+}
+
+.info-title {
+    font-size: var(--text-size-biggest);
+    font-weight: bold;
+}
+
+.info-date {
+    font-size: var(--text-size-bigger);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.info-description {
+    font-size: var(--text-size-big);
+}
+
+.history-event:nth-child(2n+1)>.info-panel {
+    order: 1;
+}
+.history-event:nth-child(2n+1)>.photo-panel {
+    order: 3;
+}
+.history-event:nth-child(2n+1)>.date-panel {
+    order: 2;
+}
+
+.history-space {
+    height: 15vh;
+}
+.history-space-first {
+    height: 10vh;
+}
+
+#content-container {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+    margin-bottom: var(--navbar-height);
+}
+
+@media screen and (max-width: 860px) {
+    .history-event {
+        flex-direction: column;
+        margin-top: calc(2 * var(--navbar-height));
+    }
+
+    .history-event:nth-child(2n+1)>.date-panel,
+    .history-event:nth-child(2n)>.date-panel {
+        order: 1;
+        width: min(90vw, 250px);
+        font-size: min(9vw, 50px);
+    }
+    .history-event:nth-child(2n+1)>.photo-panel,
+    .history-event:nth-child(2n)>.photo-panel {
+        order: 2;
+        width: min(90vw, 550px);
+    }
+    .history-event:nth-child(2n+1)>.info-panel,
+    .history-event:nth-child(2n)>.info-panel {
+        order: 3;
+        width: min(90vw, 550px);
+        text-align: center;
+        text-shadow: var(--background-day-night) 0 0 5px;
+    }
+}

@@ -50,17 +50,6 @@ transforms = {
     }
 }
 
-interpolation = function (k) {
-    return .5 * (Math.sin((k - .5) * Math.PI) + 1);
-}
-
-Number.prototype.mapFull = function (inFrom, inTo, outFrom, outTo) {
-    return (this - inFrom) * (outTo - outFrom) / (inTo - inFrom) + outFrom;
-}
-
-Number.prototype.map = function (outFrom, outTo) {
-    return this * (outTo - outFrom) + outFrom;
-}
 let setSelectedCard = (containerSelector, pos) => {
     document.querySelectorAll(containerSelector + " > *").forEach((el, elpos) => {
         if (elpos === pos) {
@@ -356,7 +345,7 @@ let indexScroll = () => {
                 let heightDifferenceB = textChild.slice(2, 4)
                                                  .reduce((sum, el) => sum + el.getBoundingClientRect().height, 0);
                 picture.style.height = goalsContent.offsetHeight - heightDifferenceA - heightDifferenceB + "px";
-                picture.style.backgroundPositionX = 100 * (sectionPosition - barHeight - fixedHeight) / -(fixedHeight * 3) + "%"
+                picture.style.backgroundPositionX = 100 * (sectionPosition - barHeight - 300) / -(300 * 3) + "%"
             }
         }
     })

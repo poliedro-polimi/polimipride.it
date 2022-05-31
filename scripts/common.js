@@ -4,6 +4,31 @@ onresizes = [];
 
 let animations = {};
 
+document.onreadystatechange = () => {
+    if (document.readyState === 'complete') {
+        let dark = localStorage.getItem("isDark") === "true";
+        if (dark) {
+            document.body.style.transition = "none";
+            document.body.classList.add("dark");
+            setTimeout(() => {
+                document.body.style.transition = "";
+            },0);
+        }
+    }
+}
+
+interpolation = function (k) {
+    return .5 * (Math.sin((k - .5) * Math.PI) + 1);
+}
+
+Number.prototype.mapFull = function (inFrom, inTo, outFrom, outTo) {
+    return (this - inFrom) * (outTo - outFrom) / (inTo - inFrom) + outFrom;
+}
+
+Number.prototype.map = function (outFrom, outTo) {
+    return this * (outTo - outFrom) + outFrom;
+}
+
 stringifyTransform = (transform) => {
     let values = transform.values;
     return transform.command + "(" + values.map(a => a.toFixed(5)).join(",") + ")"
@@ -92,7 +117,8 @@ onresizes.push(() => {
 
 function openMobileBar() {
     document.getElementById("nav-mobile").classList.add("visible");
-    document.getElementById("bar-open").classList.remove("nav-appeared")
+    document.getElementById("bar-open").classList.remove("nav-appeared");
+    document.getElementById("bar-open").style.opacity = "0";
     animateBrush(document.getElementById("brush-mobile-1"), true);
     animateBrush(document.getElementById("brush-mobile-2"), true);
     animateBrush(document.getElementById("brush-mobile-3"), true);
@@ -101,11 +127,24 @@ function openMobileBar() {
 
 function closeMobileBar() {
     document.getElementById("nav-mobile").classList.remove("visible");
-    document.getElementById("bar-open").classList.add("nav-appeared")
+    document.getElementById("bar-open").classList.add("nav-appeared");
+    document.getElementById("bar-open").style.opacity = "";
     animateBrush(document.getElementById("brush-mobile-1"), false);
     animateBrush(document.getElementById("brush-mobile-2"), false);
     animateBrush(document.getElementById("brush-mobile-3"), false);
     animateBrush(document.getElementById("brush-mobile-4"), false);
+}
+
+function switchMode() {
+    let dark = localStorage.getItem("isDark") === "true";
+    if (dark) {
+        document.body.classList.remove("dark");
+        localStorage.setItem("isDark", "false");
+        
+    } else {
+        document.body.classList.add("dark");
+        localStorage.setItem("isDark", "true");
+    }
 }
 
 onloads.push(() => {
