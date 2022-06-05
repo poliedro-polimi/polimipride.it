@@ -85,28 +85,6 @@
   },
   {
     "day": 11,
-    "title": "Roma Pride",
-    "where": {
-      "coarse": "Roma",
-      "fine": "Piazza Della Repubblica"
-    },
-    "when": {
-      "coarse": "Saturday, June 11",
-      "fine": "3:30 PM"
-    },
-    "description": "Let's go together to Roma Pride!",
-    "instagram": "https://www.instagram.com/romaprideofficial/",
-    "facebook": "https://www.facebook.com/RomaPride",
-    "maps": ["https://goo.gl/maps/4UeC4vD1CtLNqmsi6"],
-    "event": {
-      "dateStart": "2022-06-11T15:30",
-      "dateEnd": "2022-06-11T19:00",
-      "location": ["P.za Della Repubblica, 00185 Roma RM"],
-      "duration": 1
-    }
-  },
-  {
-    "day": 11,
     "title": "Bergamo Pride",
     "where": {
       "coarse": "Bergamo",
@@ -150,28 +128,6 @@
       "location": [
         "Largo Pastore, Novara NO"
       ],
-      "duration": 1
-    }
-  },
-  {
-    "day": 18,
-    "title": "Torino Pride",
-    "where": {
-      "coarse": "Torino",
-      "fine": "Corso Principe Eugenio"
-    },
-    "when": {
-      "coarse": "Saturday, June 18",
-      "fine": "4:30 PM"
-    },
-    "description": "Let's go together to Torino Pride!",
-    "instagram": "https://www.instagram.com/torinopride/",
-    "facebook": "https://www.facebook.com/TorinoPride/",
-    "maps": ["https://goo.gl/maps/nyx9erF9KP24bEJs6"],
-    "event": {
-      "dateStart": "2022-06-18T16:30",
-      "dateEnd": "2022-06-18T19:00",
-      "location": ["Corso Principe Eugenio, Torino TO"],
       "duration": 1
     }
   },

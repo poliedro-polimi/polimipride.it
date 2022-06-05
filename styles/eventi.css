@@ -31,13 +31,13 @@
 }
 
 .today {
-    background-image: url("/res/brushes/calendar-today.png");
+    background-image: url("/res/brushes/calendar-today.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .event {
-    background-image: url("/res/brushes/calendar-event.png");
+    background-image: url("/res/brushes/calendar-event.webp");
     background-size: 80% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 }
 
 #pride-week {
-    background-image: url("/res/brushes/calendar-pride-week.png");
+    background-image: url("/res/brushes/calendar-pride-week.webp");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;

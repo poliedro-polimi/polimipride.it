@@ -199,7 +199,7 @@ let indexScroll = () => {
         barVisible = true;
         barTimeouts.forEach(t => clearTimeout(t));
         barTimeouts.push(setTimeout(() => {
-            animateBrush(document.getElementById("brush-nav-back"), true);
+            document.getElementById("brush-nav-back").style.opacity = "1";
         }, 1000))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-1"), true);
@@ -235,7 +235,7 @@ let indexScroll = () => {
         barVisible = false;
         barTimeouts.forEach(t => clearTimeout(t));
         barTimeouts.push(setTimeout(() => {
-            animateBrush(document.getElementById("brush-nav-back"), false);
+            document.getElementById("brush-nav-back").style.opacity = "0";
         }, 0))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-1"), false);
@@ -269,68 +269,7 @@ let indexScroll = () => {
         closeMobileBar();
     }
     document.querySelectorAll(".index-section").forEach(e => {
-        let space = e.getAttribute("space");
-        let fixedPercent;
-        let fixedHeight = parseInt(getComputedStyle(document.documentElement)
-                                       .getPropertyValue('--fixed-pause-height'));
-        let spaceElement;
-        if ((space != null) && (window.innerWidth / window.innerHeight < 4 / 3)) {
-            spaceElement = document.getElementById(space);
-            e.classList.remove("section-fixed")
-            e.classList.remove("section-passed")
-            spaceElement.style.display = "none"
-            e.offsetWidth;
-        }
         let sectionPosition = e.offsetTop - document.documentElement.scrollTop;
-        if ((space != null) && (window.innerWidth / window.innerHeight < 4 / 3)) {
-            if (sectionPosition > barHeight) {
-                fixedPercent = 0;
-                e.classList.remove("section-fixed")
-                e.classList.remove("section-passed")
-                spaceElement.style.display = "none"
-            } else if (sectionPosition > -fixedHeight + barHeight) {
-                fixedPercent = (sectionPosition - barHeight) / -fixedHeight
-                e.classList.add("section-fixed")
-                e.classList.remove("section-passed")
-                spaceElement.style.display = "block"
-            } else {
-                fixedPercent = 1;
-                e.classList.remove("section-fixed")
-                e.classList.add("section-passed")
-                spaceElement.style.display = "none"
-            }
-            if (fixedPercent != null) {
-                switch (e.getAttribute("id")) {
-                    case "events": {
-                        let selectedChild = Math.min(2, Math.floor(fixedPercent * 3));
-                        let oldSelected = parseInt(e.getAttribute("selected"));
-                        if (oldSelected !== selectedChild) {
-                            e.querySelectorAll("#events-container>.event").forEach(card => card.classList.remove("highlighted"))
-                            e.querySelector("#events-container>.event:nth-child(" + (selectedChild + 1) + ")").classList.add("highlighted")
-                            e.setAttribute("selected", selectedChild + "");
-                            for (let i = 1; i < 4; i++) {
-                                animateBrush(document.getElementById("event-brush-" + i), (i - 1) === selectedChild);
-                            }
-                        }
-                        break;
-                    }
-                    case "pap": {
-                        let selectedChild = Math.min(2, Math.floor(fixedPercent * 3));
-                        let oldSelected = parseInt(e.getAttribute("selected"));
-                        if (oldSelected !== selectedChild) {
-                            e.querySelectorAll("#pap-container>.pap").forEach(card => card.classList.remove("highlighted"))
-                            e.querySelector("#pap-container>.pap:nth-child(" + (selectedChild + 1) + ")").classList.add("highlighted")
-                            e.setAttribute("selected", selectedChild + "");
-                            for (let i = 1; i < 4; i++) {
-                                animateBrush(document.getElementById("pap-brush-" + i), (i - 1) === selectedChild);
-                            }
-                        }
-                        break;
-                    }
-                }
-            }
-            e.offsetWidth;
-        }
         
         switch (e.getAttribute("id")) {
             

@@ -10,6 +10,9 @@ body {
 html {
     overflow-x: hidden;
 }
+#brush-nav-back {
+    opacity: 0;
+}
 
 #height-probe  {
     height: 100vh;
@@ -222,17 +225,17 @@ html {
 
 #pap-background-1,
 #event-background-1 {
-    background-image: url("/res/brushes/brush_event_1_horz.png");
+    background-image: url("/res/brushes/brush_event_1_horz.webp");
 }
 
 #pap-background-2,
 #event-background-2 {
-    background-image: url("/res/brushes/brush_event_2_horz.png");
+    background-image: url("/res/brushes/brush_event_2_horz.webp");
 }
 
 #pap-background-3,
 #event-background-3 {
-    background-image: url("/res/brushes/brush_event_3_horz.png");
+    background-image: url("/res/brushes/brush_event_3_horz.webp");
 }
 
 .pap.highlighted>.pap-background,
@@ -340,12 +343,13 @@ html {
 
 #sponsor-background {
     position: absolute;
-    background-image: url("/res/brushes/brush_goal_bg.png");
+    background-image: url("/res/sponsor_banner.webp");
     background-size: auto 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    margin-top: 18vh;
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     display: none;
     z-index: -1;
 }
@@ -451,6 +455,7 @@ html {
         --fixed-pause-height: 0px;
     }
 
+
     #pap-container,
     #events-container {
         flex-direction: row;
@@ -465,15 +470,15 @@ html {
 
     #pap-background-1,
     #event-background-1 {
-        background-image: url("/res/brushes/brush_event_1.png");
+        background-image: url("/res/brushes/brush_event_1.webp");
     }
     #pap-background-2,
     #event-background-2 {
-        background-image: url("/res/brushes/brush_event_2.png");
+        background-image: url("/res/brushes/brush_event_2.webp");
     }
     #pap-background-3,
     #event-background-3 {
-        background-image: url("/res/brushes/brush_event_3.png");
+        background-image: url("/res/brushes/brush_event_3.webp");
     }
 
     .pap-img,
@@ -571,37 +576,37 @@ html {
 }
 
 #brush-1 {
-    background-image: url('/res/brushes/brush1.png');
+    background-image: url('/res/brushes/brush1.webp');
     clip-path: url(#clip-brush-1);
 }
 
 #brush-2 {
-    background-image: url('/res/brushes/brush2.png');
+    background-image: url('/res/brushes/brush2.webp');
     clip-path: url(#clip-brush-2);
 }
 
 #brush-3 {
-    background-image: url('/res/brushes/brush3.png');
+    background-image: url('/res/brushes/brush3.webp');
     clip-path: url(#clip-brush-3);
 }
 
 #brush-4 {
-    background-image: url('/res/brushes/brush4.png');
+    background-image: url('/res/brushes/brush4.webp');
     clip-path: url(#clip-brush-4);
 }
 
 #brush-5 {
-    background-image: url('/res/brushes/brush5.png');
+    background-image: url('/res/brushes/brush5.webp');
     clip-path: url(#clip-brush-5);
 }
 
 #brush-6 {
-    background-image: url('/res/brushes/brush6.png');
+    background-image: url('/res/brushes/brush6.webp');
     clip-path: url(#clip-brush-6);
 }
 
 #brush-7 {
-    background-image: url('/res/brushes/brush7.png');
+    background-image: url('/res/brushes/brush7.webp');
     clip-path: url(#clip-brush-7);
 }
 

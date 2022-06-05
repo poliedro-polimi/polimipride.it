@@ -166,7 +166,7 @@ body.dark #day {
 
 
 #brush-nav-back {
-    background-image: url('/res/brushes/brush_nav_back.png');
+    background-image: url('/res/brushes/brush_nav_back.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: calc(var(--navbar-height) * 1.4);
@@ -174,12 +174,12 @@ body.dark #day {
     top: calc(var(--navbar-height) * -0.2);
     left: 0;
     z-index: -1;
-    clip-path: url(#clip-brush-nav-back);
-    opacity: 0;
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 #brush-nav-1 {
-    background-image: url('/res/brushes/brush_nav_1.png');
+    background-image: url('/res/brushes/brush_nav_1.webp');
     height: calc(var(--navbar-height) * 1.4);
     width: calc(var(--navbar-height) * 1.4 * 966 / 279);
     top: calc(var(--navbar-height) * -0.2);
@@ -188,7 +188,7 @@ body.dark #day {
 }
 
 #brush-nav-2 {
-    background-image: url('/res/brushes/brush_nav_2.png');
+    background-image: url('/res/brushes/brush_nav_2.webp');
     height: calc(var(--navbar-height) * 1.4);
     width: calc(var(--navbar-height) * 1.4 * 422 / 238);
     top: calc(var(--navbar-height) * -0.2);
@@ -197,7 +197,7 @@ body.dark #day {
 }
 
 #brush-nav-3 {
-    background-image: url('/res/brushes/brush_nav_3.png');
+    background-image: url('/res/brushes/brush_nav_3.webp');
     height: calc(var(--navbar-height) * 1.4);
     width: calc(var(--navbar-height) * 1.4 * 1001 / 262);
     top: calc(var(--navbar-height) * -0.2);
@@ -206,7 +206,7 @@ body.dark #day {
 }
 
 #brush-nav-4 {
-    background-image: url('/res/brushes/brush_nav_4.png');
+    background-image: url('/res/brushes/brush_nav_4.webp');
     height: calc(var(--navbar-height) * 1.4);
     width: calc(var(--navbar-height) * 1.4 * 544 / 224);
     top: calc(var(--navbar-height) * -0.2);
@@ -215,7 +215,7 @@ body.dark #day {
 }
 
 #brush-nav-5 {
-    background-image: url('/res/brushes/brush_nav_5.png');
+    background-image: url('/res/brushes/brush_nav_5.webp');
     height: calc(var(--navbar-height) * 1.4);
     width: calc(var(--navbar-height) * 1.4 * 873 / 235);
     top: calc(var(--navbar-height) * -0.2);
@@ -224,7 +224,7 @@ body.dark #day {
 }
 
 #brush-nav-6 {
-    background-image: url('/res/brushes/brush_nav_6.png');
+    background-image: url('/res/brushes/brush_nav_6.webp');
     height: calc(var(--navbar-height) * 1.4);
     width: calc(var(--navbar-height) * 1.4 * 572 / 256);
     top: calc(var(--navbar-height) * -0.2);
@@ -233,7 +233,7 @@ body.dark #day {
 }
 
 #brush-nav-7 {
-    background-image: url('/res/brushes/brush_nav_7.png');
+    background-image: url('/res/brushes/brush_nav_7.webp');
     height: calc(var(--navbar-height) * 1.4);
     width: calc(var(--navbar-height) * 1.4 * 835 / 252);
     top: calc(var(--navbar-height) * -0.2);
@@ -375,22 +375,22 @@ table > * {
 
 
 #brush-mobile-1 {
-    background-image: url('/res/brushes/brush_menu.png');
+    background-image: url('/res/brushes/brush_menu.webp');
     clip-path: url(#clip-brush-mobile-1);
 }
 
 #brush-mobile-2 {
-    background-image: url('/res/brushes/brush6.png');
+    background-image: url('/res/brushes/brush6.webp');
     clip-path: url(#clip-brush-mobile-2);
 }
 
 #brush-mobile-3 {
-    background-image: url('/res/brushes/brush5.png');
+    background-image: url('/res/brushes/brush5.webp');
     clip-path: url(#clip-brush-mobile-3);
 }
 
 #brush-mobile-4 {
-    background-image: url('/res/brushes/brush4.png');
+    background-image: url('/res/brushes/brush4.webp');
     clip-path: url(#clip-brush-mobile-4);
 }
 
@@ -412,7 +412,7 @@ table > * {
     color: var(--text-color-negative);
     height: min(300px, 40vw);
     width: 100%;
-    background-image: url("/res/brushes/subpage.png");
+    background-image: url("/res/brushes/subpage.webp");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center bottom;
@@ -427,7 +427,7 @@ table > * {
     font-size: var(--text-size-biggest);
     margin: calc(2 * var(--margin-full));
     padding: calc(0.3 * var(--text-size-biggest));
-    background-image: url("/res/brushes/brush3.png");
+    background-image: url("/res/brushes/brush3.webp");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -439,7 +439,7 @@ table > * {
 #footer {
     display: flex;
     padding: var(--navbar-height) var(--padding-full) var(--padding-full);
-    background-image: url("/res/brushes/bottom_bar.png");
+    background-image: url("/res/brushes/bottom_bar.webp");
     background-size: auto 100%;
     background-repeat: repeat-x;
     justify-content: space-evenly;
@@ -611,9 +611,6 @@ table > * {
 }
 
 @media screen and (min-width: 1300px) {
-    #brush-nav-back {
-        opacity: 1;
-    }
 
     .block-container {
         margin: 0 10%;

@@ -20,7 +20,7 @@ function createSvg(w, d) {
 function createEventDOM(pos, e) {
     let eventContainer = document.createElement("span");
     eventContainer.classList.add("event-container");
-    eventContainer.style.backgroundImage = "url('/res/brushes/brush_event_" + (pos % 3 + 1) + "_horz.png')"
+    eventContainer.style.backgroundImage = "url('/res/brushes/brush_event_" + (pos % 3 + 1) + "_horz.webp')"
     eventContainer.style.filter = "hue-rotate(" + 50 * ((pos / 3) % 9) + "deg)";
     // console.log(pos,  40 * ((pos / 3) % 9))
     
@@ -221,7 +221,7 @@ onloads.push(() => {
                 let todayTitle = document.createElement("div");
                 todayTitle.innerText = /^\/en\/.*$/.test( window.location.pathname) ? "Today's events" : "Eventi di oggi";
                 todayTitle.classList.add("subpage-subtitle");
-                todayTitle.style.backgroundImage = "url('/res/brushes/brush_nav_7.png')"
+                todayTitle.style.backgroundImage = "url('/res/brushes/brush_nav_7.webp')"
                 document.getElementById("all-events-title").before(todayTitle);
                 today.forEach((el, pos) => todayTitle.after(createEventDOM(pos, el)))
             }

@@ -21,11 +21,11 @@
 
 #start {
 
-    background-image: url("/res/brushes/brush2.png");
+    background-image: url("/res/brushes/brush2.webp");
     background-position: center 70%;
 }
 #end {
-    background-image: url("/res/brushes/brush3.png");
+    background-image: url("/res/brushes/brush3.webp");
     background-position: center;
 }
 
@@ -35,7 +35,7 @@
     left: calc(50% - var(--navbar-height) / 2);
     height: calc(100% - min(300px, 40vw) - 3 * var(--navbar-height));
     top: calc(min(300px, 40vw) + 1.5 * var(--navbar-height) + 10vh);
-    background-image: url("/res/brushes/brush_timeline.png");
+    background-image: url("/res/brushes/brush_timeline.webp");
     background-repeat: repeat-y;
     background-size: 70% auto;
     background-position: center top;
@@ -101,7 +101,7 @@
     font-size: min(calc(var(--navbar-height) * 1), 4vw);
     font-weight: bolder;
     color: var(--text-color-negative);
-    background-image: url("/res/brushes/brush2.png");
+    background-image: url("/res/brushes/brush2.webp");
     background-position: center;
 }
 
