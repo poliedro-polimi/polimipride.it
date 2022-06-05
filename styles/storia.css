@@ -37,7 +37,8 @@
     top: calc(min(300px, 40vw) + 1.5 * var(--navbar-height) + 10vh);
     background-image: url("/res/brushes/brush_timeline.png");
     background-repeat: repeat-y;
-    background-size: 100% auto;
+    background-size: 70% auto;
+    background-position: center top;
     z-index: -1;
 }
 

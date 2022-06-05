@@ -345,7 +345,7 @@ let indexScroll = () => {
                 let heightDifferenceB = textChild.slice(2, 4)
                                                  .reduce((sum, el) => sum + el.getBoundingClientRect().height, 0);
                 picture.style.height = goalsContent.offsetHeight - heightDifferenceA - heightDifferenceB + "px";
-                picture.style.backgroundPositionX = 100 * (sectionPosition - barHeight - 300) / -(300 * 3) + "%"
+                picture.style.backgroundPositionX = 100 * (sectionPosition + goalsContent.offsetHeight * 1.1)  / (goalsContent.offsetHeight * 2.4)  + "%"
             }
         }
     })

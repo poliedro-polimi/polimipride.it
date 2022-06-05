@@ -21,7 +21,8 @@ function createEventDOM(pos, e) {
     let eventContainer = document.createElement("span");
     eventContainer.classList.add("event-container");
     eventContainer.style.backgroundImage = "url('/res/brushes/brush_event_" + (pos % 3 + 1) + "_horz.png')"
-    
+    eventContainer.style.filter = "hue-rotate(" + 50 * ((pos / 3) % 9) + "deg)";
+    // console.log(pos,  40 * ((pos / 3) % 9))
     
     let eventTitle = document.createElement("span");
     eventTitle.classList.add("event-title");
@@ -146,7 +147,6 @@ window.onhashchange = () => {
 
 onloads.push(() => {
     let date = new Date();
-    date.setTime(1654923102000);
     let day = date.getMonth() === 5 ? date.getDate() : (date.getMonth() === 6 ? 30 + date.getDate() : -1);
     if ((day > 0) && (day < 34)) {
         document.querySelector("[day='" + day + "']").classList.add("today")
@@ -154,10 +154,10 @@ onloads.push(() => {
         day = undefined;
     }
     
-    fetch('/eventi/events.json')
+    fetch(window.location.href + '/events.json')
         .then(response => response.json())
         .then(data => {
-            events = data.sort((a, b) => a.day - b.day);
+            events = data.sort((a, b) => (a.day < day ? a.day + 100 : a.day) - (b.day < day ? b.day + 100 : b.day));
             loadedEvents = true;
             events.forEach((e, pos) => {
                 let calendarDay = document.querySelector("[day='" + e.day + "']>span");
@@ -219,7 +219,7 @@ onloads.push(() => {
             let today = events.filter(a => a.day === day);
             if (today.length > 0) {
                 let todayTitle = document.createElement("div");
-                todayTitle.innerText = "Eventi di oggi";
+                todayTitle.innerText = /^\/en\/.*$/.test( window.location.pathname) ? "Today's events" : "Eventi di oggi";
                 todayTitle.classList.add("subpage-subtitle");
                 todayTitle.style.backgroundImage = "url('/res/brushes/brush_nav_7.png')"
                 document.getElementById("all-events-title").before(todayTitle);

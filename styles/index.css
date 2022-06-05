@@ -327,11 +327,12 @@ html {
 }
 .goal-paragraph,
 .goal-subtitle {
-    padding: var(--margin-full) calc(var(--margin-full) * 5);
+    padding: var(--margin-full) calc(var(--margin-full) * 7);
     display: block;
+    font-size: var(--text-size-big);
 }
 .goal-subtitle {
-    padding: calc(2 * var(--margin-full)) calc(var(--margin-full) * 5);
+    padding: calc(2 * var(--margin-full)) calc(var(--margin-full) * 7);
     font-size: var(--text-size-bigger);
 }
 
@@ -359,6 +360,7 @@ html {
 #sponsor-title {
     font-size: var(--text-size-huge);
     padding: 20px;
+    text-align: center;
     color: var(--text-color-negative);
 }
 
@@ -375,6 +377,7 @@ html {
     font-size: var(--text-size-big);
     color: var(--text-color-negative);
     max-width: 80vh;
+    text-align: center;
 }
 
 

@@ -13,8 +13,7 @@ onscrolls.push(() => {
         el.style.transform = "translate(-50%, " + (-50 + displacement * 10 * multiplier) + "%)";
         let parentDisplacement =
                 (el.parentElement.getBoundingClientRect().top + el.parentElement.getBoundingClientRect().height / 2) / window.innerHeight
-        console.log(parentDisplacement);
-        if ((parentDisplacement > 0.3) && (parentDisplacement < 0.7)) {
+        if ((parentDisplacement > 0.1) && (parentDisplacement < 0.9)) {
             el.style.filter = "blur(0)"
         } else {
             el.style.filter = "blur(10px)"
@@ -25,18 +24,10 @@ onscrolls.push(() => {
         el.style.transform = "translate(-50%, " + (-50 + displacement * 15 * multiplier) + "%) scale(45%)";
         let parentDisplacement =
             (el.parentElement.getBoundingClientRect().top + el.parentElement.getBoundingClientRect().height / 2) / window.innerHeight
-        if (el.parentElement.classList.contains("inverted")) {
-            if (parentDisplacement <= 0.3) {
-                el.style.filter = "blur(0)"
-            } else {
-                el.style.filter = "blur(10px)"
-            }
+        if ((parentDisplacement > 0.1) && (parentDisplacement < 0.9)) {
+            el.style.filter = "blur(0)"
         } else {
-            if (parentDisplacement >= 0.7) {
-                el.style.filter = "blur(0)"
-            } else {
-                el.style.filter = "blur(10px)"
-            }
+            el.style.filter = "blur(10px)"
         }
     })
     document.querySelectorAll(".back-picture").forEach((el) => {
@@ -44,18 +35,10 @@ onscrolls.push(() => {
         el.style.transform = "translate(-50%, " + (-50 + displacement * 5 * multiplier) + "%) scale(45%)";
         let parentDisplacement =
             (el.parentElement.getBoundingClientRect().top + el.parentElement.getBoundingClientRect().height / 2) / window.innerHeight
-        if (el.parentElement.classList.contains("inverted")) {
-            if (parentDisplacement >= 0.7) {
-                el.style.filter = "blur(0)"
-            } else {
-                el.style.filter = "blur(10px)"
-            }
+        if ((parentDisplacement > 0.1) && (parentDisplacement < 0.9)) {
+            el.style.filter = "blur(0)"
         } else {
-            if (parentDisplacement <= 0.3) {
-                el.style.filter = "blur(0)"
-            } else {
-                el.style.filter = "blur(10px)"
-            }
+            el.style.filter = "blur(10px)"
         }
     })
 })

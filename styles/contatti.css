@@ -7,7 +7,6 @@
 
 #contacts {
     display: flex;
-    flex-basis: 0;
     flex-grow: 1;
     flex-direction: column;
     align-content: center;
