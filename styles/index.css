@@ -83,11 +83,22 @@ html {
     height: calc(100vh - var(--navbar-height) + var(--fixed-pause-height));
 }
 
-#title {
+#title-space {
     height: calc(100vh + var(--navbar-height));
+    width: 100vw;
     margin: 0;
     padding: 0;
+}
+
+#title {
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    pointer-events: none;
 }
 
 #scroll-down {
@@ -347,9 +358,9 @@ html {
     background-size: auto 100%;
     background-position: center;
     background-repeat: repeat-x;
-    margin-top: 18vh;
+    margin-top: calc((100vh - var(--navbar-height)) * 0.1);
     width: 100vw;
-    height: 75vh;
+    height: calc((100vh - var(--navbar-height)) * 0.8);
     display: none;
     z-index: -1;
 }
@@ -359,28 +370,29 @@ html {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    justify-content: space-evenly;
+    padding: 10vh 0;
 }
 
 #sponsor-title {
-    font-size: var(--text-size-huge);
-    padding: 20px;
+    font-size: var(--text-size-biggest);
     text-align: center;
+    max-width: 800px;
     color: var(--text-color-negative);
 }
 
-#sponsor-logo {
-    width: 50vw;
-    height: 25vw;
+#sponsor-name {
+    font-size: var(--text-size-huge);
+    text-align: center;
     max-width: 400px;
-    max-height: 200px;
+    font-weight: 900;
+    color: var(--text-color-negative);
 }
 
 #sponsor-text {
-    width: 65%;
-    padding: var(--padding-full);
     font-size: var(--text-size-big);
     color: var(--text-color-negative);
-    max-width: 80vh;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -653,6 +665,8 @@ html {
         height: 33.3%;
     }
 
+
+
     #pap-container,
     #events-container {
         overflow: hidden;
@@ -677,19 +691,18 @@ html {
         flex-basis: 0;
     }
 
-    #sponsor-text {
-        width: 80%;
+    #sponsor {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
-    #sponsor-logo {
-        width: 80vw;
-        height:40vw;
-        max-width: 400px;
-        max-height: 200px;
-    }
 }
 
 @media screen and (max-width: 480px) {
+
+    #sponsor {
+        font-size: 0.8em;
+    }
 
     .index-section {
         margin-left: 5px;
@@ -705,10 +718,6 @@ html {
     .event-info-text {
         font-size: var(--text-size-normal);
     }
-    #sponsor-text {
-        width: 100%;
-        padding: var(--padding-full);
-    }
 
     .pap-card {
         flex-direction: column;
@@ -722,5 +731,11 @@ html {
     }
     .pap-card-comment {
         font-size: var(--text-size-normal);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #sponsor {
+        font-size: 1.4em;
     }
 }

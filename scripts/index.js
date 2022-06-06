@@ -288,10 +288,11 @@ let indexScroll = () => {
             }
         }
     })
+    console.log(document.getElementById("sponsor").offsetTop - document.documentElement.scrollTop - barHeight)
     document
         .getElementById("sponsor-background")
         .style
         .transform = "translateY(" +
-                     (document.getElementById("sponsor").offsetTop - document.documentElement.scrollTop - vHeight / 2) / vHeight * barHeight * 2.5 + "px)"
+                     (document.getElementById("sponsor").offsetTop - document.documentElement.scrollTop - barHeight) / vHeight * barHeight * 1.1 + "px)"
 }
 onscrolls.push(indexScroll);
