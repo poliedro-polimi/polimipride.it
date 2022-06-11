@@ -200,7 +200,7 @@ let indexScroll = () => {
         barTimeouts.forEach(t => clearTimeout(t));
         barTimeouts.push(setTimeout(() => {
             document.getElementById("brush-nav-back").style.opacity = "1";
-        }, 1000))
+        }, 1000 * 0.6))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-1"), true);
             document.getElementById("nav-logo").classList.add("nav-appeared")
@@ -209,27 +209,27 @@ let indexScroll = () => {
             animateBrush(document.getElementById("brush-nav-7"), true);
             document.getElementById("nav-language").classList.add("nav-appeared")
             document.getElementById("bar-open").classList.add("nav-appeared")
-        }, 200))
+        }, 200 * 0.6))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-5"), true);
             document.getElementById("nav-link-4").classList.add("nav-appeared")
-        }, 400))
+        }, 400 * 0.6))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-3"), true);
             document.getElementById("nav-link-2").classList.add("nav-appeared")
-        }, 400))
+        }, 400 * 0.6))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-4"), true);
             document.getElementById("nav-link-3").classList.add("nav-appeared")
-        }, 600))
+        }, 600 * 0.6))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-2"), true);
             document.getElementById("nav-link-1").classList.add("nav-appeared")
-        }, 800))
+        }, 800 * 0.6))
         barTimeouts.push(setTimeout(() => {
             animateBrush(document.getElementById("brush-nav-6"), true);
             document.getElementById("nav-link-5").classList.add("nav-appeared")
-        }, 800))
+        }, 800 * 0.6))
     }
     if ((document.documentElement.scrollTop < vHeight * 0.7 - barHeight) && barVisible) {
         barVisible = false;
