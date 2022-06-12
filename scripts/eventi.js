@@ -22,7 +22,6 @@ function createEventDOM(pos, e) {
     eventContainer.classList.add("event-container");
     eventContainer.style.backgroundImage = "url('/res/brushes/brush_event_" + (pos % 3 + 1) + "_horz.webp')"
     eventContainer.style.filter = "hue-rotate(" + 50 * ((pos / 3) % 9) + "deg)";
-    // console.log(pos,  40 * ((pos / 3) % 9))
     
     let eventTitle = document.createElement("span");
     eventTitle.classList.add("event-title");

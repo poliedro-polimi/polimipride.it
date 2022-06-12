@@ -288,7 +288,6 @@ let indexScroll = () => {
             }
         }
     })
-    console.log(document.getElementById("sponsor").offsetTop - document.documentElement.scrollTop - barHeight)
     document
         .getElementById("sponsor-background")
         .style
