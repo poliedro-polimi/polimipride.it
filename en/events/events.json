@@ -25,18 +25,18 @@
     "title": "Pride Week",
     "where": {
       "coarse": "Campus Leonardo and Bovisa",
-      "fine": "Stands in the campuses"
+      "fine": "Look for our stands\nin front of BCL in Leonardo campus\nat Ovale (outside of building B2) in Durando Campus"
     },
     "when": {
       "coarse": "From Monday, June 27 to Friday, July 1",
       "fine": "All day"
     },
-    "maps": ["https://goo.gl/maps/T9RbeXS5nbL5VtR87", "https://goo.gl/maps/9kJv9dQBMebCD1Vo9"],
+    "maps": ["https://goo.gl/maps/XhUtYffKxCKMSCW1A", "https://goo.gl/maps/vvmaGA3imPJXLvzk8"],
     "description": "Come find us at the stands in the campuses! You'll find many gadgets and activities!",
     "event": {
       "dateStart": "2022-06-27T10:00",
       "dateEnd": "2022-06-27T16:00",
-      "location": ["Politecnico di Milano, Piazza Leonardo da Vinci, 42, 20133 Milano MI", "Politecnico di Milano, Bovisa, Milano MI"],
+      "location": ["Biblioteca Campus Leonardo - BCL, Via Andrea Maria Ampère, 2, 20133 Milano MI", "Ovale di pietra, Via Giovanni Durando, 20158 Milano MI"],
       "duration": 5
     }
   },

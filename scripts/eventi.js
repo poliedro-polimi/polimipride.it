@@ -153,7 +153,7 @@ onloads.push(() => {
         day = undefined;
     }
     
-    fetch(window.location.href + '/events.json')
+    fetch(window.location.origin + window.location.pathname + '/events.json')
         .then(response => response.json())
         .then(data => {
             events = data.sort((a, b) => (a.day < day ? a.day + 100 : a.day) - (b.day < day ? b.day + 100 : b.day));
