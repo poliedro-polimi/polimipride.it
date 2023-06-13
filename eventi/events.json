@@ -1,178 +1,43 @@
 [
   {
-    "day": 32,
+    "day": 24,
     "title": "La parata",
     "where": {
       "coarse": "Piazza Duca D'Aosta",
       "fine": "Verso Via Vittor Pisani"
     },
     "when": {
-      "coarse": "Sabato 2 Luglio",
+      "coarse": "Sabato 24 Giugno",
       "fine": "15:00"
     },
     "maps": ["https://goo.gl/maps/YVvNCQvuGddnoogDA"],
     "description": "La parata finale è l'evento cardine del pride. Partecipa con noi!",
     "event": {
-      "dateStart": "2022-06-11T15:00",
-      "dateEnd": "2022-06-11T19:00",
+      "dateStart": "2023-06-24T15:00",
+      "dateEnd": "2023-06-24T20:00",
       "location": ["Piazza Duca D'aosta, Milano"],
       "duration": 1
     },
     "info": "/partecipa"
   },
   {
-    "day": 27,
+    "day": 19,
     "title": "Pride Week",
     "where": {
       "coarse": "Campus Leonardo e Bovisa",
-      "fine": "Cerca i nostri banchetti\nin Patio (ed. 11)  in Leonardo\nall'Ovale (fuori ed. B2) in Durando"
+      "fine": "Cerca i nostri banchetti\nin Patio (ed. 11) o in terrazza Gardella in Leonardo\nall'Ovale (fuori ed. B2) o fuori al BL27 in Bovisa"
     },
     "when": {
-      "coarse": "Da Lunedì 27 Giugno a Venerdì 1 Luglio",
+      "coarse": "Da Lunedì 19 a Venerdì 23 Giugno",
       "fine": "Tutto il giorno"
     },
     "maps": ["https://goo.gl/maps/XhUtYffKxCKMSCW1A", "https://goo.gl/maps/vvmaGA3imPJXLvzk8"],
     "description": "Vieni a trovarci ai banchetti ai campus! Tanti gadget e attività da fare!",
     "event": {
-      "dateStart": "2022-06-27T10:00",
-      "dateEnd": "2022-06-27T16:00",
+      "dateStart": "2022-06-19T11:00",
+      "dateEnd": "2022-06-19T15:00",
       "location": ["Biblioteca Campus Leonardo - BCL, Via Andrea Maria Ampère, 2, 20133 Milano MI", "Ovale di pietra, Via Giovanni Durando, 20158 Milano MI"],
       "duration": 5
-    }
-  },
-  {
-    "day": 4,
-    "title": "Pavia Pride",
-    "where": {
-      "coarse": "Pavia",
-      "fine": "Corso Garibaldi"
-    },
-    "when": {
-      "coarse": "Sabato 4 giugno",
-      "fine": "16:00"
-    },
-    "description": "Andiamo insieme al Pavia Pride!",
-    "facebook": "https://www.facebook.com/pridepavia/photos/pcb.7516632188412057/7516602258415050",
-    "maps": ["https://goo.gl/maps/Wy25xp83ctD3XyH8A"],
-    "event": {
-      "dateStart": "2022-06-04T16:00",
-      "dateEnd": "2022-06-04T18:00",
-      "location": ["Corso Garibaldi, Pavia"],
-      "duration": 1
-    }
-  },
-  {
-    "day": 4,
-    "title": "Brianza Pride",
-    "where": {
-      "coarse": "Monza",
-      "fine": "Piazza Castello, Binario 7"
-    },
-    "when": {
-      "coarse": "Sabato 4 giugno",
-      "fine": "16:00"
-    },
-    "description": "Andiamo insieme al Brianza Pride!",
-    "instagram": "https://www.instagram.com/p/CeGZoxQL5QA/",
-    "facebook": "https://www.facebook.com/retebrianzapride/photos/pcb.5122112894542342/5122112827875682/",
-    "maps": ["https://g.page/TeatroBinario7?share"],
-    "event": {
-      "dateStart": "2022-06-04T16:00",
-      "dateEnd": "2022-06-04T18:00",
-      "location": ["Via F. Turati, 8, 20900 Monza MB"],
-      "duration": 1
-    }
-  },
-  {
-    "day": 11,
-    "title": "Bergamo Pride",
-    "where": {
-      "coarse": "Bergamo",
-      "fine": "Piazzale Gugliermo Marconi"
-    },
-    "when": {
-      "coarse": "Sabato 11 giugno",
-      "fine": "14:00"
-    },
-    "description": "Andiamo insieme al Bergamo Pride!",
-    "instagram": "https://www.instagram.com/bergamopride/",
-    "facebook": "https://www.facebook.com/BergamoPride/",
-    "maps": ["https://goo.gl/maps/nJpGQ7SbHcmFoVJq5"],
-    "event": {
-      "dateStart": "2022-06-11T14:00",
-      "dateEnd": "2022-06-11T16:00",
-      "location": ["Piazzale Guglielmo Marconi, 7, 24122 Bergamo BG"],
-      "duration": 1
-    }
-  },
-  {
-    "day": 12,
-    "title": "Novara Pride",
-    "where": {
-      "coarse": "Novara",
-      "fine": "Largo Pastore"
-    },
-    "when": {
-      "coarse": "Domenica 12 giugno",
-      "fine": "16:00"
-    },
-    "description": "Andiamo insieme al Novara Pride!",
-    "instagram": "https://www.instagram.com/novarapride/",
-    "facebook": "https://www.facebook.com/novarapride/",
-    "maps": [
-      "https://goo.gl/maps/R8RF5jXEFP9RMJhKA"
-    ],
-    "event": {
-      "dateStart": "2022-06-12T16:00",
-      "dateEnd": "2022-06-12T18:00",
-      "location": [
-        "Largo Pastore, Novara NO"
-      ],
-      "duration": 1
-    }
-  },
-  {
-    "day": 18,
-    "title": "Varese Pride",
-    "where": {
-      "coarse": "Varese",
-      "fine": "Via Luigi Sacco"
-    },
-    "when": {
-      "coarse": "Sabato 18 giugno",
-      "fine": "15:30"
-    },
-    "description": "Andiamo insieme al Varese Pride!",
-    "instagram": "https://www.instagram.com/vareseprideofficial/",
-    "facebook": "https://www.facebook.com/varesepride",
-    "maps": ["https://goo.gl/maps/FEJPaACCCDhKYQ5N8"],
-    "event": {
-      "dateStart": "2022-06-18T15:30",
-      "dateEnd": "2022-06-18T19:00",
-      "location": ["Via Luigi Sacco, Varese VA"],
-      "duration": 1
-    }
-  },
-  {
-    "day": 18,
-    "title": "Lecco Pride",
-    "where": {
-      "coarse": "Lecco",
-      "fine": "Via Ghislanzoni - Davanti al Politecnico"
-    },
-    "when": {
-      "coarse": "Sabato 18 giugno",
-      "fine": "15:30"
-    },
-    "description": "Andiamo insieme al Lecco Pride!",
-    "instagram": "https://www.instagram.com/leccopride/",
-    "facebook": "https://www.facebook.com/leccopride/",
-    "maps": ["https://goo.gl/maps/QHv6qC7vWEhsAqRt7"],
-    "event": {
-      "dateStart": "2022-06-18T15:30",
-      "dateEnd": "2022-06-18T19:00",
-      "location": ["Via Antonio Ghislanzoni, 37-31, 23900 Lecco LC"],
-      "duration": 1
     }
   }
 ]

@@ -740,3 +740,7 @@ html {
         font-size: 1.4em;
     }
 }
+
+#sponsor-logo {
+    width: min(min(500px, 55vh), 80%);
+}
