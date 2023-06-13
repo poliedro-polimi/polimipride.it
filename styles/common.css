@@ -503,6 +503,13 @@ table > * {
     aspect-ratio: 2;
 }
 
+#footer-sponsor > a.poli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 #footer-sponsor > a > svg {
     width: 100%;
     height: 100%;
