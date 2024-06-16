@@ -81,5 +81,26 @@
       "location": ["Gradini del Rettorato, Piazza Leonardo Da Vinci 32"],
       "duration": 1
     }
+  }, 
+  {
+    "day": 27,
+    "title": "\"ARE YOU PROUD?\" Docufilm screening and discussion",
+    "where": {
+      "coarse": "Campus Leonardo e Bovisa",
+      "fine": "Aula De Donato - Building 3 Leonardo Campus e Aula De Carli - Building B9 Bovisa Durando Campus"
+    },
+    "when": {
+      "coarse": "Giovedì 27 Giugno",
+      "fine": "12:15"
+    },
+    "info": "https://www.polimi.it/en/campuses-and-services/equal-opportunities-and-inclusion/lgbti",
+    "maps": ["https://goo.gl/maps/XhUtYffKxCKMSCW1A", "https://goo.gl/maps/vvmaGA3imPJXLvzk8"],
+    "description": "L'evento sarà in italiano.",
+    "event": {
+      "dateStart": "2024-06-27T12:15",
+      "dateEnd": "2024-06-27T14:15",
+      "location": ["Aula De Donato - Building 3 Leonardo Campus", "Aula De Carli - Building B9 Bovisa Durando Campus"],
+      "duration": 2
+    }
   }
 ]
