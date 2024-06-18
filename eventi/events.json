@@ -1,43 +1,106 @@
 [
   {
-    "day": 24,
+    "day": 29,
     "title": "La parata",
     "where": {
       "coarse": "Piazza Duca D'Aosta",
       "fine": "Verso Via Vittor Pisani"
     },
     "when": {
-      "coarse": "Sabato 24 Giugno",
+      "coarse": "Sabato 29 Giugno",
       "fine": "15:00"
     },
     "maps": ["https://goo.gl/maps/YVvNCQvuGddnoogDA"],
     "description": "La parata finale è l'evento cardine del pride. Partecipa con noi!",
     "event": {
-      "dateStart": "2023-06-24T15:00",
-      "dateEnd": "2023-06-24T20:00",
+      "dateStart": "2024-06-29T15:00",
+      "dateEnd": "2024-06-29T20:00",
       "location": ["Piazza Duca D'aosta, Milano"],
       "duration": 1
     },
     "info": "/partecipa"
   },
   {
-    "day": 19,
+    "day": 24,
     "title": "Pride Week",
     "where": {
       "coarse": "Campus Leonardo e Bovisa",
-      "fine": "Cerca i nostri banchetti\nin Patio (ed. 11) o in terrazza Gardella in Leonardo\nall'Ovale (fuori ed. B2) o fuori al BL27 in Bovisa"
+      "fine": "Cerca i nostri banchetti\nin Terrazza Gardella (campus Leonardo) o \nall'Ovale (fuori ed. B2)"
     },
     "when": {
-      "coarse": "Da Lunedì 19 a Venerdì 23 Giugno",
+      "coarse": "Da Lunedì 24 a Venerdì 28 Giugno",
       "fine": "Tutto il giorno"
     },
     "maps": ["https://goo.gl/maps/XhUtYffKxCKMSCW1A", "https://goo.gl/maps/vvmaGA3imPJXLvzk8"],
-    "description": "Vieni a trovarci ai banchetti ai campus! Tanti gadget e attività da fare!",
+    "description": "Vieni a trovarci ai banchetti ai campus! Vieni a conoscerci!",
     "event": {
-      "dateStart": "2022-06-19T11:00",
-      "dateEnd": "2022-06-19T15:00",
-      "location": ["Biblioteca Campus Leonardo - BCL, Via Andrea Maria Ampère, 2, 20133 Milano MI", "Ovale di pietra, Via Giovanni Durando, 20158 Milano MI"],
+      "dateStart": "2024-06-24T11:00",
+      "dateEnd": "2024-06-24T15:00",
+      "location": ["Terrazza Gardella - Politecnico di Milano", "Ovale di pietra, Via Giovanni Durando, 20158 Milano MI"],
       "duration": 5
+    }
+  },
+  {
+    "day": 25,
+    "title": "Affettività e Sessualità Fluide nelle Nuove Generazioni",
+    "where": {
+      "coarse": "Campus Leonardo",
+      "fine": "Aula De Donato, Edificio 3"
+    },
+    "when": {
+      "coarse": "Martedì 25 Giugno",
+      "fine": "17:00"
+    },
+    "maps": ["https://goo.gl/maps/XhUtYffKxCKMSCW1A"],
+    "description": "Evento organizzato dal Politecnico di Milano. L'evento sarà in italiano. Registrati dal link forninto nelle info.",
+    "info" :  "https://www.polimi.it/en/campuses-and-services/equal-opportunities-and-inclusion/lgbti",
+    "event": {
+      "dateStart": "2024-06-25T17:00",
+      "dateEnd": "2024-06-25T19:00",
+      "location": ["Aula De Donato, Edificio 3 – Leonardo Campus"],
+      "duration": 1
+    }
+  },
+  {
+    "day": 26,
+    "title": "CHECCORO – The first LGBTQI+ choir in Milan",
+    "where": {
+      "coarse": "Campus Leonardo",
+      "fine": "Gradini del Rettorato, Piazza Leonardo Da Vinci 32"
+    },
+    "when": {
+      "coarse": "Mercoledì 26 Giugno",
+      "fine": "19:00"
+    },
+    "info": "https://www.polimi.it/en/campuses-and-services/equal-opportunities-and-inclusion/lgbti",
+    "maps": ["https://goo.gl/maps/vvmaGA3imPJXLvzk8"],
+    "description": "Evento organizzato dal Politecnico di Milano. L'evento sarà in italiano. Partecipazione libera.",
+    "event": {
+      "dateStart": "2024-06-26T19:00",
+      "dateEnd": "2024-06-26T21:00",
+      "location": ["Gradini del Rettorato, Piazza Leonardo Da Vinci 32"],
+      "duration": 1
+    }
+  }, 
+  {
+    "day": 27,
+    "title": "\"ARE YOU PROUD?\" Docufilm screening and discussion",
+    "where": {
+      "coarse": "Campus Leonardo e Bovisa",
+      "fine": "Aula De Donato - Building 3 Leonardo Campus e Aula De Carli - Building B9 Bovisa Durando Campus"
+    },
+    "when": {
+      "coarse": "Giovedì 27 Giugno",
+      "fine": "12:15"
+    },
+    "info": "https://www.polimi.it/en/campuses-and-services/equal-opportunities-and-inclusion/lgbti",
+    "maps": ["https://goo.gl/maps/XhUtYffKxCKMSCW1A", "https://goo.gl/maps/vvmaGA3imPJXLvzk8"],
+    "description": "L'evento sarà in italiano.",
+    "event": {
+      "dateStart": "2024-06-27T12:15",
+      "dateEnd": "2024-06-27T14:15",
+      "location": ["Aula De Donato - Building 3 Leonardo Campus", "Aula De Carli - Building B9 Bovisa Durando Campus"],
+      "duration": 2
     }
   }
 ]
