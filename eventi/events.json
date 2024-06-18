@@ -25,7 +25,7 @@
     "title": "Pride Week",
     "where": {
       "coarse": "Campus Leonardo e Bovisa",
-      "fine": "Cerca i nostri banchetti\nin Terrazza Gardella (campus Leonardo) o \nall'Ovale (fuori ed. B2)"
+      "fine": "Cerca i nostri banchetti\nall'entrata di Terrazza Gardella\n(tra ed. 2 e 4, campus Leonardo) o \nall'Ovale\n(fuori ed. B2, campus Durando)"
     },
     "when": {
       "coarse": "Da Lunedì 24 a Venerdì 28 Giugno",
@@ -35,7 +35,7 @@
     "description": "Vieni a trovarci ai banchetti ai campus! Vieni a conoscerci!",
     "event": {
       "dateStart": "2024-06-24T11:00",
-      "dateEnd": "2024-06-24T15:00",
+      "dateEnd": "2024-06-28T15:00",
       "location": ["Terrazza Gardella - Politecnico di Milano", "Ovale di pietra, Via Giovanni Durando, 20158 Milano MI"],
       "duration": 5
     }
@@ -63,7 +63,7 @@
   },
   {
     "day": 26,
-    "title": "CHECCORO – The first LGBTQI+ choir in Milan",
+    "title": "Checcoro – The first LGBTQI+ choir in Milan",
     "where": {
       "coarse": "Campus Leonardo",
       "fine": "Gradini del Rettorato, Piazza Leonardo Da Vinci 32"
@@ -84,7 +84,7 @@
   }, 
   {
     "day": 27,
-    "title": "\"ARE YOU PROUD?\" Docufilm screening and discussion",
+    "title": "\u201CARE YOU PROUD?\" Docufilm screening and discussion",
     "where": {
       "coarse": "Campus Leonardo e Bovisa",
       "fine": "Aula De Donato - Building 3 Leonardo Campus e Aula De Carli - Building B9 Bovisa Durando Campus"
